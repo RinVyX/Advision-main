@@ -8,26 +8,21 @@ const Video = ({ subPage }) => {
       }`}
     >
       <div className="container mx-auto">
-        <div className="text-justify">
-          AdVision supports you in your audiovisual projects and productions from
-          design to distribution strategy. AdVision produces your corporate films,
-          your seminar recordings, your video reports, your marketing buzz or
-          viral video or your interviews and testimonials..
-        </div>
-        <div className="text-justify">
-          Claiming creativity and originality, our achievements meet the needs of
-          communication and information projects from the most conventional to the
-          most offbeat. AdVision puts its know-how and its audiovisual production
-          team at the disposal of your needs and desires to create a strong
-          message that suits you!
-        </div>
-        <div>What we offer</div>
-        <ul>
-          <li>Institutional film – Corporate video</li>
-          <li>Interview and Testimonial</li>
-          <li>Webcast & Rich Media</li>
-          <li>Advertising & Consulting</li>
-        </ul>        
+        At AdVision, we provide comprehensive support for your audiovisual projects and productions, taking you through the entire process from design to distribution strategy. Our expertise lies in producing a wide range of content, including corporate films, seminar recordings, video reports, marketing buzz or viral videos, as well as interviews and testimonials.
+
+        We take pride in our commitment to creativity and originality, ensuring that our deliverables cater to communication and information projects, regardless of whether they are conventional or offbeat. Our team at AdVision possesses the necessary know-how and expertise in audiovisual production, enabling us to meet your specific needs and desires, creating a powerful message that truly represents you.
+        <br />
+        Here's a glimpse of what we offer:
+        <br />
+        1. Institutional Film - Corporate Video: We excel in crafting compelling institutional films and corporate videos that effectively convey your brand's message, values, and offerings, leaving a lasting impact on your audience.
+        <br />
+        2. Interview and Testimonial: Our team conducts interviews and testimonials that capture the essence of your brand, highlighting the experiences and perspectives of individuals associated with your organization, delivering authentic and engaging content.
+        <br />
+        3. Webcast & Rich Media: We offer webcast and rich media solutions, enabling you to deliver live or pre-recorded content to your target audience, facilitating seamless interaction and engagement.
+        <br />
+        4. Advertising & Consulting: Our agency provides advertising services and consulting expertise, helping you develop effective strategies to reach and engage your desired audience through audiovisual content, maximizing the impact of your campaigns.
+        <br />
+        At AdVision, we are dedicated to bringing your audiovisual projects to life, ensuring they align with your goals and resonate with your audience. Trust us to deliver high-quality content that captivates, informs, and leaves a lasting impression. Partner with us to unlock the potential of audiovisual storytelling for your brand.
       </div>
     </Container>
   );

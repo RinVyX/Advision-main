@@ -8,38 +8,29 @@ const Events = ({ subPage }) => {
       }`}
     >
       <div className="container mx-auto">
-        <div>Act, act, act and still act… to exist!</div>
-        <div>
-          Customers are more and more volatile: they adapt their behavior more and
-          more quickly according to their economic situation and their values.
-        </div>
-        <div>
-          Not easy, therefore, to capture them and attract their attention by
-          remaining stuck in the starting blocks!
-        </div>
-        <div>
-          Act constantly, show up, thank, renew, innovate, surprise... create the
-          event!
-        </div>
-        <div>
-          onstantly, show up, thank, renew, innovate, surprise... create the
-          event!
-        </div>
-        <div>
-          Events as a tool for growth and a vector of economic dynamics for your
-          brand, take action!
-        </div>
-        <div>What we offer</div>
-        <ul className="list-disc">
-          <li>strategic study</li>
-          <li>creation of corporate events</li>
-          <li>location search, logistics</li>
-          <li>event communication campaigns</li>
-          <li>bespoke event production</li>
-          <li>coordination of all service providers</li>
-          <li>impact analysis</li>
-          <li>creativity, innovation & emotions</li>
-        </ul>
+        In a world where customers are increasingly volatile, constantly adapting their behavior based on economic circumstances and values, it is crucial to take action and actively engage to establish your brand's existence. Simply waiting on the sidelines won't capture their attention or sustain their interest.
+
+        At our agency, we understand the importance of continuous action, appreciation, renewal, innovation, and surprise to attract and retain customers. We believe in creating moments that make an impact, generating excitement and leaving a lasting impression. It's time to create the event!
+
+        Events serve as powerful tools for brand growth and catalysts for economic dynamics. We offer a range of services to help you leverage events effectively. Here's what we provide:
+        <br />
+        1. Strategic Study: We conduct a comprehensive study to understand your brand, target audience, and objectives, enabling us to develop a strategic approach for your event initiatives.
+        <br />
+        2. Creation of Corporate Events: Our team specializes in crafting corporate events that align with your brand's identity and messaging, delivering a memorable experience to attendees.
+        <br />
+        3. Location Search and Logistics: We handle the intricate details of finding the perfect event location and managing logistics, ensuring smooth execution and a seamless experience for all participants.
+        <br />
+        4. Event Communication Campaigns: We design and execute targeted communication campaigns to generate excitement, drive attendance, and maximize the impact of your event.
+        <br />
+        5. Bespoke Event Production: From concept development to execution, we offer bespoke event production services, tailoring every aspect to suit your brand and create a unique experience.
+        <br />
+        6. Coordination of All Service Providers: We take care of coordinating all service providers involved in your event, ensuring seamless collaboration and flawless execution.
+        <br />
+        7. Impact Analysis: Our team evaluates the impact and effectiveness of your events, providing valuable insights and recommendations for future initiatives.
+        <br />
+        8. Creativity, Innovation & Emotions: We infuse creativity, innovation, and emotions into every aspect of your event, making it a truly memorable and engaging experience for attendees.
+        <br />
+        At our agency, we believe that taking action and creating unforgettable events is key to establishing your brand's presence and driving growth. Let us help you harness the power of events to captivate your audience, generate meaningful connections, and propel your brand forward.
       </div>
     </Container>
   );
