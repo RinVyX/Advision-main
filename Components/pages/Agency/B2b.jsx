@@ -14,40 +14,40 @@ const B2b = ({ subPage }) => {
         <GrayText>
           Because the challenges of B2B marketing are our raison d'être!
         </GrayText>
-        <p className="w-full h-fill mb-4 font-light text-xs dark:text-gray-200 text-gray-500 md:hidden">
+        <div className="w-full h-fill mb-4 font-light text-xs dark:text-gray-200 text-gray-500 md:hidden">
           At AdVision, we work to achieve your business objectives by
           implementing strategies adapted to your sector of activity!
           Acquisition of commercial contacts, business development or
           inter-company relations, we combine creativity and rationality to
           develop marketing projects that will have a real impact in your
           market. The ROI, we know that!
-        </p>
-        <h1 className="p-1 text-black dark:text-white">
+        </div>
+        <div className="p-1 text-black dark:text-white">
           Our B2B marketing agency can help you:
-        </h1>
+        </div>
         <ul className="font-Signika list-inside list-disc dark:text-gray-200 text-gray-500 my-4">
-          <li className="text-sm lg-text-2xl ">Increase your notoriety</li>
-          <li className="text-sm lg-text-xl ">Obtain competitive advantages</li>
-          <li className="text-sm lg-text-xl ">
+          <li className="text-sm lg-text-2xl">Increase your notoriety</li>
+          <li className="text-sm lg-text-xl">Obtain competitive advantages</li>
+          <li className="text-sm lg-text-xl">
             Create impactful marketing communication tools
           </li>
-          <li className="text-sm lg-text-xl ">
+          <li className="text-sm lg-text-xl">
             Build and maintain your business relationships
           </li>
-          <li className="text-sm lg-text-xl ">
+          <li className="text-sm lg-text-xl">
             Generate your advertising campaigns
           </li>
-          <li className="text-sm lg-text-xl ">Organize your business events</li>
+          <li className="text-sm lg-text-xl">Organize your business events</li>
         </ul>
         <Lottie animationData={buisness} className="lg:pb-32 my-10" />
-        <p className="w-full h-fill  mt-10 mb-4 font-light text-xs dark:text-gray-200 text-gray-500 md:hidden">
+        <div className="w-full h-fill mt-10 mb-4 font-light text-xs dark:text-gray-200 text-gray-500 md:hidden">
           You will not find in our teams the traditional mentality of the
           marketing agency which thrives on mass media, creative prices... and
           exorbitant fees. At AdVision, not only are we accessible and friendly,
           but we work to understand and master your business challenges. We
           speak the same language as you, not the incomprehensible jargon of
           advertising!
-        </p>
+        </div>
         <div className="w-[30px] h-[250px] md:hidden"></div>
       </div>
       {/* big screens +lg */}
@@ -67,24 +67,24 @@ const B2b = ({ subPage }) => {
             develop marketing projects that will have a real impact in your
             market. The ROI, we know that!
           </ContentText>
-          <h1 className="p-1 text-black dark:text-white">
+          <div className="p-1 text-black dark:text-white">
             Our B2B marketing agency can help you:
-          </h1>
+          </div>
           <ul className="font-Signika list-inside list-disc dark:text-gray-200 text-gray-500 my-4">
-            <li className="text-sm lg-text-2xl ">Increase your notoriety</li>
-            <li className="text-sm lg-text-xl ">
+            <li className="text-sm lg-text-2xl">Increase your notoriety</li>
+            <li className="text-sm lg-text-xl">
               Obtain competitive advantages
             </li>
-            <li className="text-sm lg-text-xl ">
+            <li className="text-sm lg-text-xl">
               Create impactful marketing communication tools
             </li>
-            <li className="text-sm lg-text-xl ">
+            <li className="text-sm lg-text-xl">
               Build and maintain your business relationships
             </li>
-            <li className="text-sm lg-text-xl ">
+            <li className="text-sm lg-text-xl">
               Generate your advertising campaigns
             </li>
-            <li className="text-sm lg-text-xl ">
+            <li className="text-sm lg-text-xl">
               Organize your business events
             </li>
           </ul>

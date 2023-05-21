@@ -28,7 +28,7 @@ const Stands = ({ subPage }) => {
         // onPause={handlePlayerPause}
         paused={pause}
       />
-      <button onClick={handlePlayerPause}>pause</button>
+      <button onClick={handlePlayerPause}></button>
     </Content>
   );
 };

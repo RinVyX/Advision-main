@@ -88,7 +88,7 @@ export default function Events() {
                       onChange={(e) => setEmail(e.target.value)}
                       type="email"
                       id="email"
-                      className=" bg-gray-700  text-white text-sm rounded-sm block w-full p-2.5 lg:w-[400px]"
+                      className=" bg-gray-200  text-white text-sm rounded-l block w-full p-2.5 lg:w-[400px]"
                       placeholder="Email"
                       required
                     />
@@ -99,7 +99,7 @@ export default function Events() {
                       onChange={(e) => setSubject(e.target.value)}
                       type="text"
                       id="subject"
-                      className=" bg-gray-700  text-white text-sm rounded-sm block w-full p-2.5 lg:w-[400px]"
+                      className=" bg-gray-200  text-white text-sm rounded-l block w-full p-2.5 lg:w-[400px]"
                       placeholder="Subject"
                       required
                     />
@@ -110,7 +110,7 @@ export default function Events() {
                       onChange={(e) => setComment(e.target.value)}
                       id="message"
                       rows="5"
-                      className=" bg-gray-700  text-white text-sm rounded-sm block w-full p-2.5 lg:w-[400px]"
+                      className=" bg-gray-200  text-white text-sm rounded-l block w-full p-2.5 lg:w-[400px]"
                       placeholder="Leave a comment..."
                     ></textarea>
                   </div>
@@ -118,8 +118,7 @@ export default function Events() {
                     <button
                       onClick={() => sendEmail()}
                       type="submit"
-                      className="py-2 hover:animate-pulse px-2 text-sm justify-items-end font-medium text-center border-2 border-black dark:border-white dark:text-white text-black rounded-sm "
-                    >
+                      className="py-2 hover:bg-[#34568B] hover:text-white hover:animate-pulse px-2 text-sm justify-items-end font-medium text-center border-2 rounded-md border-black dark:border-white dark:text-white text-black">
                       Send message
                     </button>
                   </div>
@@ -150,7 +149,7 @@ export default function Events() {
                   </div>
                 </div>
               </div>
-              <div className="flex justify-center items-center sm:gap-2 gap-1  ">
+              <div className="flex justify-center items-center sm:gap-2 gap-1">
                 <p className="dark:text-white text-black">
                   recrutement@advision-dz.net
                 </p>
@@ -168,7 +167,7 @@ export default function Events() {
                   </div>
                 </div>
               </div>
-              <div className="flex justify-center items-center sm:gap-2 gap-1  mb-2">
+              <div className="flex justify-center items-center sm:gap-2 gap-1 mb-2">
                 <p className="dark:text-white text-black">
                   advision.contact@gmail.com
                 </p>
@@ -186,15 +185,18 @@ export default function Events() {
                   </div>
                 </div>
               </div>
-              <div className="text-white flex justify-center items-center gap-4 ">
-                <a
-                  href="https://www.linkedin.com/in/sahhar-dhia-2b9a03177/"
-                  target="_blank"
-                >
-                  <FlipIcon icon="/images/youtube.png" color="0a66c2" />
+              <div className="text-white flex justify-center items-center gap-4">
+                <a href="https://www.youtube.com/@advision6492/videos" target="_blank">
+                  <FlipIcon icon="/images/youtube.png" color="#0a66c2" />
                 </a>
-                <a href="https://t.me/+213794064884" target="_blank">
+                <a href="https://www.facebook.com/advisioneldjazair" target="_blank">
                   <FlipIcon icon="/images/facebook.png" color="#2481cc" />
+                </a>
+                <a href="https://www.linkedin.com/company/74389890/admin/" target="_blank">
+                  <FlipIcon icon="/images/linkedin.png" color="#2481cc" />
+                </a>
+                <a href="https://www.instagram.com/advision.dz/" target="_blank">
+                  <FlipIcon icon="/images/instagram.png"  />
                 </a>
               </div>
             </animated.div>
@@ -208,8 +210,8 @@ const FlipIcon = ({ icon }) => {
   return (
     <div>
       <div
-        className={`w-[55px] h-[55px] bg-gray-700 rounded-sm flex justify-center items-center relative overflow-hidden
-        hover:bg-[#2481cc] transition delay-150 duration-350 ease-in-out cursor-pointer transform hover:scale-105 `}
+        className={`w-[55px] h-[55px] bg-gray-300 rounded-lg flex justify-center items-center relative overflow-hidden
+        hover:bg-[#98B4D4] transition delay-150 duration-350 ease-in-out cursor-pointer transform hover:scale-105 `}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >

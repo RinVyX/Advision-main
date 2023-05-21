@@ -9,33 +9,35 @@ const Consulting = ({ subPage }) => {
         subPage === "consulting" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       }`}
     >
-      <Lottie animationData={consulting} />
-      <h1>
-        At AdVision agency, we give you the means to achieve your ambitions
-      </h1>
-      <h3>You want to grow !</h3>
-      <p>
-        Communicate intelligently with your targets and get support from our
-        communication and strategy consulting agency!
-      </p>
-      <p>
-        You are looking for: an external and professional view of your brand and
-        your market, a partnership of trust with an experienced, friendly team
-        experienced in communication techniques, a new creative, innovative and
-        original approach... solutions to develop your brand and a real
-        communication strategy ?
-      </p>
-      <h2>What we do for you</h2>
-      <ul>
-        <li>audit, benchmarking and monitoring</li>
-        <li>communication strategy </li>
-        <li>support & advice</li>
-        <li>campaign management</li>
-        <li>positioning</li>
-        <li>multimedia advertising concepts and campaigns</li>
-        <li>marketing analysis</li>
-        <li>purchase of spaces</li>
-      </ul>
+      {/* <Lottie animationData={consulting} /> */}
+      <div className="container mx-auto">
+        <div>
+          At AdVision agency, we give you the means to achieve your ambitions
+        </div>
+        <div>You want to grow !</div>
+        <div>
+          Communicate intelligently with your targets and get support from our
+          communication and strategy consulting agency!
+        </div>
+        <div className="text-justify">
+          You are looking for: an external and professional view of your brand and
+          your market, a partnership of trust with an experienced, friendly team
+          experienced in communication techniques, a new creative, innovative and
+          original approach... solutions to develop your brand and a real
+          communication strategy ?
+        </div>
+        <div>What we do for you</div>
+        <ul>
+          <li>audit, benchmarking and monitoring</li>
+          <li>communication strategy </li>
+          <li>support & advice</li>
+          <li>campaign management</li>
+          <li>positioning</li>
+          <li>multimedia advertising concepts and campaigns</li>
+          <li>marketing analysis</li>
+          <li>purchase of spaces</li>
+        </ul>
+      </div>
     </Container>
   );
 };

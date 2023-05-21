@@ -13,7 +13,7 @@ const Communication = ({ subPage }) => {
       lg:justify-center my-auto lg:flex-row lg:gap-4 font-Signika`}
     >
       {/* mobile */}
-      <p className="w-[90%] h-fill  mt-10 mb-4 font-light text-xs dark:text-gray-200 text-gray-500 md:hidden ">
+      <p className="text-justify w-[90%] h-fill  mt-10 mb-4 font-light text-xs dark:text-gray-200 text-gray-500 md:hidden ">
         As a communication and advertising agency working in "business to
         business", our secret ingredient is the achievement of results! The rest
         of the recipe, we adapt it according to each mandate. At AdVision, we
@@ -28,7 +28,7 @@ const Communication = ({ subPage }) => {
       <div className="w-[90%] mb-4 max-w-lg md:w-[500px] lg:w-[700px]">
         <Lottie animationData={communication} />
       </div>
-      <p className="w-[90%] h-fill  mt-10 mb-4 font-light text-xs dark:text-gray-200 text-gray-500 lg:hidden">
+      <p className="text-justify w-[90%] h-fill  mt-10 mb-4 font-light text-xs dark:text-gray-200 text-gray-500 lg:hidden">
         As a communication and advertising agency working in "business to
         business", our secret ingredient is the achievement of results! The rest
         of the recipe, we adapt it according to each mandate. At AdVision, we
@@ -40,7 +40,7 @@ const Communication = ({ subPage }) => {
         With us, no divas! It's easy and pleasant to work with our team, we
         promise!
       </h2>
-      <p className="w-[90%] h-fill my-4 font-light text-xs dark:text-gray-200 text-gray-500 lg:hidden">
+      <p className="text-justify w-[90%] h-fill my-4 font-light text-xs dark:text-gray-200 text-gray-500 lg:hidden">
         Human relations and professional services, but without red tape or
         extravagant fees. Above all, we build a relationship of trust. Our
         mantra is to imagine solutions that make our customers win… and to make
@@ -53,7 +53,7 @@ const Communication = ({ subPage }) => {
 
       {/* lg screen */}
       <div className="lg:flex justify-center item-center w-[50%] h-full hidden flex-col ">
-        <p className="w-[90%] h-fill  mt-10 mb-4 font-light text-base dark:text-gray-200 text-gray-500">
+        <p className="text-justify w-[90%] h-fill  mt-10 mb-4 font-light text-base dark:text-gray-200 text-gray-500">
           As a communication and advertising agency working in "business to
           business", our secret ingredient is the achievement of results! The
           rest of the recipe, we adapt it according to each mandate. At
@@ -66,7 +66,7 @@ const Communication = ({ subPage }) => {
           With us, no divas! It's easy and pleasant to work with our team, we
           promise!
         </h2>
-        <p className="w-[90%] mb-10 font-light text-base dark:text-gray-200 text-gray-500">
+        <p className="text-justify w-[90%] mb-10 font-light text-base dark:text-gray-200 text-gray-500">
           Human relations and professional services, but without red tape or
           extravagant fees. Above all, we build a relationship of trust. Our
           mantra is to imagine solutions that make our customers win… and to

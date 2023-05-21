@@ -7,26 +7,28 @@ const Video = ({ subPage }) => {
         subPage === "video" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       }`}
     >
-      <p>
-        AdVision supports you in your audiovisual projects and productions from
-        design to distribution strategy. AdVision produces your corporate films,
-        your seminar recordings, your video reports, your marketing buzz or
-        viral video or your interviews and testimonials..
-      </p>
-      <p>
-        Claiming creativity and originality, our achievements meet the needs of
-        communication and information projects from the most conventional to the
-        most offbeat. AdVision puts its know-how and its audiovisual production
-        team at the disposal of your needs and desires to create a strong
-        message that suits you!
-      </p>
-      <h1>What we offer</h1>
-      <ul>
-        <li>Institutional film – Corporate video</li>
-        <li>Interview and Testimonial</li>
-        <li>Webcast & Rich Media</li>
-        <li>Advertising & Consulting</li>
-      </ul>
+      <div className="container mx-auto">
+        <div className="text-justify">
+          AdVision supports you in your audiovisual projects and productions from
+          design to distribution strategy. AdVision produces your corporate films,
+          your seminar recordings, your video reports, your marketing buzz or
+          viral video or your interviews and testimonials..
+        </div>
+        <div className="text-justify">
+          Claiming creativity and originality, our achievements meet the needs of
+          communication and information projects from the most conventional to the
+          most offbeat. AdVision puts its know-how and its audiovisual production
+          team at the disposal of your needs and desires to create a strong
+          message that suits you!
+        </div>
+        <div>What we offer</div>
+        <ul>
+          <li>Institutional film – Corporate video</li>
+          <li>Interview and Testimonial</li>
+          <li>Webcast & Rich Media</li>
+          <li>Advertising & Consulting</li>
+        </ul>        
+      </div>
     </Container>
   );
 };
