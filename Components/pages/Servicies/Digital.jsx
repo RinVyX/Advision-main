@@ -7,45 +7,32 @@ const Digital = ({ subPage }) => {
         subPage === "digital" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       }`}
     >
-      <div className="container mx-auto">
-        <div>
-          And how to travel quickly other than by the WEB? ! Creating a website is
-          not that difficult. Many already do!
-        </div>
-        <div className="text-justify">
-          But at AdVision agency, we create and deploy a real high-performance
-          digital strategy for your brand that is consistent with all of your
-          off-line communication tools.
-        </div>
-        <div>
-          We build ergonomics capable of effectively meeting the expectations of
-          your brand's users by favoring optimal browsing comfort to build
-          loyalty.
-        </div>
-        <div>
-          We support you in the “intelligent writing” of content to generate good
-          SEO.
-        </div>
-        <div>
-          We are committed to providing your users with a memorable experience by
-          creating memories and emotions.
-        </div>
-        <div>
-          And because we know that "only the result counts", we create online
-          marketing tools to improve the performance of your site and optimize
-          your RO
-        </div>
-        <div>What we offer</div>
-        <ul>
-          <li>marketing & digital strategy: advice & support</li>
-          <li>creation of Profetional Wpa mobile apps</li>
-          <li>development & CMS</li>
-          <li>graphic design, web design & responsive design</li>
-          <li>e-marketing, m-marketing and contests</li>
-          <li>email campaigns</li>
-          <li>referencing and visibility</li>
-          <li>social media & social networks</li>
-        </ul>
+      <div className="container mx-auto text-justify p-8">
+        Looking to explore alternative means of travel beyond the web? Look no further! While creating a website may seem like a simple task, many have already ventured into this domain. However, at AdVision agency, we go above and beyond by crafting and implementing a cutting-edge digital strategy for your brand that seamlessly aligns with your offline communication channels.
+
+        Our team specializes in constructing user-friendly interfaces that effectively cater to your brand's target audience, ensuring optimal browsing comfort to foster customer loyalty. We also provide comprehensive assistance in "intelligent writing" techniques to generate compelling content that enhances your search engine optimization (SEO) efforts.
+
+        But that's not all—we are committed to curating a memorable experience for your users, evoking emotions and creating lasting memories. Understanding that outcomes are paramount, we develop online marketing tools that enhance your website's performance and optimize your return on investment (ROI).
+        <br />
+        Here's a glimpse of what we offer:
+        <br />
+        1. Marketing & Digital Strategy: Our experts provide valuable advice and unwavering support to devise and execute a robust marketing and digital strategy tailored to your specific requirements.
+        <br />
+        2. Professional WPA Mobile App Creation: We excel in crafting professional and functional mobile applications, enabling you to extend your brand's reach and engage with your audience on the go.
+        <br />
+        3. Development & CMS: Our proficient team undertakes development projects and offers content management system (CMS) solutions to streamline your online presence and ensure smooth website management.
+        <br />
+        4. Graphic Design, Web Design & Responsive Design: We have skilled designers who can breathe life into your brand through visually captivating graphic designs, user-friendly web designs, and responsive design to provide a seamless experience across different devices.
+        <br />
+        5. E-Marketing, M-Marketing, and Contests: We leverage the power of e-marketing and mobile marketing (m-marketing) to amplify your brand's online visibility. Additionally, we organize engaging contests to foster audience participation and brand engagement.
+        <br />
+        6. Email Campaigns: Our experts specialize in crafting compelling email campaigns that effectively reach your target audience and drive desired actions, ensuring a high level of engagement.
+        <br />
+        7. Referencing and Visibility: We employ effective referencing techniques to enhance your website's visibility in search engine results, boosting your brand's online presence.
+        <br />
+        8. Social Media & Social Networks: Our team harnesses the potential of social media platforms and social networks to create meaningful connections between your brand and your audience, enabling you to engage and expand your customer base.
+        <br />
+        At AdVision agency, we are dedicated to helping your brand soar to new heights in the digital realm. Experience our comprehensive services and embark on an extraordinary digital journey today.
       </div>
     </Container>
   );

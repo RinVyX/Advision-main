@@ -7,6 +7,7 @@ const Graphics = ({ subPage }) => {
         subPage === "graphics" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       }`}
     >
+
       <div className="container mx-auto pb-32 pt-12">
         <div>At AdVision, we share this “sweet” point of view!</div>
         <div>
@@ -69,7 +70,7 @@ const Graphics = ({ subPage }) => {
         </ul>
       </div>
       <div className="gap-8 columns-3">
-        <img className="w-full" src="/images/stand/genepi.jpg" alt="" />
+        <img className="w-full hover:delay-150" src="/images/stand/genepi.jpg" alt="" />
         <img className="w-full" src="/images/stand/genepi1.jpg" alt="" />
         <img className="w-full" src="/images/stand/genepi2.jpg" alt="" />
         <img className="w-full" src="/images/stand/genepi3.jpg" alt="" />
