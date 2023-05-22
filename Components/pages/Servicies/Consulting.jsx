@@ -40,20 +40,7 @@ const Consulting = ({ subPage }) => {
 };
 
 export default Consulting;
-const GrayText = styled.p`
-  color: gray;
-  font-size: 16px;
-`;
-const Heading = styled.p`
-  color: black;
-  font-size: 24px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-`;
-const ContentText = styled.p`
-  color: gray;
-  font-size: 18px;
-`;
+
 const Content = styled.div`
   overflow-y: scroll;
   &::-webkit-scrollbar {

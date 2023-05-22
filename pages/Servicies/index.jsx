@@ -19,7 +19,7 @@ const index = () => {
   });
 
   return (
-    <Content className="bg-white dark:bg-black">
+    <Content className="dark:bg-black">
       {Transition(
         (style, item) =>
           item && (

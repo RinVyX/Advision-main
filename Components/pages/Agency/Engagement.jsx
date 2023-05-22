@@ -13,7 +13,7 @@ const Engagement = ({ subPage }) => {
       ease transform duration-300 transition-all
         lg:flex-row-reverse lg:justify-center  mx-auto`}
     >
-      <div className="flex justify-center items-center flex-col h-full mx-4 my-8 w-[90%] lg:w-full lg:flex-row lg:gap-10 font-Signika">
+      <div className="flex justify-center items-center flex-col h-full my-8 w-[90%] lg:w-full lg:flex-row lg:gap-10 font-Signika">
         <Lottie
           animationData={Engagement1}
           className="w-[350px] lg:w-[600px] "

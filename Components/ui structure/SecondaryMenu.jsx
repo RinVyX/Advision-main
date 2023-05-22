@@ -36,7 +36,7 @@ const SecondaryMenu = ({
           item && (
             <animated.nav
               style={style}
-              className="absolute w-[100%] h-[60px] font-Signika font-light bg-white dark:bg-black"
+              className="absolute w-[100%] h-[60px] font-Signika font-light dark:bg-black"
               onKeyDown={(e) => handleKeyDown(e)}
             >
               <SNav
@@ -88,7 +88,7 @@ const SecondaryMenu = ({
               <SNav
                 className={`w-full h-[60px] absolute ${
                   page === "servicies" ? "left-0" : "left-[-100%]"
-                } flex justify-start items-center  gap-6  ease pl-5 md:pl-10 transform duration-500 transition-all overflow-x-auto`}
+                } flex justify-start items-center gap-6 pl-5 md:pl-10 ease transform duration-500 transition-all overflow-x-auto`}
               >
                 <p
                   className={`cursor-pointer font-semibold ${
