@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-const Seer18 = ({ subPage }) => {
+const Graphics = ({ subPage }) => {
   return (
     <Content
       className={`w-full  absolute ${
-        subPage === "seer18" ? "left-0" : "left-[-200%]"
+        subPage === "graphics" ? "left-0" : "left-[-200%]"
       } font-Signika`}
     >
       <div className="body-font">
@@ -48,7 +48,7 @@ const Seer18 = ({ subPage }) => {
   );
 };
 
-export default Seer18;
+export default Graphics;
 const Heading = styled.p`
   color: black;
   font-size: 24px;

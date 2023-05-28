@@ -27,7 +27,7 @@ const SecondaryMenu = ({
     }
   }, [page]);
   const handleKeyDown = (e) => {
-    console.log("hello world");
+    console.log("Hello world");
   };
   return (
     <>
@@ -52,7 +52,7 @@ const SecondaryMenu = ({
                   }`}
                   onClick={() => setSubPage("philosophy")}
                 >
-                  Philosophie
+                  Philosophy
                 </p>
                 <p
                   className={`cursor-pointer font-semibold ${
@@ -72,7 +72,7 @@ const SecondaryMenu = ({
                   }`}
                   onClick={() => setSubPage("equipe")}
                 >
-                  Equipe
+                  Team
                 </p>
                 <p
                   className={`cursor-pointer font-semibold mr-2 ${
@@ -199,119 +199,69 @@ const SecondaryMenu = ({
               >
                 <p
                   className={`cursor-pointer font-semibold ${
-                    subPage === "seer"
+                    subPage === "event"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("seer")}
+                  onClick={() => setSubPage("event")}
                 >
-                  SEER
+                  Events
                 </p>
                 <p
                   className={`cursor-pointer font-semibold ${
-                    subPage === "eic"
+                    subPage === "graphics"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("eic")}
+                  onClick={() => setSubPage("graphics")}
                 >
-                  EIC
+                  Graphics
                 </p>
                 <p
                   className={`cursor-pointer font-semibold ${
-                    subPage === "niae"
+                    subPage === "digital"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("niae")}
+                  onClick={() => setSubPage("digital")}
                 >
-                  NIAE
+                  Digital
                 </p>
               </SNav>
               <SNav
                 className={`w-full h-[60px] absolute ${
-                  page === "achivments" ? "left-0" : "left-[-100%]"
+                  page === "achievements" ? "left-0" : "left-[-100%]"
                 } flex justify-start items-center  gap-6  ease pl-5 md:pl-10 transform duration-500 transition-all overflow-x-auto whitespace-nowrap`}
               >
                 <p
                   className={`cursor-pointer font-semibold ${
-                    subPage === "seer18"
+                    subPage === "event"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("seer18")}
+                  onClick={() => setSubPage("event")}
                 >
-                  SEER 18
+                  Events
                 </p>
                 <p
                   className={`cursor-pointer font-semibold ${
-                    subPage === "seer19"
+                    subPage === "graphics"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("seer19")}
+                  onClick={() => setSubPage("graphics")}
                 >
-                  SEER 19
+                  Graphics
                 </p>
                 <p
                   className={`cursor-pointer font-semibold ${
-                    subPage === "seer20"
+                    subPage === "digital"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("seer20")}
+                  onClick={() => setSubPage("digital")}
                 >
-                  SEER 20
-                </p>
-                <p
-                  className={`cursor-pointer font-semibold ${
-                    subPage === "seer21"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("seer21")}
-                >
-                  SEER 21
-                </p>
-                <p
-                  className={`cursor-pointer font-semibold ${
-                    subPage === "seer22"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("seer22")}
-                >
-                  SEER 22
-                </p>
-                <p
-                  className={`cursor-pointer font-semibold ${
-                    subPage === "seer23"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("seer23")}
-                >
-                  SEER 23
-                </p>
-                <p
-                  className={`cursor-pointer font-semibold ${
-                    subPage === "eva"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("eva")}
-                >
-                  EVA
-                </p>
-                <p
-                  className={`cursor-pointer font-semibold mr-4 ${
-                    subPage === "stands"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("stands")}
-                >
-                  Stands
+                  Digital
                 </p>
               </SNav>
             </animated.nav>

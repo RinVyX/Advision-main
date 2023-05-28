@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
-const Seer23 = ({ subPage }) => {
+const Digital = ({ subPage }) => {
   return (
     <Content
       className={`w-full  absolute ${
-        subPage === "seer23" ? "left-0" : "left-[-200%]"
+        subPage === "digital" ? "left-0" : "left-[-200%]"
       } flex justify-center items-start  ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-Signika mx-4 md:mx-10 my-4`}
     >
       <GrayText>
-        Because the challenges of Seer23 marketing are our raison d'être!
+        Because the challenges of Seer19 marketing are our raison d'être!
       </GrayText>
       <ContentText>
         At AdVision, we work to achieve your business objectives by implementing
@@ -20,7 +20,7 @@ const Seer23 = ({ subPage }) => {
         projects that will have a real impact in your market. The ROI, we know
         that!
       </ContentText>
-      <Heading>Our Seer23 marketing agency can help you:</Heading>
+      <Heading>Our Seer19 marketing agency can help you:</Heading>
       <List>
         <ListItem>Increase your notoriety</ListItem>
         <ListItem>Obtain competitive advantages</ListItem>
@@ -43,7 +43,7 @@ const Seer23 = ({ subPage }) => {
   );
 };
 
-export default Seer23;
+export default Digital;
 const GrayText = styled.p`
   color: #888a9b;
   font-size: 16px;

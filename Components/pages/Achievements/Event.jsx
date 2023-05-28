@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-const Eva = ({ subPage }) => {
+const Event = ({ subPage }) => {
   return (
     <Content
       className={`w-full  absolute ${
-        subPage === "eva" ? "left-0" : "left-[-200%]"
+        subPage === "event" ? "left-0" : "left-[-200%]"
       } flex justify-center items-start  ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-Signika mx-4 md:mx-10 my-4`}
     >
       <GrayText>
@@ -43,7 +43,7 @@ const Eva = ({ subPage }) => {
   );
 };
 
-export default Eva;
+export default Event;
 const GrayText = styled.p`
   color: #888a9b;
   font-size: 16px;

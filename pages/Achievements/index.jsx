@@ -2,14 +2,9 @@ import { useEffect, useState } from "react";
 import { useTransition, animated } from "react-spring";
 import { useContext } from "react";
 import { State } from "../../Context/context";
-import Seer18 from "../../Components/pages/Achievements/Seer18";
-import Seer19 from "../../Components/pages/Achievements/Seer19";
-import Seer20 from "../../Components/pages/Achievements/Seer20";
-import Seer21 from "../../Components/pages/Achievements/Seer21";
-import Seer22 from "../../Components/pages/Achievements/Seer22";
-import Seer23 from "../../Components/pages/Achievements/Seer23";
-import Stands from "../../Components/pages/Achievements/Stands";
-import Eva from "../../Components/pages/Achievements/Eva";
+import Event from "../../Components/pages/Achievements/Event";
+import Graphics from "../../Components/pages/Achievements/Graphics";
+import Digital from "../../Components/pages/Achievements/Digital";
 import styled from "styled-components";
 
 export default function Events() {
@@ -45,14 +40,9 @@ export default function Events() {
               } absolute  w-full h-full`}
             >
               <PageWrapper>
-                <Seer18 subPage={subPage} />
-                <Seer19 subPage={subPage} />
-                <Seer20 subPage={subPage} />
-                <Seer21 subPage={subPage} />
-                <Seer22 subPage={subPage} />
-                <Seer23 subPage={subPage} />
-                <Eva subPage={subPage} />
-                <Stands subPage={subPage} />
+                <Event subPage={subPage} />
+                <Graphics subPage={subPage} />
+                <Digital subPage={subPage} />
               </PageWrapper>
             </animated.div>
           )
