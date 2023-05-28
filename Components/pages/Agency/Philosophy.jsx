@@ -1,11 +1,11 @@
 import Lottie from "lottie-react";
 import styled from "styled-components";
 import vision from "../../../Lottie/vision.json";
-const Vision = ({ subPage }) => {
+const Philosophy = ({ subPage }) => {
   return (
     <Container
       className={`w-full h-full absolute ${
-        subPage === "vision" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
+        subPage === "philosophy" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       } flex justify-start items-center flex-col top-0
       ease transform duration-300 transition-all
       lg:justify-center my-auto lg:flex-row lg:gap-4 font-Signika`}
@@ -14,7 +14,7 @@ const Vision = ({ subPage }) => {
         <Lottie animationData={vision} />
       </div>
       <div className=" lg:h-full lg:flex lg:justify-center lg:items-start lg:flex-col w-[90%] lg:w-[100%] mx-[20px] lg:translate-y-14 font-Signika">
-        <div className="text-base mt-2 ">
+        <div className="text-base mt-2">
           Over time, over time, an identity has been forged, a culture and
           values have naturally imposed themselves.
         </div>
@@ -62,7 +62,7 @@ const Vision = ({ subPage }) => {
   );
 };
 
-export default Vision;
+export default Philosophy;
 const Container = styled.div`
   overflow-y: scroll;
   &::-webkit-scrollbar {

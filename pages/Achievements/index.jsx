@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import { useTransition, animated } from "react-spring";
 import { useContext } from "react";
 import { State } from "../../Context/context";
-import Seer18 from "../../Components/pages/Achivments/Seer18";
-import Seer19 from "../../Components/pages/Achivments/Seer19";
-import Seer20 from "../../Components/pages/Achivments/Seer20";
-import Seer21 from "../../Components/pages/Achivments/Seer21";
-import Seer22 from "../../Components/pages/Achivments/Seer22";
-import Seer23 from "../../Components/pages/Achivments/Seer23";
-import Stands from "../../Components/pages/Achivments/Stands";
-import Eva from "../../Components/pages/Achivments/Eva";
+import Seer18 from "../../Components/pages/Achievements/Seer18";
+import Seer19 from "../../Components/pages/Achievements/Seer19";
+import Seer20 from "../../Components/pages/Achievements/Seer20";
+import Seer21 from "../../Components/pages/Achievements/Seer21";
+import Seer22 from "../../Components/pages/Achievements/Seer22";
+import Seer23 from "../../Components/pages/Achievements/Seer23";
+import Stands from "../../Components/pages/Achievements/Stands";
+import Eva from "../../Components/pages/Achievements/Eva";
 import styled from "styled-components";
 
 export default function Events() {
@@ -21,7 +21,7 @@ export default function Events() {
     leave: { left: "-100%", opacity: 0 },
   });
   useEffect(() => {
-    if (page === "achivments") {
+    if (page === "achievements") {
       setAnimate(true);
     } else {
       setAnimate(false);
@@ -39,7 +39,7 @@ export default function Events() {
                 page === "agency" ||
                 page === "servicies" ||
                 page === "events" ||
-                page === "achivments"
+                page === "achievements"
                   ? "top-[60px]"
                   : "top-0"
               } absolute  w-full h-full`}

@@ -3,10 +3,12 @@ import { useEffect, useState } from "react";
 import { useTransition, animated } from "react-spring";
 import { useContext } from "react";
 import { State } from "../../Context/context";
-import Vision from "../../Components/pages/Agency/Vision";
+import Equipe from "../../Components/pages/Agency/Equipe";
 import Engagement from "../../Components/pages/Agency/Engagement";
 import Communication from "../../Components/pages/Agency/Communication";
 import B2b from "../../Components/pages/Agency/B2b";
+import Philosophy from "../../Components/pages/Agency/Philosophy";
+import ApportDAffaire from "../../Components/pages/Agency/ApportDAffaire";
 import styled from "styled-components";
 export default function Events({ showMeni }) {
   const { page, subPage, setSubPage } = useContext(State);
@@ -19,7 +21,7 @@ export default function Events({ showMeni }) {
   const handleKeyDown = (e) => {
     console.log(e);
     if ((e.key = "ArrowRight")) {
-      if (subPage === "vision") {
+      if (subPage === "equipe") {
         setSubPage("engagment");
       }
       if (subPage === "engagment") {
@@ -29,12 +31,12 @@ export default function Events({ showMeni }) {
         setSubPage("b2b");
       }
       if (subPage === "b2b") {
-        setSubPage("vision");
+        setSubPage("equipe");
       }
     }
     if ((e.key = "ArrowLeft")) {
       if (subPage === "engagment") {
-        setSubPage("vision");
+        setSubPage("equipe");
       }
       if (subPage === "communication") {
         setSubPage("engagment");
@@ -42,7 +44,7 @@ export default function Events({ showMeni }) {
       if (subPage === "b2b") {
         setSubPage("communication");
       }
-      if (subPage === "vision") {
+      if (subPage === "equipe") {
         setSubPage("b2b");
       }
     }
@@ -61,10 +63,13 @@ export default function Events({ showMeni }) {
               style={style}
               className={` top-[0px] left-0 absolute w-full h-full `}
             >
-              <Vision subPage={subPage} />
+              <Equipe subPage={subPage} />
               <Engagement subPage={subPage} />
               <Communication subPage={subPage} />
               <B2b subPage={subPage} />
+              <Philosophy subPage={subPage} />
+              <ApportDAffaire subPage={subPage} />
+              
             </animated.div>
           )
       )}

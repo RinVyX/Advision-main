@@ -47,15 +47,15 @@ const SideMenu = () => {
         </p>
         <p
           className={`my-4 cursor-pointer hover:text-black ${
-            page === "achivments" ? "text-purple-400" : "text-white"
+            page === "achievements" ? "text-purple-400" : "text-white"
           }`}
           onClick={() => {
-            setPage("achivments"),
-              router.push("/Achivments"),
+            setPage("achievements"),
+              router.push("/Achievements"),
               setShowRightMenu(false);
           }}
         >
-          achivments
+          Achievements
         </p>
         <p
           className={`my-4 cursor-pointer hover:text-black ${

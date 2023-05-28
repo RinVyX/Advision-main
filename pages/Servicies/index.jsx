@@ -8,6 +8,8 @@ import Events from "../../Components/pages/Servicies/Events";
 import Graphics from "../../Components/pages/Servicies/Graphics";
 import Identity from "../../Components/pages/Servicies/Identity";
 import Video from "../../Components/pages/Servicies/Video";
+import Advertisement from "../../Components/pages/Servicies/Advertisement";
+import TeamBuilding from "../../Components/pages/Servicies/TeamBuilding";
 import styled from "styled-components";
 const index = () => {
   const { page, subPage, setSubPage } = useContext(State);
@@ -40,6 +42,8 @@ const index = () => {
               <Graphics subPage={subPage} />
               <Identity subPage={subPage} />
               <Video subPage={subPage} />
+              <Advertisement subPage={subPage} />
+              <TeamBuilding subPage={subPage} />
             </animated.div>
           )
       )}

@@ -26,7 +26,7 @@ function Context({ children }) {
     console.log("setting page to", page);
     if (page) {
       sessionStorage.setItem("page", page);
-      console.log("page ran");
+      console.log("page run");
     } else {
       setPage("home");
       sessionStorage.setItem("page", "home");
@@ -36,12 +36,12 @@ function Context({ children }) {
     typeof window !== "undefined" && sessionStorage.getItem("setSubPage")
       ? sessionStorage.getItem("setSubPage")
       : page === "agency"
-      ? "vision"
+      ? "philosophy"
       : page === "servicies"
       ? "consulting"
       : page === "events"
       ? "seer"
-      : page === "achivments"
+      : page === "achievements"
       ? "seer18"
       : ""
   );
@@ -50,7 +50,7 @@ function Context({ children }) {
   }, [subPage]);
   useEffect(() => {
     if (page === "agency") {
-      setSubPage("vision");
+      setSubPage("philosophy");
     }
     if (page === "servicies") {
       setSubPage("consulting");
@@ -58,7 +58,7 @@ function Context({ children }) {
     if (page === "events") {
       setSubPage("seer");
     }
-    if (page === "achivments") {
+    if (page === "achievements") {
       setSubPage("seer18");
     }
   }, [page]);

@@ -13,12 +13,13 @@ const Engagement = ({ subPage }) => {
       ease transform duration-300 transition-all
         lg:flex-row-reverse lg:justify-center  mx-auto`}
     >
-      <div className="flex justify-center items-center flex-col h-full my-8 w-[90%] lg:w-full lg:flex-row lg:gap-10 font-Signika">
-        <Lottie
+      <div className="justify-center items-center flex-col h-full my-8 w-[90%] lg:w-full lg:flex-row lg:gap-10 font-Signika">
+        {/* <Lottie
           animationData={Engagement1}
           className="w-[350px] lg:w-[600px] "
-        />
-        <ul className="font-Signika list-inside list-disc dark:text-gray-200 text-gray-500 my-4">
+        /> */}
+        <div className="w-[30px] h-[90px]"></div>
+        <ul className="font-Signika list-inside list-disc dark:text-gray-200 text-gray-500 mx-8">
           <li className="text-sm lg:text-xl ">A step-by-step guide</li>
           <li className="text-sm lg:text-xl ">Use of best practices</li>
           <li className="text-sm lg:text-xl ">

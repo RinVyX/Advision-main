@@ -19,7 +19,7 @@ const SecondaryMenu = ({
       page === "agency" ||
       page === "servicies" ||
       page === "events" ||
-      page === "achivments"
+      page === "achievements"
     ) {
       setSecondaryMenuTransition(true);
     } else {
@@ -45,14 +45,44 @@ const SecondaryMenu = ({
                 } flex justify-start items-center gap-6 pl-5 md:pl-10 ease transform duration-500 transition-all overflow-x-auto`}
               >
                 <p
-                  className={`cursor-pointer font-semibold ${
-                    subPage === "vision"
+                  className={`cursor-pointer font-semibold mr-2 ${
+                    subPage === "philosophy"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("vision")}
+                  onClick={() => setSubPage("philosophy")}
                 >
-                  Vision
+                  Philosophie
+                </p>
+                <p
+                  className={`cursor-pointer font-semibold ${
+                    subPage === "communication"
+                      ? "text-purple-400"
+                      : "text-black dark:text-white"
+                  }`}
+                  onClick={() => setSubPage("communication")}
+                >
+                  Communication
+                </p>
+                <p
+                  className={`cursor-pointer font-semibold ${
+                    subPage === "equipe"
+                      ? "text-purple-400"
+                      : "text-black dark:text-white"
+                  }`}
+                  onClick={() => setSubPage("equipe")}
+                >
+                  Equipe
+                </p>
+                <p
+                  className={`cursor-pointer font-semibold mr-2 ${
+                    subPage === "b2b"
+                      ? "text-purple-400"
+                      : "text-black dark:text-white"
+                  }`}
+                  onClick={() => setSubPage("b2b")}
+                >
+                  Marketing B2B
                 </p>
                 <p
                   className={`cursor-pointer font-semibold ${
@@ -66,23 +96,13 @@ const SecondaryMenu = ({
                 </p>
                 <p
                   className={`cursor-pointer font-semibold ${
-                    subPage === "communication"
+                    subPage === "apportDAffaire"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("communication")}
+                  onClick={() => setSubPage("apportDAffaire")}
                 >
-                  Communication
-                </p>
-                <p
-                  className={`cursor-pointer font-semibold mr-2 ${
-                    subPage === "b2b"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("b2b")}
-                >
-                  B2B
+                  Apport d'Affaires
                 </p>
               </SNav>
               <SNav
@@ -150,6 +170,27 @@ const SecondaryMenu = ({
                 >
                   Events
                 </p>
+                <p
+                  className={`cursor-pointer font-semibold mr-4 ${
+                    subPage === "teamBuilding"
+                      ? "text-purple-400"
+                      : "text-black dark:text-white"
+                  }`}
+                  onClick={() => setSubPage("teamBuilding")}
+                >
+                  Team Building
+                </p>
+                <p
+                  className={`cursor-pointer font-semibold mr-4 ${
+                    subPage === "advertisement"
+                      ? "text-purple-400"
+                      : "text-black dark:text-white"
+                  }`}
+                  onClick={() => setSubPage("advertisement")}
+                >
+                  Advertisement
+                </p>               
+                
               </SNav>
               <SNav
                 className={`w-full h-[60px] absolute ${
