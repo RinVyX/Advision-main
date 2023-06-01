@@ -25,9 +25,9 @@ export default function Events() {
               style={style}
               className={`${
                 page === "agency" ||
-                page === "servicies" ||
+                page === "services" ||
                 page === "events" ||
-                page === "achivments"
+                page === "achivements"
                   ? "top-[60px]"
                   : "top-0"
               } absolute  w-full h-full`}

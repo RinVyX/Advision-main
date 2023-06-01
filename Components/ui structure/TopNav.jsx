@@ -34,7 +34,17 @@ const TopNav = () => {
             showRightMenu ? "opacity-0" : "opacity-1"
           }  cursor-pointer transition ease transform duration-300`}
         >
-          Home
+          Acceuil
+        </p>
+        <p
+          onClick={() => {
+            setPage("vision"), router.push("/Vision");
+          }}
+          className={`mx-4 font-Signika font-medium ${
+            showRightMenu ? "opacity-0" : "opacity-1"
+          } cursor-pointer transition ease transform duration-300`}
+        >
+          Nous connaître
         </p>
         <p
           onClick={() => {

@@ -3,12 +3,9 @@ import { useEffect, useState } from "react";
 import { useTransition, animated } from "react-spring";
 import { useContext } from "react";
 import { State } from "../../Context/context";
-import Equipe from "../../Components/pages/Agency/Equipe";
-import Engagement from "../../Components/pages/Agency/Engagement";
-import Communication from "../../Components/pages/Agency/Communication";
-import B2b from "../../Components/pages/Agency/B2b";
-import Philosophy from "../../Components/pages/Agency/Philosophy";
-import ApportDAffaire from "../../Components/pages/Agency/ApportDAffaire";
+import Valeur from "../../Components/pages/Agency/Valeur";
+import Vision from "../../Components/pages/Agency/Vision";
+import Philosophie from "../../Components/pages/Agency/Philosophie";
 import styled from "styled-components";
 export default function Events({ showMeni }) {
   const { page, subPage, setSubPage } = useContext(State);
@@ -21,31 +18,25 @@ export default function Events({ showMeni }) {
   const handleKeyDown = (e) => {
     console.log(e);
     if ((e.key = "ArrowRight")) {
-      if (subPage === "equipe") {
-        setSubPage("engagment");
+      if (subPage === "valeur") {
+        setSubPage("vision");
       }
-      if (subPage === "engagment") {
-        setSubPage("communication");
+      if (subPage === "vision") {
+        setSubPage("philosophie");
       }
-      if (subPage === "communication") {
-        setSubPage("b2b");
-      }
-      if (subPage === "b2b") {
-        setSubPage("equipe");
+      if (subPage === "philosophie") {
+        setSubPage("valeur");
       }
     }
     if ((e.key = "ArrowLeft")) {
-      if (subPage === "engagment") {
-        setSubPage("equipe");
+      if (subPage === "valeur") {
+        setSubPage("philosophie");
       }
-      if (subPage === "communication") {
-        setSubPage("engagment");
+      if (subPage === "philosophie") {
+        setSubPage("vision");
       }
-      if (subPage === "b2b") {
-        setSubPage("communication");
-      }
-      if (subPage === "equipe") {
-        setSubPage("b2b");
+      if (subPage === "vision") {
+        setSubPage("valeur");
       }
     }
   };
@@ -63,13 +54,9 @@ export default function Events({ showMeni }) {
               style={style}
               className={` top-[0px] left-0 absolute w-full h-full `}
             >
-              <Equipe subPage={subPage} />
-              <Engagement subPage={subPage} />
-              <Communication subPage={subPage} />
-              <B2b subPage={subPage} />
-              <Philosophy subPage={subPage} />
-              <ApportDAffaire subPage={subPage} />
-              
+              <Valeur subPage={subPage} />
+              <Vision subPage={subPage} />
+              <Philosophie subPage={subPage} />              
             </animated.div>
           )
       )}

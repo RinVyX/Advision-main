@@ -36,13 +36,13 @@ function Context({ children }) {
     typeof window !== "undefined" && sessionStorage.getItem("setSubPage")
       ? sessionStorage.getItem("setSubPage")
       : page === "agency"
-      ? "philosophy"
-      : page === "servicies"
+      ? "philosophie"
+      : page === "services"
       ? "consulting"
       : page === "events"
       ? "seer"
       : page === "achievements"
-      ? "seer18"
+      ? "events"
       : ""
   );
   useEffect(() => {
@@ -50,16 +50,16 @@ function Context({ children }) {
   }, [subPage]);
   useEffect(() => {
     if (page === "agency") {
-      setSubPage("philosophy");
+      setSubPage("philosophie");
     }
-    if (page === "servicies") {
+    if (page === "services") {
       setSubPage("consulting");
     }
     if (page === "events") {
       setSubPage("seer");
     }
     if (page === "achievements") {
-      setSubPage("seer18");
+      setSubPage("events");
     }
   }, [page]);
   return (

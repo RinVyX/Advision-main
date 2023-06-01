@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-const Events = ({ subPage }) => {
+const Evenement = ({ subPage }) => {
   return (
     <Container
       className={`w-full h-full absolute top-0  ease transform duration-300 transition-all ${
-        subPage === "events" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
+        subPage === "evenement" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       }`}
     >
       <div className="container mx-auto">
@@ -36,7 +36,7 @@ const Events = ({ subPage }) => {
   );
 };
 
-export default Events;
+export default Evenement;
 const Container = styled.div`
   overflow-y: auto;
   &::-webkit-scrollbar {

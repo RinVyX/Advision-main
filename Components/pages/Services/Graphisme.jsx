@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-const Graphics = ({ subPage }) => {
+const Graphisme = ({ subPage }) => {
   return (
     <Container
       className={`w-full h-full absolute top-0  ease transform duration-300 transition-all ${
-        subPage === "graphics" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
+        subPage === "graphisme" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       }`}
     >
 
@@ -88,7 +88,7 @@ const Graphics = ({ subPage }) => {
   );
 };
 
-export default Graphics;
+export default Graphisme;
 const Container = styled.div`
   overflow-y: auto;
   &::-webkit-scrollbar {

@@ -1,11 +1,11 @@
 import Lottie from "lottie-react";
 import styled from "styled-components";
 import vision from "../../../Lottie/vision.json";
-const Philosophy = ({ subPage }) => {
+const Valeur = ({ subPage }) => {
   return (
     <Container
       className={`w-full h-full absolute ${
-        subPage === "philosophy" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
+        subPage === "valeur" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       } flex justify-start items-center flex-col top-0
       ease transform duration-300 transition-all
       lg:justify-center my-auto lg:flex-row lg:gap-4 font-Signika`}
@@ -62,7 +62,7 @@ const Philosophy = ({ subPage }) => {
   );
 };
 
-export default Philosophy;
+export default Valeur;
 const Container = styled.div`
   overflow-y: scroll;
   &::-webkit-scrollbar {

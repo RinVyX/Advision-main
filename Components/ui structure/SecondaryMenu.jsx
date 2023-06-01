@@ -17,7 +17,7 @@ const SecondaryMenu = ({
   useEffect(() => {
     if (
       page === "agency" ||
-      page === "servicies" ||
+      page === "services" ||
       page === "events" ||
       page === "achievements"
     ) {
@@ -46,99 +46,59 @@ const SecondaryMenu = ({
               >
                 <p
                   className={`cursor-pointer font-semibold mr-2 ${
-                    subPage === "philosophy"
+                    subPage === "philosophie"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("philosophy")}
+                  onClick={() => setSubPage("philosophie")}
                 >
-                  Philosophy
+                  Philosophie
                 </p>
                 <p
                   className={`cursor-pointer font-semibold ${
-                    subPage === "communication"
+                    subPage === "vision"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("communication")}
+                  onClick={() => setSubPage("vision")}
                 >
-                  Communication
+                  Vision
                 </p>
                 <p
                   className={`cursor-pointer font-semibold ${
-                    subPage === "equipe"
+                    subPage === "valeur"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("equipe")}
+                  onClick={() => setSubPage("valeur")}
                 >
-                  Team
-                </p>
-                <p
-                  className={`cursor-pointer font-semibold mr-2 ${
-                    subPage === "b2b"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("b2b")}
-                >
-                  Marketing B2B
-                </p>
-                <p
-                  className={`cursor-pointer font-semibold ${
-                    subPage === "engagment"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("engagment")}
-                >
-                  Engagement
-                </p>
-                <p
-                  className={`cursor-pointer font-semibold ${
-                    subPage === "apportDAffaire"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("apportDAffaire")}
-                >
-                  Apport d'Affaires
+                  Valeur
                 </p>
               </SNav>
               <SNav
                 className={`w-full h-[60px] absolute ${
-                  page === "servicies" ? "left-0" : "left-[-100%]"
+                  page === "services" ? "left-0" : "left-[-100%]"
                 } flex justify-start items-center gap-6 pl-5 md:pl-10 ease transform duration-500 transition-all overflow-x-auto`}
               >
                 <p
                   className={`cursor-pointer font-semibold ${
-                    subPage === "consulting"
+                    subPage === "branding"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("consulting")}
+                  onClick={() => setSubPage("branding")}
                 >
-                  Consulting
+                  Branding
                 </p>
                 <p
                   className={`cursor-pointer font-semibold ${
-                    subPage === "identity"
+                    subPage === "graphisme"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("identity")}
+                  onClick={() => setSubPage("graphisme")}
                 >
-                  Identity
-                </p>
-                <p
-                  className={`cursor-pointer font-semibold ${
-                    subPage === "graphics"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("graphics")}
-                >
-                  Graphics
+                  Graphisme
                 </p>
                 <p
                   className={`cursor-pointer font-semibold ${
@@ -162,35 +122,14 @@ const SecondaryMenu = ({
                 </p>
                 <p
                   className={`cursor-pointer font-semibold mr-4 ${
-                    subPage === "events"
+                    subPage === "evenement"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("events")}
+                  onClick={() => setSubPage("evenement")}
                 >
-                  Events
-                </p>
-                <p
-                  className={`cursor-pointer font-semibold mr-4 ${
-                    subPage === "teamBuilding"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("teamBuilding")}
-                >
-                  Team Building
-                </p>
-                <p
-                  className={`cursor-pointer font-semibold mr-4 ${
-                    subPage === "advertisement"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("advertisement")}
-                >
-                  Advertisement
-                </p>               
-                
+                  Evenement
+                </p>                
               </SNav>
               <SNav
                 className={`w-full h-[60px] absolute ${
@@ -199,33 +138,33 @@ const SecondaryMenu = ({
               >
                 <p
                   className={`cursor-pointer font-semibold ${
-                    subPage === "event"
+                    subPage === "niae"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("event")}
+                  onClick={() => setSubPage("niae")}
                 >
-                  Events
+                  N-IAE
                 </p>
                 <p
                   className={`cursor-pointer font-semibold ${
-                    subPage === "graphics"
+                    subPage === "seer"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("graphics")}
+                  onClick={() => setSubPage("seer")}
                 >
-                  Graphics
+                  SEER
                 </p>
                 <p
                   className={`cursor-pointer font-semibold ${
-                    subPage === "digital"
+                    subPage === "eic"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("digital")}
+                  onClick={() => setSubPage("eic")}
                 >
-                  Digital
+                  EIC
                 </p>
               </SNav>
               <SNav

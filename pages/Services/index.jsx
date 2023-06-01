@@ -2,14 +2,11 @@ import { useEffect, useState } from "react";
 import { useTransition, animated } from "react-spring";
 import { useContext } from "react";
 import { State } from "../../Context/context";
-import Consulting from "../../Components/pages/Servicies/Consulting";
-import Digital from "../../Components/pages/Servicies/Digital";
-import Events from "../../Components/pages/Servicies/Events";
-import Graphics from "../../Components/pages/Servicies/Graphics";
-import Identity from "../../Components/pages/Servicies/Identity";
-import Video from "../../Components/pages/Servicies/Video";
-import Advertisement from "../../Components/pages/Servicies/Advertisement";
-import TeamBuilding from "../../Components/pages/Servicies/TeamBuilding";
+import Digital from "../../Components/pages/Services/Digital";
+import Evenement from "../../Components/pages/Services/Evenement";
+import Graphisme from "../../Components/pages/Services/Graphisme";
+import Branding from "../../Components/pages/Services/Branding";
+import Video from "../../Components/pages/Services/Video";
 import styled from "styled-components";
 const index = () => {
   const { page, subPage, setSubPage } = useContext(State);
@@ -29,21 +26,18 @@ const index = () => {
               style={style}
               className={`${
                 page === "agency" ||
-                page === "servicies" ||
+                page === "services" ||
                 page === "events" ||
-                page === "achivments"
+                page === "achievements"
                   ? "top-[60px]"
                   : "top-0"
               } absolute  w-full h-full`}
             >
-              <Consulting subPage={subPage} />
               <Digital subPage={subPage} />
-              <Events subPage={subPage} />
-              <Graphics subPage={subPage} />
-              <Identity subPage={subPage} />
+              <Evenement subPage={subPage} />
+              <Graphisme subPage={subPage} />
+              <Branding subPage={subPage} />
               <Video subPage={subPage} />
-              <Advertisement subPage={subPage} />
-              <TeamBuilding subPage={subPage} />
             </animated.div>
           )
       )}

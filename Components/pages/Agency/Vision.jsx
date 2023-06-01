@@ -1,11 +1,11 @@
 import Lottie from "lottie-react";
 import styled from "styled-components";
 import communication from "../../../Lottie/communication.json";
-const Communication = ({ subPage }) => {
+const Vision = ({ subPage }) => {
   return (
     <Container
       className={`w-full h-full  absolute ${
-        subPage === "communication"
+        subPage === "vision"
           ? "left-0 opacity-1"
           : "left-[-100%] opacity-0"
       } flex justify-start items-center flex-col top-0
@@ -79,7 +79,7 @@ const Communication = ({ subPage }) => {
   );
 };
 
-export default Communication;
+export default Vision;
 
 const Container = styled.div`
   overflow-y: auto;

@@ -32,7 +32,7 @@ export default function Events() {
               style={style}
               className={`${
                 page === "agency" ||
-                page === "servicies" ||
+                page === "services" ||
                 page === "events" ||
                 page === "achievements"
                   ? "top-[60px]"

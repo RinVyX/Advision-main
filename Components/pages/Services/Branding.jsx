@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-const Identity = ({ subPage }) => {
+const Branding = ({ subPage }) => {
   return (
     <Container
       className={`w-full h-full absolute top-0  ease transform duration-300 transition-all ${
-        subPage === "identity" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
+        subPage === "branding" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       }`}
     >
       <div className="container mx-auto">
@@ -30,7 +30,7 @@ const Identity = ({ subPage }) => {
   );
 };
 
-export default Identity;
+export default Branding;
 const Container = styled.div`
   overflow-y: auto;
   &::-webkit-scrollbar {
