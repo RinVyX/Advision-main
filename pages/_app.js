@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Context>
       <Ui className="font-Signika" children={<Component {...pageProps} />} />
+      <Ui className="font-Kanit" children={<Component {...pageProps} />} />
     </Context>
   );
 }

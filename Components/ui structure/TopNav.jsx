@@ -8,7 +8,7 @@ const TopNav = () => {
   const { setPage, showRightMenu, setShowRightMenu } = useContext(State);
   const genericHamburgerLine = `h-[2px] my-[4px] rounded-full bg-black dark:bg-white transition ease transform duration-300`;
   return (
-    <nav className="top-0 absolute left-0 w-full h-[80px] bg-white dark:bg-black flex justify-between items-center border-b border-gray-400 dark:border-gray-100 dark:text-white text-black">
+    <nav className="top-0 absolute left-0 w-full h-[80px] bg-white dark:bg-black flex justify-between items-center border-gray-400 dark:border-gray-100 dark:text-white text-black">
       {/* logo */}
       <div
         className="w-[80px] h-[80px] flex justify-center items-center ml-1 md:ml-10"
@@ -26,7 +26,7 @@ const TopNav = () => {
       </div>
       {/* home contact burger */}
       <div className="h-full ml-10 flex justify-center items-center gap-2 md:gap-2 mr-[2px] md:mr-10 z-50">
-        <p
+        {/* <p
           onClick={() => {
             setPage("home"), router.push("/");
           }}
@@ -55,7 +55,7 @@ const TopNav = () => {
           } cursor-pointer transition ease transform duration-300`}
         >
           Contact
-        </p>
+        </p> */}
         <div
           className={`mx-4 font-Signika font-medium ${
             showRightMenu ? "opacity-0" : "opacity-1"

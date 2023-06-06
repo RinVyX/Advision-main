@@ -36,16 +36,16 @@ const SecondaryMenu = ({
           item && (
             <animated.nav
               style={style}
-              className="absolute w-[100%] h-[60px] font-Signika font-light dark:bg-black"
+              className="absolute w-[100%] h-[100%] font-Signika font-light dark:bg-black"
               onKeyDown={(e) => handleKeyDown(e)}
             >
               <SNav
-                className={`w-full h-[60px] absolute ${
+                className={`w-full h-full  ${
                   page === "agency" ? "left-0" : "left-[-100%]"
-                } flex justify-start items-center gap-6 pl-5 md:pl-10 ease transform duration-500 transition-all overflow-x-auto`}
+                } flex flex-col items-center gap-2 ease transform duration-500 transition-all `}
               >
-                <p
-                  className={`cursor-pointer font-semibold mr-2 ${
+                <div
+                  className={`cursor-pointer font-semibold ${
                     subPage === "philosophie"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
@@ -53,8 +53,8 @@ const SecondaryMenu = ({
                   onClick={() => setSubPage("philosophie")}
                 >
                   Philosophie
-                </p>
-                <p
+                </div>
+                <div
                   className={`cursor-pointer font-semibold ${
                     subPage === "vision"
                       ? "text-purple-400"
@@ -63,8 +63,8 @@ const SecondaryMenu = ({
                   onClick={() => setSubPage("vision")}
                 >
                   Vision
-                </p>
-                <p
+                </div>
+                <div
                   className={`cursor-pointer font-semibold ${
                     subPage === "valeur"
                       ? "text-purple-400"
@@ -73,7 +73,7 @@ const SecondaryMenu = ({
                   onClick={() => setSubPage("valeur")}
                 >
                   Valeur
-                </p>
+                </div>
               </SNav>
               <SNav
                 className={`w-full h-[60px] absolute ${

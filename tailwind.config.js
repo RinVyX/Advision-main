@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Signika: ['"Signika"', ...defaultTheme.fontFamily.sans],
+        Kanit: ['"Kanit"', ...defaultTheme.fontFamily.sans],
         pressStart: ['"Press Start 2P"', "cursive"],
         poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
       },

@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
 import styled from "styled-components";
-import communication from "../../../Lottie/communication.json";
+/* import communication from "../../../Lottie/communication.json"; */
 const Vision = ({ subPage }) => {
   return (
     <Container
@@ -8,8 +8,8 @@ const Vision = ({ subPage }) => {
         subPage === "vision"
           ? "left-0 opacity-1"
           : "left-[-100%] opacity-0"
-      } flex justify-start items-center flex-col top-0
-      ease transform duration-300 transition-all
+      } flex justify-start items-center flex-col top-0 pl-48
+      ease transform duration-300 transition-all 
       lg:justify-center my-auto lg:flex-row lg:gap-4 font-Signika`}
     >
       {/* mobile */}
@@ -25,9 +25,9 @@ const Vision = ({ subPage }) => {
         With us, no divas! It's easy and pleasant to work with our team, we
         promise!
       </div>
-      <div className="w-[90%] mb-4 max-w-lg md:w-[500px] lg:w-[700px]">
+      {/* <div className="w-[90%] mb-4 max-w-lg md:w-[500px] lg:w-[700px]">
         <Lottie animationData={communication} />
-      </div>
+      </div> */}
       <div className="text-justify w-[90%] h-fill  mt-10 mb-4 font-light text-xs dark:text-gray-200 text-gray-500 lg:hidden">
         As a communication and advertising agency working in "business to
         business", our secret ingredient is the achievement of results! The rest
