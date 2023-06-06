@@ -8,13 +8,13 @@ const SideMenu = () => {
   const { page, setPage, showRightMenu, setShowRightMenu } = useContext(State);
   return (
     <div
-      className={`w-full md:w-full xl:w-full h-full bg-[#9A1A65] dark:bg-[#691243] absolute top-[50%] ${
+      className={`w-full md:w-full xl:w-full h-full bg-[#9A1A65] dark:bg-[#691243] mix-blend-multiply absolute top-[50%] ${
         !showRightMenu ? "right-[-100%]" : "right-0"
       } z-40 translate-y-[-50%] flex-col flex justify-start ease transform duration-500 transition-all`}
     >
-      <div className="ml-[2%] w-full flex gap-4 flex-col mt-[100px] text-8xl font-kanit font-semibold uppercase text-white">
+      <div className="ml-[2%] w-full flex gap-4 flex-col mt-[100px] text-8xl font-kanit font-bold uppercase text-white">
         <p
-          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.5rem] ${
+          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.5rem] hover:italic ${
             page === "agency" ? "text-purple-400" : "text-white"
           }`}
           onClick={() => {
@@ -24,7 +24,7 @@ const SideMenu = () => {
           Agence
         </p>
         <p
-          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.5rem] ${
+          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.5rem] hover:italic ${
             page === "services" ? "text-purple-400" : "text-white"
           }`}
           onClick={() => {
@@ -36,7 +36,7 @@ const SideMenu = () => {
           Services
         </p>
         <p
-          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.5rem] ${
+          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.5rem] hover:italic ${
             page === "events" ? "text-purple-400" : "text-white"
           }`}
           onClick={() => {
@@ -46,7 +46,7 @@ const SideMenu = () => {
           Nos Success Story
         </p>
         </div>
-        <hr className="w-48"/>
+        <div ></div>
         <div>
         <p
           className={`my-4 cursor-pointer hover:text-[#380f27] ${
