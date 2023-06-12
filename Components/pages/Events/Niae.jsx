@@ -7,36 +7,22 @@ const Niae = ({ subPage }) => {
         subPage === "niae" ? "left-0" : "left-[-200%]"
       } flex justify-center items-start  ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-Signika mx-4 md:mx-10 my-4`}
     >
-      <GrayText>
-        Because the challenges of Niae marketing are our raison d'être!
-      </GrayText>
-      <ContentText>
-        At AdVision, we work to achieve your business objectives by implementing
-        strategies adapted to your sector of activity!
+      <ContentText className="text-justify">
+        L’organisation du Salon International de l’Agriculture à Constantine est le fruit d’une réflexion profonde et d’une volonté inébranlable de promouvoir 
+        une agriculture moderne et performante. Ce salon n’est pas le fruit du hasard, mais plutôt le résultat d’une approche novatrice visant à mettre en lumière 
+        les avancées et les opportunités offertes par le secteur agricole.
         <br />
-        Acquisition of commercial contacts, business development or
-        inter-company relations,
-        <br /> we combine creativity and rationality to develop marketing
-        projects that will have a real impact in your market. The ROI, we know
-        that!
-      </ContentText>
-      <Heading>Our Niae marketing agency can help you:</Heading>
-      <List>
-        <ListItem>Increase your notoriety</ListItem>
-        <ListItem>Obtain competitive advantages</ListItem>
-        <ListItem>Create impactful marketing communication tools</ListItem>
-        <ListItem>Build and maintain your business relationships</ListItem>
-        <ListItem>Generate your advertising campaigns</ListItem>
-        <ListItem>Organize your business events</ListItem>
-      </List>
-      <ContentText>
-        You will not find in our teams the traditional mentality of the
-        marketing agency which thrives on mass media,
-        <br /> creative prices... and exorbitant fees. At AdVision, not only are
-        we accessible and friendly, but we work to understand and master your
-        business challenges.
-        <br /> We speak the same language as you, not the incomprehensible
-        jargon of advertising!
+        Aujourd’hui, le salon est en constante évolution, s’inscrivant dans une dynamique fonctionnelle axée sur la production de biens, de services, d’investissements 
+        et de travaux universitaires. Grâce aux efforts considérables déployés ces dernières années par le secteur agricole, cette dynamique est guidée par un calendrier 
+        d’actions rigoureusement planifié visant à propulser notre agriculture sur la voie de l’expansion économique, génératrice de progrès techniques et de productivité accrue, 
+        reconnue à l’échelle internationale.
+        <br />
+        Ce salon a été initié et conçu par des professionnels engagés dans le but de stimuler notre agriculture et de la positionner sur les chemins de la performance 
+        et de l’ouverture vers l’extérieur. Bien que son impact soit ressenti principalement dans la wilaya de Constantine, sa portée s’étend à travers de nombreuses 
+        wilayas du nord et du sud du pays, en faisant ainsi un événement d’envergure nationale.
+        <br />
+        Les expositions mettent en avant la richesse de notre géographie agricole, avec sa biodiversité exceptionnelle et son zonage bien réparti. Les agriculteurs, 
+        éleveurs, transformateurs, artisans, universitaires et start-ups innovantes se côtoient, créant un bouillonnement d’idées et d’opportunités.
       </ContentText>
       <div className="w-full h-[140px] "></div>
     </Content>

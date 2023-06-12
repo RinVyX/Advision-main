@@ -38,7 +38,7 @@ const TopNav = () => {
         </p>
         <p
           onClick={() => {
-            setPage("agency"), router.push("/Agency");
+            setPage("agence"), router.push("/Agence");
           }}
           className={`mx-4 font-Signika font-medium ${
             showRightMenu ? "opacity-0" : "opacity-1"

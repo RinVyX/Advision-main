@@ -7,24 +7,25 @@ const Branding = ({ subPage }) => {
         subPage === "branding" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       }`}
     >
-      <div className="container mx-auto">
-        In order to make a name for yourself and gain recognition, it is essential to establish your presence. To truly exist, your brand needs to be visible. And for your brand to stand out and leave a lasting impression, it must have a distinctive identity encompassing a name, a graphic charter, a well-defined positioning, and a set of values and ethics. A strong brand identity is characterized by its power, coherence, richness, and clarity. So, how do you envision your brand being perceived?
+      <div className="container mx-auto w-[70%] my-[5%] text-justify">
+      Bienvenue dans notre agence de branding, où nous donnons vie à votre identité visuelle !
+      <br />
+      Le branding est bien plus qu'un simple logo. C'est l'essence même de votre entreprise, ce qui la distingue de ses concurrents et crée une connexion avec votre public cible.
+      <br />
 
-        At our agency, we offer a range of services to help you shape and enhance your brand's identity. Here's what we provide:
-        <br />
-        1. Study of Positioning and Values: We conduct an in-depth analysis of your brand's positioning in the market and help you define the values that will differentiate you from your competitors, allowing you to create a unique brand proposition.
-        <br />
-        2. Brand Differentiation: We assist you in developing strategies to differentiate your brand and ensure it stands out in the minds of your target audience, establishing a strong and memorable presence.
-        <br />
-        3. Name: Our experts work with you to create a compelling and distinctive name for your brand that resonates with your audience and effectively represents your values and offerings.
-        <br />
-        4. LogoType: We craft visually appealing and impactful logos that serve as the face of your brand, capturing its essence and leaving a lasting impression.
-        <br />
-        5. Graphical Charter: Our team develops a comprehensive graphical charter that encompasses visual elements such as colors, typography, imagery, and design guidelines. This ensures consistency across all brand communications, reinforcing your brand's identity and recognition.
-        <br />
-        6. Signage: We create compelling signage solutions that effectively communicate your brand's identity and attract attention in physical spaces, maximizing your visibility and leaving a lasting impression on customers.
-        <br />
-        By availing our services, you can establish a powerful and distinctive brand identity that resonates with your target audience, sets you apart from the competition, and helps you achieve your goals. Let us help you create a brand that captivates and leaves a lasting impact.
+      Nous comprenons l'importance de forger une identité forte et cohérente pour votre marque. Grâce à notre expertise en branding, 
+      nous travaillons en étroite collaboration avec vous pour créer une image de marque unique, mémorable et alignée sur vos valeurs et votre vision.
+      <br />
+
+      De la conception du logo et de la charte graphique à la définition de la stratégie de marque, nous mettons en œuvre notre créativité 
+      et notre savoir-faire pour donner vie à votre marque de manière impactante.
+      <br />
+
+      Que vous soyez une start-up ambitieuse ou une entreprise établie souhaitant redynamiser votre image, nous sommes là pour vous accompagner à chaque étape du processus de branding.
+      <br />
+
+      Découvrez comment notre agence de branding peut vous aider à faire briller votre entreprise et à vous démarquer sur le marché. 
+      Contactez-nous dès aujourd'hui pour une consultation personnalisée. Ensemble, nous ferons de votre marque une véritable force qui capte l'attention et suscite l'adhésion.
       </div>
     </Container>
   );

@@ -35,31 +35,31 @@ function Context({ children }) {
   const [subPage, setSubPage] = useState(
     typeof window !== "undefined" && sessionStorage.getItem("setSubPage")
       ? sessionStorage.getItem("setSubPage")
-      : page === "agency"
+      : page === "agence"
       ? "philosophie"
       : page === "services"
-      ? "consulting"
+      ? "branding"
       : page === "events"
       ? "seer"
-      : page === "achievements"
-      ? "events"
+      : page === "nosSuccessStory"
+      ? "digital"
       : ""
   );
   useEffect(() => {
     sessionStorage.setItem("subPage", subPage);
   }, [subPage]);
   useEffect(() => {
-    if (page === "agency") {
+    if (page === "agence") {
       setSubPage("philosophie");
     }
     if (page === "services") {
-      setSubPage("consulting");
+      setSubPage("branding");
     }
     if (page === "events") {
       setSubPage("seer");
     }
-    if (page === "achievements") {
-      setSubPage("events");
+    if (page === "nosSuccessStory") {
+      setSubPage("digital");
     }
   }, [page]);
   return (

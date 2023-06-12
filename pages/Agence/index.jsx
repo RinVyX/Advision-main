@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import { useTransition, animated } from "react-spring";
 import { useContext } from "react";
 import { State } from "../../Context/context";
-import Valeur from "../../Components/pages/Agency/Valeur";
-import Vision from "../../Components/pages/Agency/Vision";
-import Philosophie from "../../Components/pages/Agency/Philosophie";
+import Valeur from "../../Components/pages/Agence/Valeur";
+import Vision from "../../Components/pages/Agence/Vision";
+import Philosophie from "../../Components/pages/Agence/Philosophie";
 import styled from "styled-components";
 export default function Events({ showMeni }) {
   const { page, subPage, setSubPage } = useContext(State);

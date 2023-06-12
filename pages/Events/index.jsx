@@ -24,10 +24,10 @@ export default function Events() {
               config={{ duration: 500 }}
               style={style}
               className={`${
-                page === "agency" ||
+                page === "agence" ||
                 page === "services" ||
                 page === "events" ||
-                page === "achivements"
+                page === "nosSuccessStory"
                   ? "top-[60px]"
                   : "top-0"
               } absolute  w-full h-full`}

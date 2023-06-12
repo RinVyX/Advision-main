@@ -25,10 +25,10 @@ const index = () => {
             <animated.div
               style={style}
               className={`${
-                page === "agency" ||
+                page === "agence" ||
                 page === "services" ||
                 page === "events" ||
-                page === "achievements"
+                page === "nosSuccessStory"
                   ? "top-[60px]"
                   : "top-0"
               } absolute  w-full h-full`}

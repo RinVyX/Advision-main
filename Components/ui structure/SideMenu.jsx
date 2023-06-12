@@ -8,24 +8,24 @@ const SideMenu = () => {
   const { page, setPage, showRightMenu, setShowRightMenu } = useContext(State);
   return (
     <div
-      className={`w-full md:w-full xl:w-full h-full bg-[#9A1A65] dark:bg-[#691243] mix-blend-multiply absolute top-[50%] ${
+      className={`w-full md:w-full xl:w-full h-full bg-[#9A1A65] dark:bg-[#691243] absolute top-[50%] ${
         !showRightMenu ? "right-[-100%]" : "right-0"
       } z-40 translate-y-[-50%] flex-col flex justify-start ease transform duration-500 transition-all`}
     >
-      <div className="ml-[2%] w-full flex gap-4 flex-col mt-[100px] text-8xl font-kanit font-bold uppercase text-white">
+      <div className="ml-[2%] w-full flex gap-4 flex-col mt-[100px] text-5xl md:text-8xl font-kanit font-bold uppercase text-white">
         <p
-          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.5rem] hover:italic ${
-            page === "agency" ? "text-purple-400" : "text-white"
+          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.125rem] hover:italic ${
+            page === "agence" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
-            setPage("agency"), router.push("/Agency"), setShowRightMenu(false);
+            setPage("agence"), router.push("/Agence"), setShowRightMenu(false);
           }}
         >
           Agence
         </p>
         <p
-          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.5rem] hover:italic ${
-            page === "services" ? "text-purple-400" : "text-white"
+          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.125rem] hover:italic ${
+            page === "services" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
             setPage("services"),
@@ -36,33 +36,33 @@ const SideMenu = () => {
           Services
         </p>
         <p
-          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.5rem] hover:italic ${
-            page === "events" ? "text-purple-400" : "text-white"
+          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.125rem] hover:italic ${
+            page === "nosSuccessStory" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
-            setPage("events"), router.push("/Events"), setShowRightMenu(false);
+            setPage("nosSuccessStory"), router.push("/NosSuccessStory"), setShowRightMenu(false);
           }}
         >
           Nos Success Story
         </p>
-        </div>
-        <div ></div>
-        <div>
+      </div>
+      <hr className="w-[50%] h-1 border-none bg-gradient-to-r from-[#380f27] to-transparent rounded-xl ml-[2%] mt-[2%]" ></hr>
+      <div className="ml-[2%] mt-[1%] text-7xl">
         <p
-          className={`my-4 cursor-pointer hover:text-[#380f27] ${
-            page === "achievements" ? "text-purple-400" : "text-white"
+          className={`my-4 cursor-pointer hover:text-[#380f27] hover:italic hover:text-[4.7rem] capitalize ${
+            page === "events" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
-            setPage("achievements"),
-              router.push("/Achievements"),
+            setPage("events"),
+              router.push("/Events"),
               setShowRightMenu(false);
           }}
         >
           Nos évenements
         </p>
         <p
-          className={`my-4 cursor-pointer hover:text-[#380f27] ${
-            page === "contact" ? "text-purple-400" : "text-white"
+          className={`my-4 mt-[1%] cursor-pointer hover:text-[#380f27] hover:italic hover:text-[4.7rem] capitalize ${
+            page === "contact" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
             setPage("contact"),

@@ -16,10 +16,10 @@ const SecondaryMenu = ({
 
   useEffect(() => {
     if (
-      page === "agency" ||
+      page === "agence" ||
       page === "services" ||
       page === "events" ||
-      page === "achievements"
+      page === "nosSuccessStory"
     ) {
       setSecondaryMenuTransition(true);
     } else {
@@ -36,16 +36,16 @@ const SecondaryMenu = ({
           item && (
             <animated.nav
               style={style}
-              className="absolute w-[100%] h-[100%] font-Signika font-light dark:bg-black"
+              className="absolute w-[100%] h-[60px] font-Signika font-light dark:bg-black"
               onKeyDown={(e) => handleKeyDown(e)}
             >
               <SNav
-                className={`w-full h-full  ${
-                  page === "agency" ? "left-0" : "left-[-100%]"
-                } flex flex-col items-center gap-2 ease transform duration-500 transition-all `}
+                className={`w-full h-[60px] absolute ${
+                  page === "agence" ? "left-0" : "left-[-100%]"
+                } flex justify-start items-center gap-6 pl-5 md:pl-10 ease transform duration-500 transition-all overflow-x-auto`}
               >
                 <div
-                  className={`cursor-pointer font-semibold ${
+                  className={`cursor-pointer font-semibold mr-2 ${
                     subPage === "philosophie"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
@@ -169,7 +169,7 @@ const SecondaryMenu = ({
               </SNav>
               <SNav
                 className={`w-full h-[60px] absolute ${
-                  page === "achievements" ? "left-0" : "left-[-100%]"
+                  page === "nosSuccessStory" ? "left-0" : "left-[-100%]"
                 } flex justify-start items-center  gap-6  ease pl-5 md:pl-10 transform duration-500 transition-all overflow-x-auto whitespace-nowrap`}
               >
                 <p

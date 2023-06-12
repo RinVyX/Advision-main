@@ -7,37 +7,30 @@ const Eic = ({ subPage }) => {
         subPage === "eic" ? "left-0" : "left-[-200%]"
       } flex justify-center items-start  ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-Signika mx-4 md:mx-10 my-4`}
     >
-      <GrayText>
-        Because the challenges of Eic marketing are our raison d'être!
-      </GrayText>
       <ContentText>
-        At AdVision, we work to achieve your business objectives by implementing
-        strategies adapted to your sector of activity!
+        Advision El Djzaïr a l’honneur d’ouvrir pour la deuxième fois le concours EIC, Energy Innovation Challenge.
         <br />
-        Acquisition of commercial contacts, business development or
-        inter-company relations,
-        <br /> we combine creativity and rationality to develop marketing
-        projects that will have a real impact in your market. The ROI, we know
-        that!
+        Destiné aux jeunes entrepreneurs, et aux porteurs de projets novateurs dans le domaine des énergies.
+        <br />
+        Les candidats sélectionnes présenteront leurs projets devant un jury constitué de :
+        <br />
+        Professionnels dans le domaine des énergies. <br />
+        Académiciens spécialistes dans la gestion de projet l’entreprenariat. <br />
+        Par cet évènement Advision El Djzaïr vise à donner aux candidats et aux futurs entrepreneurs : <br />
+
+        L’occasion de rencontrer des professionnels. <br />
+        Des chefs d’entreprise. <br />
+        Des investisseurs susceptibles de les accompagner dans leurs projets. <br />
+        Et enfin
+        <br />
+        Les lauréats se verront attribuer des gratifications et des attestation de reconnaissance pour leurs travaux.
+        <br />
+        Le prix EIC, Energy Innovation Challenge sera attribué au meilleur projet.
       </ContentText>
-      <Heading>Our Eic marketing agency can help you:</Heading>
-      <List>
-        <ListItem>Increase your notoriety</ListItem>
-        <ListItem>Obtain competitive advantages</ListItem>
-        <ListItem>Create impactful marketing communication tools</ListItem>
-        <ListItem>Build and maintain your business relationships</ListItem>
-        <ListItem>Generate your advertising campaigns</ListItem>
-        <ListItem>Organize your business events</ListItem>
-      </List>
-      <ContentText>
-        You will not find in our teams the traditional mentality of the
-        marketing agency which thrives on mass media,
-        <br /> creative prices... and exorbitant fees. At AdVision, not only are
-        we accessible and friendly, but we work to understand and master your
-        business challenges.
-        <br /> We speak the same language as you, not the incomprehensible
-        jargon of advertising!
-      </ContentText>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/sfi4BwNeio8" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+      </iframe>
       <div className="w-full h-[140px] "></div>
     </Content>
   );

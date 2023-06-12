@@ -211,7 +211,7 @@ const FlipIcon = ({ icon }) => {
     <div>
       <div
         className={`w-[55px] h-[55px] bg-gray-300 rounded-lg flex justify-center items-center relative overflow-hidden
-        hover:bg-[#98B4D4] transition delay-150 duration-350 ease-in-out cursor-pointer transform hover:scale-105 `}
+        hover:bg-[#2c031cfb] transition delay-150 duration-350 ease-in-out cursor-pointer transform hover:scale-105 `}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >

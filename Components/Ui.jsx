@@ -9,7 +9,7 @@ const Ui = ({ children }) => {
   const [secondaryMenuTransition, setSecondaryMenuTransition] = useState(false);
   console.log("page", page, "subPage", subPage, "showMenu", showRightMenu);
   return (
-    <div className="bg-[url('/images/bg.png')] bg-local relative w-screen h-screen overflow-hidden dark:text-white text-black">
+    <div className="bg-[url('/images/')] bg-local relative w-screen h-screen overflow-hidden dark:text-white text-black">
       {/* top navigation */}
       <TopNav setSecondaryMenuTransition={setSecondaryMenuTransition} />
       {/* side Nave showRightMenu */}
