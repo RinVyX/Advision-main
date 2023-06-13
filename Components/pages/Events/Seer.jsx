@@ -34,9 +34,9 @@ const Seer = ({ subPage }) => {
         les échanges professionnels et le développement de collaborations fructueuses. Avec son succès continu, le salon contribue activement à promouvoir l'innovation, 
         le développement économique et la transition énergétique en Algérie et au-delà.
       </div>
-      <div className="flex-auto">
+      {/* <div className="flex-auto">
         <iframe src="https://embed.lottiefiles.com/animation/117720"></iframe>
-      </div>
+      </div> */}
       <div className="w-full h-[140px] "></div>
     </Content>
   );
