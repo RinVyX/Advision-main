@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 const Digital = ({ subPage }) => {
   return (
-    <Container
+    <Content
       className={`w-full h-full absolute top-0  ease transform duration-300 transition-all ${
         subPage === "digital" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       }`}
     >
-      <div className="container mx-auto text-justify p-8">
+      <div className="mx-auto text-justify p-8">
         Looking to explore alternative means of travel beyond the web? Look no further! While creating a website may seem like a simple task, many have already ventured into this domain. However, at AdVision agency, we go above and beyond by crafting and implementing a cutting-edge digital strategy for your brand that seamlessly aligns with your offline communication channels.
 
         Our team specializes in constructing user-friendly interfaces that effectively cater to your brand's target audience, ensuring optimal browsing comfort to foster customer loyalty. We also provide comprehensive assistance in "intelligent writing" techniques to generate compelling content that enhances your search engine optimization (SEO) efforts.
@@ -34,12 +34,12 @@ const Digital = ({ subPage }) => {
         <br />
         At AdVision agency, we are dedicated to helping your brand soar to new heights in the digital realm. Experience our comprehensive services and embark on an extraordinary digital journey today.
       </div>
-    </Container>
+    </Content>
   );
 };
 
 export default Digital;
-const Container = styled.div`
+const Content = styled.div`
   overflow-y: auto;
   &::-webkit-scrollbar {
     width: 6px;

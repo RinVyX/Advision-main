@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 const Graphisme = ({ subPage }) => {
   return (
-    <Container
+    <Content
       className={`w-full h-full absolute top-0  ease transform duration-300 transition-all ${
         subPage === "graphisme" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       }`}
     >
 
-      <div className="container mx-auto pb-32 pt-12">
+      <div className="mx-auto pb-32 pt-12">
         <div>At AdVision, we share this “sweet” point of view!</div>
         <div>
           To be known and recognized, it is necessary and essential to communicate
@@ -84,12 +84,12 @@ const Graphisme = ({ subPage }) => {
         <img className="w-full" src="/images/stand/demlec.jpg" alt="" />
         <img className="w-full" src="/images/stand/energical.jpg" alt="" />
       </div>
-    </Container>
+    </Content>
   );
 };
 
 export default Graphisme;
-const Container = styled.div`
+const Content = styled.div`
   overflow-y: auto;
   &::-webkit-scrollbar {
     width: 6px;

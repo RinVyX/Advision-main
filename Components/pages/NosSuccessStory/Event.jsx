@@ -5,9 +5,19 @@ const Event = ({ subPage }) => {
     <Content
       className={`w-full  absolute ${
         subPage === "event" ? "left-0" : "left-[-200%]"
-      } flex justify-center items-start  ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-Signika mx-4 md:mx-10 my-4`}
+      } flex justify-center items-start  ease transform duration-500 transition-all w-[100%] flex-col font-Signika my-4`}
     >
-      <div className="w-full h-[140px] "></div>
+      <div className="grid grid-flow-col justify-stretch">
+        <div className="gap-0 ">
+          <a href="https://fr.seer-dz.com/"> <img src="/images/stand/berardi.jpg" alt="" className=""/> </a>
+        </div>
+        <div className="gap-0 ">
+          <a href="https://n-iae.com"> <img src="/images/Contrat-de-participation-1_page-0001.jpg" alt="" className=""/> </a>
+        </div>
+        <div className="gap-0 ">
+          <a href="https://fr.seer-dz.com/eic-challenge/"> <img src="/images/bg.png" alt="" className=""/> </a>
+        </div>
+      </div>
     </Content>
   );
 };

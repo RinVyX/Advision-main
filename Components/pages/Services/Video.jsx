@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 const Video = ({ subPage }) => {
   return (
-    <Container
+    <Content
       className={`w-full h-full absolute top-0  ease transform duration-300 transition-all ${
         subPage === "video" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       }`}
     >
-      <div className="container mx-auto">
+      <div className="mx-auto">
         At AdVision, we provide comprehensive support for your audiovisual projects and productions, taking you through the entire process from design to distribution strategy. Our expertise lies in producing a wide range of content, including corporate films, seminar recordings, video reports, marketing buzz or viral videos, as well as interviews and testimonials.
 
         We take pride in our commitment to creativity and originality, ensuring that our deliverables cater to communication and information projects, regardless of whether they are conventional or offbeat. Our team at AdVision possesses the necessary know-how and expertise in audiovisual production, enabling us to meet your specific needs and desires, creating a powerful message that truly represents you.
@@ -24,12 +24,12 @@ const Video = ({ subPage }) => {
         <br />
         At AdVision, we are dedicated to bringing your audiovisual projects to life, ensuring they align with your goals and resonate with your audience. Trust us to deliver high-quality content that captivates, informs, and leaves a lasting impression. Partner with us to unlock the potential of audiovisual storytelling for your brand.
       </div>
-    </Container>
+    </Content>
   );
 };
 
 export default Video;
-const Container = styled.div`
+const Content = styled.div`
   overflow-y: auto;
   &::-webkit-scrollbar {
     width: 6px;

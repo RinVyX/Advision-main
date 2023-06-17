@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 const Evenement = ({ subPage }) => {
   return (
-    <Container
+    <Content
       className={`w-full h-full absolute top-0  ease transform duration-300 transition-all ${
         subPage === "evenement" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       }`}
     >
-      <div className="container mx-auto">
+      <div className="mx-auto">
         In a world where customers are increasingly volatile, constantly adapting their behavior based on economic circumstances and values, it is crucial to take action and actively engage to establish your brand's existence. Simply waiting on the sidelines won't capture their attention or sustain their interest.
 
         At our agency, we understand the importance of continuous action, appreciation, renewal, innovation, and surprise to attract and retain customers. We believe in creating moments that make an impact, generating excitement and leaving a lasting impression. It's time to create the event!
@@ -32,12 +32,12 @@ const Evenement = ({ subPage }) => {
         <br />
         At our agency, we believe that taking action and creating unforgettable events is key to establishing your brand's presence and driving growth. Let us help you harness the power of events to captivate your audience, generate meaningful connections, and propel your brand forward.
       </div>
-    </Container>
+    </Content>
   );
 };
 
 export default Evenement;
-const Container = styled.div`
+const Content = styled.div`
   overflow-y: auto;
   &::-webkit-scrollbar {
     width: 6px;

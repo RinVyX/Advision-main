@@ -170,7 +170,7 @@ const SecondaryMenu = ({
               <SNav
                 className={`w-full h-[60px] absolute ${
                   page === "nosSuccessStory" ? "left-0" : "left-[-100%]"
-                } flex justify-start items-center  gap-6  ease pl-5 md:pl-10 transform duration-500 transition-all overflow-x-auto whitespace-nowrap`}
+                } flex justify-start items-center gap-6 ease pl-5 md:pl-10 transform duration-500 transition-all overflow-x-auto`}
               >
                 <p
                   className={`cursor-pointer font-semibold ${
@@ -180,7 +180,7 @@ const SecondaryMenu = ({
                   }`}
                   onClick={() => setSubPage("event")}
                 >
-                  Events
+                  Nos evenements
                 </p>
                 <p
                   className={`cursor-pointer font-semibold ${
@@ -190,17 +190,17 @@ const SecondaryMenu = ({
                   }`}
                   onClick={() => setSubPage("graphics")}
                 >
-                  Graphics
+                  Graphisme
                 </p>
                 <p
                   className={`cursor-pointer font-semibold ${
-                    subPage === "digital"
+                    subPage === "prestation"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("digital")}
+                  onClick={() => setSubPage("prestation")}
                 >
-                  Digital
+                  Prestation
                 </p>
               </SNav>
             </animated.nav>

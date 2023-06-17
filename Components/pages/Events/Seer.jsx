@@ -56,11 +56,6 @@ const Seer = ({ subPage }) => {
 };
 
 export default Seer;
-
-const ContentText = styled.p`
-  color: gray;
-  font-size: 18px;
-`;
 const Content = styled.div`
   overflow-y: scroll;
   &::-webkit-scrollbar {

@@ -8,7 +8,7 @@ import Graphisme from "../../Components/pages/Services/Graphisme";
 import Branding from "../../Components/pages/Services/Branding";
 import Video from "../../Components/pages/Services/Video";
 import styled from "styled-components";
-const index = () => {
+export default function Events() {
   const { page, subPage, setSubPage } = useContext(State);
   const [animate, setAnimate] = useState(true);
   const Transition = useTransition(animate, {
@@ -18,7 +18,7 @@ const index = () => {
   });
 
   return (
-    <Content className="dark:bg-black">
+    <Content className="w-full h-full bg-white dark:bg-black">
       {Transition(
         (style, item) =>
           item && (
@@ -45,7 +45,6 @@ const index = () => {
   );
 };
 
-export default index;
 const Content = styled.div`
   overflow-y: auto;
   &::-webkit-scrollbar {

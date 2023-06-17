@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { State } from "../../Context/context";
 import Event from "../../Components/pages/NosSuccessStory/Event";
 import Graphics from "../../Components/pages/NosSuccessStory/Graphics";
-import Digital from "../../Components/pages/NosSuccessStory/Digital";
+import Prestation from "../../Components/pages/NosSuccessStory/Prestation";
 import styled from "styled-components";
 
 export default function Events() {
@@ -42,7 +42,7 @@ export default function Events() {
               <PageWrapper>
                 <Event subPage={subPage} />
                 <Graphics subPage={subPage} />
-                <Digital subPage={subPage} />
+                <Prestation subPage={subPage} />
               </PageWrapper>
             </animated.div>
           )
