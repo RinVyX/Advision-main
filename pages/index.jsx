@@ -18,7 +18,7 @@ export default function Home({}) {
     }
   }, [page]);
   return (
-    <div className="w-[100%] h-[100%] bg-white dark:bg-black">
+    <div className="w-[100%] h-[100%]  bg-[#F7F7F7] dark:bg-[#1F1F21]">
       {Transition(
         (style, item) =>
           item && (

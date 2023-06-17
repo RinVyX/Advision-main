@@ -42,7 +42,7 @@ export default function Events({ showMeni }) {
   };
   return (
     <div
-      className="w-full h-[calc(100%-60px)] absolute top-[60px] overflow-hidden text-black dark:text-white dark:bg-black"
+      className="w-full h-[calc(100%-60px)] absolute top-[60px] overflow-hidden text-black dark:text-white bg-[#F7F7F7] dark:bg-[#1F1F21]"
       onKeyDown={(e) => handleKeyDown(e)}
       tabIndex={0}
     >

@@ -8,7 +8,7 @@ const TopNav = () => {
   const { setPage, showRightMenu, setShowRightMenu } = useContext(State);
   const genericHamburgerLine = `h-[2px] my-[4px] rounded-full bg-black dark:bg-white transition ease transform duration-300`;
   return (
-    <nav className="top-0 absolute left-0 w-full h-[80px] bg-white dark:bg-black flex justify-between items-center border-gray-400 dark:border-gray-100 dark:text-white text-black">
+    <nav className="top-0 absolute left-0 w-full h-[80px] bg-[#F7F7F7] dark:bg-[#1F1F21] flex justify-between items-center border-gray-400 dark:border-gray-100 dark:text-white text-black">
       {/* logo */}
       <div
         className="w-[80px] h-[80px] flex justify-center items-center ml-1 md:ml-10"

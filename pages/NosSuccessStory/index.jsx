@@ -23,7 +23,7 @@ export default function Events() {
     }
   }, [page]);
   return (
-    <div className="w-full h-full bg-white dark:bg-black">
+    <div className="w-full h-full bg-[#F7F7F7] dark:bg-[#1F1F21]">
       {Transition(
         (style, item) =>
           item && (

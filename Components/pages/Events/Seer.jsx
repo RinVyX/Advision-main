@@ -7,7 +7,7 @@ const Seer = ({ subPage }) => {
         subPage === "seer" ? "left-0" : "left-[-200%]"
       } flex items-start ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-Signika mx-4 md:mx-10 my-4`}
     >      
-      <ContentText className="text-justify">
+      <div className="text-justify">
         SEER est le premier événement commercial international en Algérie, dédié simultanément aux industries de l’électricité et des énergies renouvelables.
         <br />
         Via une large gamme de produits et solutions exposés, le salon rassemble différents opérateurs (Fabricants d’équipements, distributeurs, bureaux d’études, 
@@ -30,7 +30,7 @@ const Seer = ({ subPage }) => {
         Chaque année, le SEER se positionne comme un événement incontournable pour les acteurs du secteur, offrant un espace privilégié pour le partage des connaissances, 
         les échanges professionnels et le développement de collaborations fructueuses. Avec son succès continu, le salon contribue activement à promouvoir l'innovation, 
         le développement économique et la transition énergétique en Algérie et au-delà.
-      </ContentText>
+      </div>
       <div >
         <iframe className="w-full aspect-video" src="https://www.youtube.com/embed/iUyw0sNMM94" 
                 allow="accelerometer; autoplay; picture-in-picture" 

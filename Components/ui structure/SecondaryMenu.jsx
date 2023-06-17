@@ -36,7 +36,7 @@ const SecondaryMenu = ({
           item && (
             <animated.nav
               style={style}
-              className="absolute w-[100%] h-[60px] font-Signika font-light dark:bg-black"
+              className="absolute w-[100%] h-[60px] font-Signika font-light bg-[#F7F7F7] dark:bg-[#1F1F21]"
               onKeyDown={(e) => handleKeyDown(e)}
             >
               <SNav
@@ -47,8 +47,8 @@ const SecondaryMenu = ({
                 <div
                   className={`cursor-pointer font-semibold mr-2 ${
                     subPage === "philosophie"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
+                      ? "text-purple-400 drop-shadow-[1px_3px_3px_rgba(0,0,0,0.25)] dark:drop-shadow-[1px_3px_3px_rgba(255,255,255,0.25)] "
+                      : "text-[#1F1F21] dark:text-[#F7F7F7]"
                   }`}
                   onClick={() => setSubPage("philosophie")}
                 >
@@ -57,8 +57,8 @@ const SecondaryMenu = ({
                 <div
                   className={`cursor-pointer font-semibold ${
                     subPage === "vision"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
+                      ? "text-purple-400 drop-shadow-[1px_3px_3px_rgba(0,0,0,0.25)] dark:drop-shadow-[1px_3px_3px_rgba(255,255,255,0.25)]"
+                      : "text-[#1F1F21] dark:text-[#F7F7F7]"
                   }`}
                   onClick={() => setSubPage("vision")}
                 >
@@ -67,8 +67,8 @@ const SecondaryMenu = ({
                 <div
                   className={`cursor-pointer font-semibold ${
                     subPage === "valeur"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
+                      ? "text-purple-400 drop-shadow-[1px_3px_3px_rgba(0,0,0,0.25)] dark:drop-shadow-[1px_3px_3px_rgba(255,255,255,0.25)]"
+                      : "text-[#1F1F21] dark:text-[#F7F7F7]"
                   }`}
                   onClick={() => setSubPage("valeur")}
                 >
@@ -83,8 +83,8 @@ const SecondaryMenu = ({
                 <p
                   className={`cursor-pointer font-semibold ${
                     subPage === "branding"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
+                      ? "text-purple-400 drop-shadow-[1px_3px_3px_rgba(0,0,0,0.25)] dark:drop-shadow-[1px_3px_3px_rgba(255,255,255,0.25)]"
+                      : "text-[#1F1F21] dark:text-[#F7F7F7]"
                   }`}
                   onClick={() => setSubPage("branding")}
                 >
@@ -93,8 +93,8 @@ const SecondaryMenu = ({
                 <p
                   className={`cursor-pointer font-semibold ${
                     subPage === "graphisme"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
+                      ? "text-purple-400 drop-shadow-[1px_3px_3px_rgba(0,0,0,0.25)] dark:drop-shadow-[1px_3px_3px_rgba(255,255,255,0.25)]"
+                      : "text-[#1F1F21] dark:text-[#F7F7F7]"
                   }`}
                   onClick={() => setSubPage("graphisme")}
                 >
@@ -103,8 +103,8 @@ const SecondaryMenu = ({
                 <p
                   className={`cursor-pointer font-semibold ${
                     subPage === "digital"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
+                      ? "text-purple-400 drop-shadow-[1px_3px_3px_rgba(0,0,0,0.25)] dark:drop-shadow-[1px_3px_3px_rgba(255,255,255,0.25)]"
+                      : "text-[#1F1F21] dark:text-[#F7F7F7]"
                   }`}
                   onClick={() => setSubPage("digital")}
                 >
@@ -113,8 +113,8 @@ const SecondaryMenu = ({
                 <p
                   className={`cursor-pointer font-semibold ${
                     subPage === "video"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
+                      ? "text-purple-400 drop-shadow-[1px_3px_3px_rgba(0,0,0,0.25)] dark:drop-shadow-[1px_3px_3px_rgba(255,255,255,0.25)]"
+                      : "text-[#1F1F21] dark:text-[#F7F7F7]"
                   }`}
                   onClick={() => setSubPage("video")}
                 >
@@ -123,8 +123,8 @@ const SecondaryMenu = ({
                 <p
                   className={`cursor-pointer font-semibold mr-4 ${
                     subPage === "evenement"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
+                      ? "text-purple-400 drop-shadow-[1px_3px_3px_rgba(0,0,0,0.25)] dark:drop-shadow-[1px_3px_3px_rgba(255,255,255,0.25)]"
+                      : "text-[#1F1F21] dark:text-[#F7F7F7]"
                   }`}
                   onClick={() => setSubPage("evenement")}
                 >
@@ -139,8 +139,8 @@ const SecondaryMenu = ({
                 <p
                   className={`cursor-pointer font-semibold ${
                     subPage === "niae"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
+                      ? "text-purple-400 drop-shadow-[1px_3px_3px_rgba(0,0,0,0.25)] dark:drop-shadow-[1px_3px_3px_rgba(255,255,255,0.25)]"
+                      : "text-[#1F1F21] dark:text-[#F7F7F7]"
                   }`}
                   onClick={() => setSubPage("niae")}
                 >
@@ -149,8 +149,8 @@ const SecondaryMenu = ({
                 <p
                   className={`cursor-pointer font-semibold ${
                     subPage === "seer"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
+                      ? "text-purple-400 drop-shadow-[1px_3px_3px_rgba(0,0,0,0.25)] dark:drop-shadow-[1px_3px_3px_rgba(255,255,255,0.25)]"
+                      : "text-[#1F1F21] dark:text-[#F7F7F7]"
                   }`}
                   onClick={() => setSubPage("seer")}
                 >
@@ -159,8 +159,8 @@ const SecondaryMenu = ({
                 <p
                   className={`cursor-pointer font-semibold ${
                     subPage === "eic"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
+                      ? "text-purple-400 drop-shadow-[1px_3px_3px_rgba(0,0,0,0.25)] dark:drop-shadow-[1px_3px_3px_rgba(255,255,255,0.25)]"
+                      : "text-[#1F1F21] dark:text-[#F7F7F7]"
                   }`}
                   onClick={() => setSubPage("eic")}
                 >
@@ -175,8 +175,8 @@ const SecondaryMenu = ({
                 <p
                   className={`cursor-pointer font-semibold ${
                     subPage === "event"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
+                      ? "text-purple-400 drop-shadow-[1px_3px_3px_rgba(0,0,0,0.25)] dark:drop-shadow-[1px_3px_3px_rgba(255,255,255,0.25)]"
+                      : "text-[#1F1F21] dark:text-[#F7F7F7]"
                   }`}
                   onClick={() => setSubPage("event")}
                 >
@@ -185,8 +185,8 @@ const SecondaryMenu = ({
                 <p
                   className={`cursor-pointer font-semibold ${
                     subPage === "graphics"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
+                      ? "text-purple-400 drop-shadow-[1px_3px_3px_rgba(0,0,0,0.25)] dark:drop-shadow-[1px_3px_3px_rgba(255,255,255,0.25)]"
+                      : "text-[#1F1F21] dark:text-[#F7F7F7]"
                   }`}
                   onClick={() => setSubPage("graphics")}
                 >
@@ -195,8 +195,8 @@ const SecondaryMenu = ({
                 <p
                   className={`cursor-pointer font-semibold ${
                     subPage === "prestation"
-                      ? "text-purple-400"
-                      : "text-black dark:text-white"
+                      ? "text-purple-400 drop-shadow-[1px_3px_3px_rgba(0,0,0,0.25)] dark:drop-shadow-[1px_3px_3px_rgba(255,255,255,0.25)]"
+                      : "text-[#1F1F21] dark:text-[#F7F7F7]"
                   }`}
                   onClick={() => setSubPage("prestation")}
                 >

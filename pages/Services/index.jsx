@@ -18,7 +18,7 @@ export default function Events() {
   });
 
   return (
-    <Content className="w-full h-full bg-white dark:bg-black">
+    <Content className="w-full h-full bg-[#F7F7F7] dark:bg-[#1F1F21]">
       {Transition(
         (style, item) =>
           item && (
