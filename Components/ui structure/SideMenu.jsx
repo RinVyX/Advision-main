@@ -12,10 +12,10 @@ const SideMenu = () => {
         !showRightMenu ? "right-[-100%]" : "right-0"
       } z-40 translate-y-[-50%] flex-col flex justify-start ease transform duration-500 transition-all`}
     >
-      <div className="ml-[2%] w-full flex gap-4 flex-col mt-[100px] text-5xl md:text-8xl font-kanit font-bold uppercase text-white">
+      <div className="ml-[2%] w-full flex gap-4 flex-col mt-[100px] text-5xl md:text-8xl font-kanit font-bold uppercase text-slate-200 dark:text-slate-50">
         <p
           className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.125rem] hover:italic ${
-            page === "agence" ? "text-[#380f27] italic" : "text-white"
+            page === "agence" ? "text-[#41142e] italic dark:text-[#2b0a1d]" : "text-slate-100"
           }`}
           onClick={() => {
             setPage("agence"), router.push("/Agence"), setShowRightMenu(false);
@@ -25,7 +25,7 @@ const SideMenu = () => {
         </p>
         <p
           className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.125rem] hover:italic ${
-            page === "services" ? "text-[#380f27] italic" : "text-white"
+            page === "services" ? "text-[#41142e] dark:text-[#2b0a1d] italic" : "text-slate-100"
           }`}
           onClick={() => {
             setPage("services"),
@@ -37,7 +37,7 @@ const SideMenu = () => {
         </p>
         <p
           className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.125rem] hover:italic ${
-            page === "nosSuccessStory" ? "text-[#380f27] italic" : "text-white"
+            page === "nosSuccessStory" ? "text-[#41142e] dark:text-[#2b0a1d] italic" : "text-slate-100"
           }`}
           onClick={() => {
             setPage("nosSuccessStory"), router.push("/NosSuccessStory"), setShowRightMenu(false);
@@ -50,7 +50,7 @@ const SideMenu = () => {
       <div className="ml-[2%] mt-[1%] text-7xl">
         <p
           className={`my-4 cursor-pointer hover:text-[#380f27] hover:italic hover:text-[4.7rem] capitalize ${
-            page === "events" ? "text-[#380f27] italic" : "text-white"
+            page === "events" ? "text-[#41142e] dark:text-[#2b0a1d] italic" : "text-slate-100"
           }`}
           onClick={() => {
             setPage("events"),
@@ -62,7 +62,7 @@ const SideMenu = () => {
         </p>
         <p
           className={`my-4 mt-[1%] cursor-pointer hover:text-[#380f27] hover:italic hover:text-[4.7rem] capitalize ${
-            page === "contact" ? "text-[#380f27] italic" : "text-white"
+            page === "contact" ? "text-[#41142e] dark:text-[#2b0a1d] italic" : "text-slate-100"
           }`}
           onClick={() => {
             setPage("contact"),

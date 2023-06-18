@@ -73,7 +73,7 @@ export default function Events() {
           item && (
             <animated.div
               style={style}
-              className="absolute w-[100%] h-full font-Signika"
+              className="absolute w-[100%] h-full font-Kanit"
             >
               <div className="mt-10">
                 <div className="w-full justify-center items-center flex flex-col mb-4">

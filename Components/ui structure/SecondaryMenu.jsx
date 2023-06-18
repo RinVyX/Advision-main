@@ -36,7 +36,7 @@ const SecondaryMenu = ({
           item && (
             <animated.nav
               style={style}
-              className="absolute w-[100%] h-[60px] font-Signika font-light bg-[#F7F7F7] dark:bg-[#1F1F21]"
+              className="absolute w-[100%] h-[60px] font-Kanit font-light bg-[#F7F7F7] dark:bg-[#1F1F21]"
               onKeyDown={(e) => handleKeyDown(e)}
             >
               <SNav

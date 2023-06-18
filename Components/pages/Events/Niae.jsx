@@ -5,7 +5,7 @@ const Niae = ({ subPage }) => {
     <Content
       className={`w-full  absolute ${
         subPage === "niae" ? "left-0" : "left-[-200%]"
-      } flex justify-center items-start  ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-Signika mx-4 md:mx-10 my-4`}
+      } flex justify-center items-start  ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-Kanit mx-4 md:mx-10 my-4`}
     >
       <div className="text-justify">
         L’organisation du Salon International de l’Agriculture à Constantine est le fruit d’une réflexion profonde et d’une volonté inébranlable de promouvoir 

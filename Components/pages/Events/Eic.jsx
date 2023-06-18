@@ -5,7 +5,7 @@ const Eic = ({ subPage }) => {
     <Content
       className={`w-full  absolute ${
         subPage === "eic" ? "left-0" : "left-[-200%]"
-      } flex justify-center items-start  ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-Signika mx-4 md:mx-10 my-4`}
+      } flex justify-center items-start  ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-Kanit mx-4 md:mx-10 my-4`}
     >
       <div>
         Advision El Djzaïr a l’honneur d’ouvrir pour la deuxième fois le concours EIC, Energy Innovation Challenge.

@@ -30,7 +30,7 @@ const TopNav = () => {
           onClick={() => {
             setPage("home"), router.push("/");
           }}
-          className={`mx-4 font-Signika font-medium ${
+          className={`mx-4 font-Kanit font-medium ${
             showRightMenu ? "opacity-0" : "opacity-1"
           }  cursor-pointer transition ease transform duration-300`}
         >
@@ -40,7 +40,7 @@ const TopNav = () => {
           onClick={() => {
             setPage("agence"), router.push("/Agence");
           }}
-          className={`mx-4 font-Signika font-medium ${
+          className={`mx-4 font-Kanit font-medium ${
             showRightMenu ? "opacity-0" : "opacity-1"
           } cursor-pointer transition ease transform duration-300`}
         >
@@ -50,14 +50,14 @@ const TopNav = () => {
           onClick={() => {
             setPage("contact"), router.push("/Contact");
           }}
-          className={`mx-4 font-Signika font-medium ${
+          className={`mx-4 font-Kanit font-medium ${
             showRightMenu ? "opacity-0" : "opacity-1"
           } cursor-pointer transition ease transform duration-300`}
         >
           Contact
         </p> */}
         <div
-          className={`mx-4 font-Signika font-medium ${
+          className={`mx-4 font-Kanit font-medium ${
             showRightMenu ? "opacity-0" : "opacity-1"
           } cursor-pointer transition ease transform duration-300`}
         >

@@ -13,7 +13,7 @@ const Philosophie = ({ subPage }) => {
       {/* <div className="w-[90%] mx-auto md:my-[100px] lg:w-[600px] lg:flex lg:justify-center lg:h-full lg:items-center my-[20px]">
         <Lottie animationData={vision} />
       </div> */}
-      <div className=" lg:h-full lg:flex lg:justify-center lg:items-start lg:flex-col w-[90%] lg:w-[50%] mx-[20px] lg:translate-y-14 font-Signika">
+      <div className=" lg:h-full lg:flex lg:justify-center lg:items-start lg:flex-col w-[90%] lg:w-[50%] mx-[20px] lg:translate-y-14 font-Kanit">
         <div className="text-base mt-2">
           Au fil du temps, une identité s'est forgée, une culture et des valeurs se sont naturellement imposées.
         </div>

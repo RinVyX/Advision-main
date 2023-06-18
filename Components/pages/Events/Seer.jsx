@@ -5,7 +5,7 @@ const Seer = ({ subPage }) => {
     <Content
       className={`w-full  absolute ${
         subPage === "seer" ? "left-0" : "left-[-200%]"
-      } flex items-start ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-Signika mx-4 md:mx-10 my-4`}
+      } flex items-start ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-Kanit mx-4 md:mx-10 my-4`}
     >      
       <div className="text-justify">
         SEER est le premier événement commercial international en Algérie, dédié simultanément aux industries de l’électricité et des énergies renouvelables.

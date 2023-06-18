@@ -12,7 +12,7 @@ const SideMenu = () => {
         !showRightMenu ? "right-[-100%]" : "right-0"
       } z-40 translate-y-[-50%] flex-col flex justify-start items-center ease transform duration-500 transition-all`}
     >
-      <div className="w-full flex justify-center items-center gap-4 flex-col mt-[100px] text-2xl font-semibold font-Signika uppercase text-white">
+      <div className="w-full flex justify-center items-center gap-4 flex-col mt-[100px] text-2xl font-semibold font-Kanit uppercase text-white">
         <p
           className={`my-4 cursor-pointer hover:text-[#691243] ${
             page === "agency" ? "text-purple-400" : "text-white"

@@ -5,7 +5,7 @@ const Event = ({ subPage }) => {
     <Content
       className={`w-full absolute ${
         subPage === "event" ? "left-0" : "left-[-200%]"
-      } flex justify-center items-start ease transform duration-500 transition-all w-[100%] flex-col font-Signika my-4`}
+      } flex justify-center items-start ease transform duration-500 transition-all w-[100%] flex-col font-Kanit my-4`}
     >
       <div className="grid grid-flow-col justify-stretch">
         <div className="gap-0 hover:scale-90">

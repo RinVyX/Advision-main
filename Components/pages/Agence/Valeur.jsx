@@ -8,12 +8,12 @@ const Valeur = ({ subPage }) => {
         subPage === "valeur" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       } flex justify-start items-center flex-col top-0 pl-48
       ease transform duration-300 transition-all
-      lg:justify-center my-auto lg:flex-row lg:gap-4 font-Signika`}
+      lg:justify-center my-auto lg:flex-row lg:gap-4 font-Kanit`}
     >
       {/* <div className="w-[90%] mx-auto md:my-[100px] lg:w-[600px] lg:flex lg:justify-center lg:h-full lg:items-center my-[20px]">
         <Lottie animationData={vision} />
       </div> */}
-      <div className=" lg:h-full lg:flex lg:justify-center lg:items-start lg:flex-col w-[80%] lg:w-[90%] mx-[20px] lg:translate-y-14 font-Signika">
+      <div className=" lg:h-full lg:flex lg:justify-center lg:items-start lg:flex-col w-[80%] lg:w-[90%] mx-[20px] lg:translate-y-14 font-Kanit">
         <div className="text-xl my-4">
         Chez nous, la créativité est notre moteur, nous croyons en la puissance des idées novatrices et originales pour créer des campagnes qui captivent notre public.
         </div>

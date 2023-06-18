@@ -5,7 +5,7 @@ const Graphics = ({ subPage }) => {
     <Content
       className={`w-full  absolute ${
         subPage === "graphics" ? "left-0" : "left-[-200%]"
-      } font-Signika`}
+      } font-Kanit`}
     >
     </Content>
   );

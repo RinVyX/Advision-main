@@ -1,6 +1,7 @@
 import Lottie from "lottie-react";
 import styled from "styled-components";
 import communication from "../../../Lottie/communication.json";
+import Pattern from "../../../Lottie/Pattern.json";
 const Vision = ({ subPage }) => {
   return (
     <Container
@@ -10,7 +11,7 @@ const Vision = ({ subPage }) => {
           : "left-[-100%] opacity-0"
       } flex justify-start items-center flex-col top-0 pl-48
       ease transform duration-300 transition-all 
-      lg:justify-center my-auto lg:flex-row lg:gap-4 font-Signika`}
+      lg:justify-center my-auto lg:flex-row lg:gap-4 font-Kanit`}
     >
       {/* mobile */}
       <div className="text-justify w-[90%] h-fill  mt-10 mb-4 font-light text-xs dark:text-gray-200 text-gray-500 md:hidden ">
@@ -22,7 +23,10 @@ const Vision = ({ subPage }) => {
         Avec nous, pas de divas ! Il est facile et agréable de travailler avec notre équipe, nous vous le promettons !
       </div>
       <div className="w-[90%] mb-4 max-w-lg md:w-[500px] lg:w-[700px]">
-        <Lottie animationData={communication} />
+        {/* <Lottie animationData={Pattern} /> */}
+        <video loop autoPlay playsInline >
+          <source src="/Pattern.mp4" type="video/mp4" />
+        </video>
       </div>     
       <div className="text-justify w-[90%] h-fill my-4 font-light text-xs dark:text-gray-200 text-gray-500 lg:hidden">
       Des relations humaines et des services professionnels, mais sans bureaucratie ni frais extravagants. Avant tout, nous construisons une relation de confiance. 
@@ -31,7 +35,7 @@ const Vision = ({ subPage }) => {
       </div>
 
       {/* lg screen */}
-      <div className="lg:flex justify-center item-center w-[70%] h-full hidden flex-col font-Signika">
+      <div className="lg:flex justify-center item-center w-[70%] h-full hidden flex-col font-Kanit">
         <div className="text-justify w-[90%] h-fill  mt-10 mb-4 font-light text-base dark:text-gray-200 text-gray-500">
           En tant qu'agence de communication et de publicité travaillant en "business to business", notre ingrédient secret est la réalisation de résultats ! 
           Le reste de la recette, nous l'adapté en fonction de chaque mandat. Chez AdVision, nous parlons votre langue : augmentation des ventes, notoriété de la marque, 
