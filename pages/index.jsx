@@ -59,7 +59,7 @@ export default function Home({}) {
     </div> }*/
 
 
-   <div className="w-[100%] h-[100%]  bg-[#F7F7F7] dark:bg-[#1F1F21]">
+   <div className="w-[100%] h-[100%] ">
       {Transition(
         (style, item) =>
           item && (
