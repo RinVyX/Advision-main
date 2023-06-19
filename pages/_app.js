@@ -7,11 +7,12 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import { ThemeProvider } from "next-themes";
 function MyApp({ Component, pageProps }) {
   return (
-    <Context>
-      <Ui className="font-Signika" children={<Component {...pageProps} />} />
-      <Ui className="font-Kanit" children={<Component {...pageProps} />} />
-      
-    </Context>
+    <ParallaxProvider scrollAxis="horizontal">
+      <Context>
+        <Ui className="font-Signika" children={<Component {...pageProps} />} />
+        <Ui className="font-Kanit" children={<Component {...pageProps} />} />
+      </Context>
+    </ParallaxProvider>
   );
 }
 

@@ -2,18 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   margin: 0px;
   padding: 0px;
-  overflow: hidden;
+  overflow:  auto;
   box-sizing: border-box;
-  min-height: 100vh;
-  min-height: stretch;
-  min-height: -webkit-fill-available;
+  /* min-height: 100vh;
+  min-height: -webkit-fill-available; */
+  /* min-height: stretch; */
 }
 html {
-  height: stretch;
-  height: -webkit-fill-available;
+  /*height: -webkit-fill-available;
+  height: stretch;*/
+  height: auto;
 }
 

@@ -13,6 +13,8 @@
     "@emotion/styled": "^11.10.6",
     "@material-tailwind/react": "^1.2.4",
     "@mui/material": "^5.11.13",
+    "@splinetool/runtime": "^0.9.369",
+    "@splinetool/viewer": "^0.9.369",
     "@tailwindui/react": "^0.1.1",
     "@u-wave/react-youtube": "^0.7.4",
     "framer-motion": "^10.2.5",

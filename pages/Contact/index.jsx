@@ -67,7 +67,7 @@ export default function Events() {
     }
   };
   return (
-    <div className="w-[100%] h-[100%] relative dark:text-white  text-black bg-[#F7F7F7] dark:bg-[#1F1F21]">
+    <div className="w-[100%] h-[100%] relative dark:text-white  text-black">
       {Transition(
         (style, item) =>
           item && (

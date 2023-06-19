@@ -1,7 +1,14 @@
 import Lottie from "lottie-react";
 import styled from "styled-components";
 import vision from "../../../Lottie/vision.json";
+import { Application } from '@splinetool/runtime';
+import { useEffect } from 'react';
+import { loadSplineViewer } from '../../ui structure/SplineViewer';
+
 const Philosophie = ({ subPage }) => {
+/*   useEffect(() => {
+    loadSplineViewer();
+  }, []); */
   return (
     <Container
       className={`w-full h-full absolute ${
@@ -10,10 +17,15 @@ const Philosophie = ({ subPage }) => {
       ease transform duration-300 transition-all
       lg:justify-center my-auto lg:flex-row lg:gap-4 font-Kanit`}
     >
+      {/* <div>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.369/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/74r0DZCM-qGzOYtN/scene.splinecode"></spline-viewer>
+      </div> */}
       {/* <div className="w-[90%] mx-auto md:my-[100px] lg:w-[600px] lg:flex lg:justify-center lg:h-full lg:items-center my-[20px]">
         <Lottie animationData={vision} />
       </div> */}
       <div className=" lg:h-full lg:flex lg:justify-center lg:items-start lg:flex-col w-[90%] lg:w-[50%] mx-[20px] lg:translate-y-14 font-Kanit">
+        
         <div className="text-base mt-2">
           Au fil du temps, une identité s'est forgée, une culture et des valeurs se sont naturellement imposées.
         </div>

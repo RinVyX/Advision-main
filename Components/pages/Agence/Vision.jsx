@@ -21,12 +21,6 @@ const Vision = ({ subPage }) => {
       </div>
       <div className="w-[90%] mb-4 font-medium text- md:hidden lg:hidden">
         Avec nous, pas de divas ! Il est facile et agréable de travailler avec notre équipe, nous vous le promettons !
-      </div>
-      <div className="w-[90%] mb-4 max-w-lg md:w-[500px] lg:w-[700px]">
-        {/* <Lottie animationData={Pattern} /> */}
-        <video loop autoPlay playsInline >
-          <source src="/Pattern.mp4" type="video/mp4" />
-        </video>
       </div>     
       <div className="text-justify w-[90%] h-fill my-4 font-light text-xs dark:text-gray-200 text-gray-500 lg:hidden">
       Des relations humaines et des services professionnels, mais sans bureaucratie ni frais extravagants. Avant tout, nous construisons une relation de confiance. 
@@ -36,6 +30,12 @@ const Vision = ({ subPage }) => {
 
       {/* lg screen */}
       <div className="lg:flex justify-center item-center w-[70%] h-full hidden flex-col font-Kanit">
+      <div className="w-[90%] mb-4 max-w-lg md:w-[500px] lg:w-[700px]">
+        {/* <Lottie animationData={Pattern} /> */}
+        <video loop autoPlay playsInline >
+          <source src="/Pattern.mp4" type="video/mp4" />
+        </video>
+      </div>  
         <div className="text-justify w-[90%] h-fill  mt-10 mb-4 font-light text-base dark:text-gray-200 text-gray-500">
           En tant qu'agence de communication et de publicité travaillant en "business to business", notre ingrédient secret est la réalisation de résultats ! 
           Le reste de la recette, nous l'adapté en fonction de chaque mandat. Chez AdVision, nous parlons votre langue : augmentation des ventes, notoriété de la marque, 

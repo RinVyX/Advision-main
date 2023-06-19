@@ -8,9 +8,10 @@ const SideMenu = () => {
   const { page, setPage, showRightMenu, setShowRightMenu } = useContext(State);
   return (
     <div
+      id="backdoor"            
       className={`w-full md:w-full xl:w-full h-full bg-[#9A1A65] dark:bg-[#691243] absolute top-[50%] ${
         !showRightMenu ? "right-[-100%]" : "right-0"
-      } z-40 translate-y-[-50%] flex-col flex justify-start ease transform duration-500 transition-all`}
+      } z-40 translate-y-[-50%] flex-col flex justify-start transform  transition-opacity ease-in duration-700 opacity-100`}
     >
       <div className="ml-[2%] w-full flex gap-4 flex-col mt-[100px] text-5xl md:text-8xl font-kanit font-bold uppercase text-slate-200 dark:text-slate-50">
         <p
