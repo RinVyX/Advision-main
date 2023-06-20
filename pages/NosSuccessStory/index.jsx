@@ -23,7 +23,7 @@ export default function Events() {
     }
   }, [page]);
   return (
-    <div className="w-full h-full bg-white dark:bg-black">
+    <div className="w-full h-full dark:bg-black">
       {Transition(
         (style, item) =>
           item && (
