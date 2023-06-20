@@ -18,23 +18,43 @@ export default function Home({}) {
     }
   }, [page]);
   return (
-    <div className="w-[100%] h-[100%] dark:bg-black">
+    <div className="w-[100%] h-[100%] dark:bg-[#1f1f1f] select-none">
       {Transition(
         (style, item) =>
           item && (
             <animated.div
               config={{ duration: 500 }}
               style={style}
-              className="absolute w-full h-full justify-center items-center"
+              className="absolute w-full h-full"
             >
-              <div className="w-full h-[calc(100vh-100px)] justify-center items-center flex gap-10 flex-col">
-                <img src="/images/logo.png" className="w-[300px] h-[300px]" />
-                <div className="flex justify-center items-center flex-col gap-4 font-Signika">
-                  <h1 className="text-5xl text-center">AdVision</h1>
-                  <div className="w-full flex justify-center items-center">
-                    <h2 className="text-3xl text-[#BC227C] text-center">
-                      a global vision for communication
-                    </h2>
+              <div className="w-full h-[calc(100vh-100px)] m-[100px] my-[200px]">
+                <div className="font-Kanit text-black bg-clip-text">
+                  <div className="text-[106px] leading-[100px]">
+                    <div className="inline-flex">
+                      <span className="font-bold text-[#1f1f1f] 
+                                       dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] dark:from-pink-900 dark:to-pink-200 dark:text-transparent dark:bg-clip-text">
+                        We speak 
+                      </span>
+                      &nbsp;
+                      <div className="font-light dark:text-gray-200"> your language, </div>
+                    </div>
+                    <div className="inline-flex tracking-wide"> 
+                      <div className="font-bold italic text-[#1f1f1f]
+                                     dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] dark:from-pink-900 dark:to-pink-200 dark:text-transparent dark:bg-clip-text"> 
+                        wherever 
+                      </div>
+                     &nbsp;
+                     <div className="font-light dark:text-gray-200"> you are. </div>                       
+                    </div>
+                  </div>
+                  <div className="text-[55px] leading-[100px] inline-flex tracking-wide">
+                    <div className="font-light dark:text-gray-200"> Unleashing the Power of </div>
+                    &nbsp;
+                    <div className=" text-[#ff97dc]"> Global Vision </div>
+                    &nbsp;
+                    <div className="font-light dark:text-gray-200"> in </div>
+                    &nbsp;
+                    <div className=" text-[#ff97dc]"> Communication. </div>                      
                   </div>
                 </div>
               </div>
