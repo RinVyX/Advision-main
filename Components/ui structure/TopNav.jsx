@@ -8,10 +8,10 @@ const TopNav = () => {
   const { setPage, showRightMenu, setShowRightMenu } = useContext(State);
   const genericHamburgerLine = `h-[2px] my-[4px] rounded-full bg-black dark:bg-white transition ease transform duration-300`;
   return (
-    <nav className="top-0 absolute left-0 w-full h-[80px]  flex justify-between items-center border-gray-400 dark:border-gray-100 dark:text-[#F7F7F7] text-[#1F1F21]">
+    <nav className="top-0 absolute left-0 w-full h-[80px]  flex justify-between items-center border-gray-400 dark:border-gray-100 dark:text-[#F7F7F7] text-[#1F1F21] dark:bg-[#1f1f1f]">
       {/* logo */}
       <div
-        className="w-[80px] h-[80px] flex justify-center items-center ml-1 md:ml-10"
+        className="w-[170px] flex justify-center items-center ml-1 md:ml-10"
         onClick={() => {
           {
             setPage("home"), router.push("/");
@@ -19,9 +19,9 @@ const TopNav = () => {
         }}
       >
         <img
-          src="/images/logo.png"
+          src="/images/advisionwhitetahawour.png"
           alt="logo"
-          className="w-[62px] h-[62px] cursor-pointer"
+          className=" cursor-pointer"
         />
       </div>
       {/* home contact burger */}

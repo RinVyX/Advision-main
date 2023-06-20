@@ -6,6 +6,7 @@ import { State } from "../../Context/context";
 import Valeur from "../../Components/pages/Agence/Valeur";
 import Vision from "../../Components/pages/Agence/Vision";
 import Philosophie from "../../Components/pages/Agence/Philosophie";
+import Test from "../../Components/pages/Agence/Test";
 import styled from "styled-components";
 export default function Events({ showMeni }) {
   const { page, subPage, setSubPage } = useContext(State);
@@ -25,6 +26,9 @@ export default function Events({ showMeni }) {
         setSubPage("philosophie");
       }
       if (subPage === "philosophie") {
+        setSubPage("test");
+      }
+      if (subPage === "test") {
         setSubPage("valeur");
       }
     }
@@ -36,6 +40,9 @@ export default function Events({ showMeni }) {
         setSubPage("vision");
       }
       if (subPage === "vision") {
+        setSubPage("test");
+      }
+      if (subPage === "test") {
         setSubPage("valeur");
       }
     }
@@ -57,6 +64,7 @@ export default function Events({ showMeni }) {
               <Valeur subPage={subPage} />
               <Vision subPage={subPage} />
               <Philosophie subPage={subPage} />              
+              <Test subPage={subPage} />              
             </animated.div>
           )
       )}

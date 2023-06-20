@@ -8,14 +8,14 @@ const Event = ({ subPage }) => {
       } flex justify-center items-start ease transform duration-500 transition-all w-[100%] flex-col font-Kanit my-4`}
     >
       <div className="grid grid-flow-col justify-stretch">
-        <div className="gap-0 hover:scale-90">
-          <a href="https://fr.seer-dz.com/"> <img src="/images/Contrat-de-participation-1_page-0001.jpg" alt="" className=""/> </a>
+        <div className="gap-0 hover:scale-110">
+          <a href="https://fr.seer-dz.com/"> <img src="/images/Affiche-A3-.png" alt="" className=" items-center"/> </a>
         </div>
-        <div className="gap-0 hover:scale-90">
-          <a href="https://n-iae.com"> <img src="/images/Contrat-de-participation-1_page-0001.jpg" alt="" className=""/> </a>
+        <div className="gap-0 hover:scale-110">
+          <a href="https://n-iae.com"> <img src="/images/Affiche-A4.png" alt="" className=""/> </a>
         </div>
-        <div className="gap-0 hover:scale-90">
-          <a href="https://fr.seer-dz.com/eic-challenge/"> <img src="/images/Contrat-de-participation-1_page-0001.jpg" alt="" className=""/> </a>
+        <div className="gap-0 hover:scale-110">
+          <a href="https://fr.seer-dz.com/eic-challenge/"> <img src="/images/EIC-fiche_portrait_V5.jpg" alt="" className=""/> </a>
         </div>
       </div>
     </Content>

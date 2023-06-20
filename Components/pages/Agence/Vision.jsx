@@ -31,10 +31,7 @@ const Vision = ({ subPage }) => {
       {/* lg screen */}
       <div className="lg:flex justify-center item-center w-[70%] h-full hidden flex-col font-Kanit">
       <div className="w-[90%] mb-4 max-w-lg md:w-[500px] lg:w-[700px]">
-        {/* <Lottie animationData={Pattern} /> */}
-        <video loop autoPlay playsInline >
-          <source src="/Pattern.mp4" type="video/mp4" />
-        </video>
+        {/* <Lottie animationData={Pattern} /> */}        
       </div>  
         <div className="text-justify w-[90%] h-fill  mt-10 mb-4 font-light text-base dark:text-gray-200 text-gray-500">
           En tant qu'agence de communication et de publicité travaillant en "business to business", notre ingrédient secret est la réalisation de résultats ! 

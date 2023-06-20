@@ -74,6 +74,16 @@ const SecondaryMenu = ({
                 >
                   Valeur
                 </div>
+                <div
+                  className={`cursor-pointer font-semibold ${
+                    subPage === "test"
+                      ? "text-purple-400 drop-shadow-[1px_3px_3px_rgba(0,0,0,0.25)] dark:drop-shadow-[1px_3px_3px_rgba(255,255,255,0.25)]"
+                      : "text-[#1F1F21] dark:text-[#F7F7F7]"
+                  }`}
+                  onClick={() => setSubPage("test")}
+                >
+                  Test
+                </div>
               </SNav>
               <SNav
                 className={`w-full h-[60px] absolute ${

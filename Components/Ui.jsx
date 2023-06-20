@@ -9,10 +9,12 @@ const Ui = ({ children }) => {
   const [secondaryMenuTransition, setSecondaryMenuTransition] = useState(false);
   console.log("page", page, "subPage", subPage, "showMenu", showRightMenu);
   return (
-    <div className="bg-[url('/')] bg-local bg-opacity-50 relative w-screen h-screen overflow-hidden dark:text-white text-black">
-      <video loop autoPlay playsInline className="h-max w-max opacity-20">
+    <div className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-pink-900 via-pink-200 to-white bg-opacity-50 relative w-screen h-screen overflow-hidden 
+                  dark:text-white text-black dark:bg-[#1f1f1f]">
+      
+      {/* <video loop autoPlay playsInline className="h-max w-max opacity-20">
         <source src="/Pattern.mp4" type="video/mp4" />
-      </video>
+      </video> */}
       {/* top navigation */}
       <TopNav setSecondaryMenuTransition={setSecondaryMenuTransition} />
       {/* side Nave showRightMenu */}

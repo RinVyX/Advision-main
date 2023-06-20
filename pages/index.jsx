@@ -37,7 +37,7 @@ export default function Home({}) {
 
   return (
     
-    <div className="w-[100%] h-[100%] ">
+    <div className="w-[100%] h-[100%] dark:bg-[#1f1f1f]">
       {Transition(
         (style, item) =>
           item && (
@@ -45,8 +45,7 @@ export default function Home({}) {
               config={{ duration: 500 }}
               style={style}
               className=""
-            >             
-              
+            >            
 
               {/* parallax */}
               {/* <div ref={target} style={{
@@ -70,18 +69,34 @@ export default function Home({}) {
                   <Image  src="/para/Cloud.png" height={200} width={1000} />
                 </div>
               </div> */}
-              <div className="w-full h-[calc(100vh-100px)] justify-center items-center flex gap-10 flex-col">
-                <div>
+              <div className="w-full h-[calc(100vh-100px)] m-[100px] my-[200px]">
+                {/* <div className="item-center pl-5 pb-5">
                   <MouseParallax enableOnTouchDevice >
-                    <img src="/images/logo.png" className="w-[300px] h-[300px]" />  
+                    <img src="/images/logo.png" className="w-[300px] h-[300px] m-40 " />  
+                    <div className="text-6xl text-center">AdVision El DJAZAIR</div>
                   </MouseParallax>
-                </div>
-                <div className="flex justify-center items-center flex-col gap-4 font-Kanit">
-                  <h1 className="text-5xl text-center">AdVision</h1>
-                  <div className="w-full flex justify-center items-center">
-                    <h2 className="text-3xl text-[#BC227C] text-center">
-                      a global vision for communication
-                    </h2>
+                </div> */}
+                <div className="font-Kanit text-black bg-clip-text">
+                  <div className="text-[106px] leading-[100px]">
+                    <div className="inline-flex">
+                      <span className="font-bold text-[#1f1f1f] dark:bg-gradient-to-r dark:from-pink-500 dark:to-violet-500 dark:text-transparent dark:bg-clip-text">We speak </span>
+                      &nbsp;
+                      <div className="font-light"> your language, </div>
+                    </div>
+                    <div className="inline-flex tracking-wide"> 
+                     <div className="font-bold italic text-[#1f1f1f]"> wherever </div>
+                     &nbsp;
+                     <div className="font-light "> you are. </div>                       
+                    </div>
+                  </div>
+                  <div className="text-[55px] leading-[100px] inline-flex tracking-wide">
+                    <div className="font-light"> Unleashing the Power of </div>
+                    &nbsp;
+                    <div className=" text-[#a82a7e]"> Global Vision </div>
+                    &nbsp;
+                    <div className="font-light"> in </div>
+                    &nbsp;
+                    <div className=" text-[#a82a7e]"> Communication. </div>                      
                   </div>
                 </div>
               </div>
