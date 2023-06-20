@@ -3,18 +3,17 @@
 @tailwind utilities;
 body {
   width: auto;
-  height: auto;
+  /* height: auto; */
   margin: 0px;
   padding: 0px;
   overflow:  auto;
   box-sizing: border-box;
-  /* min-height: 100vh;
-  min-height: -webkit-fill-available; */
-  /* min-height: stretch; */
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: stretch;
 }
 html {
-  /*height: -webkit-fill-available;
-  height: stretch;*/
-  height: auto;
+  height: -webkit-fill-available;
+  height: stretch;
 }
 

@@ -15,6 +15,7 @@ const Ui = ({ children }) => {
       {/* <video loop autoPlay playsInline className="h-max w-max opacity-20">
         <source src="/Pattern.mp4" type="video/mp4" />
       </video> */}
+      
       {/* top navigation */}
       <TopNav setSecondaryMenuTransition={setSecondaryMenuTransition} />
       {/* side Nave showRightMenu */}
