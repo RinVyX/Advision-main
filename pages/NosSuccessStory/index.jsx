@@ -23,42 +23,23 @@ export default function Events() {
     }
   }, [page]);
   return (
-    <div className="w-full h-full dark:bg-black">
+    <div className="w-full h-[calc(100%-60px)] absolute top-[60px] dark:bg-[#1f1f1f] ">
       {Transition(
         (style, item) =>
           item && (
             <animated.div
               config={{ duration: 500 }}
               style={style}
-              className={`${
-                page === "agence" ||
-                page === "services" ||
-                page === "events" ||
-                page === "nosSuccessStory"
-                  ? "top-[60px]"
-                  : "top-0"
-              } absolute  w-full h-full`}
+              className={` top-[0px] left-0 absolute w-full h-full `}
             >
-              <PageWrapper>
-                <Event subPage={subPage} />
-                <Graphics subPage={subPage} />
-                <Digital subPage={subPage} />
-              </PageWrapper>
+            
+              <Event subPage={subPage} />
+              <Graphics subPage={subPage} />
+              <Digital subPage={subPage} />
+            
             </animated.div>
           )
       )}
     </div>
   );
 }
-const PageWrapper = styled.div`
-  overflow: auto;
-  &::-webkit-scrollbar {
-    width: 6px;
-  }
-  &::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #c084fc;
-  }
-  width: 100%;
-  height: 100%;
-`;

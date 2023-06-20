@@ -5,12 +5,18 @@ const Seer = ({ subPage }) => {
     <Content
       className={`w-full  absolute ${
         subPage === "seer" ? "left-0" : "left-[-200%]"
-      } flex  ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-Signika mx-4 md:mx-10 my-4`}
+      } flex  ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-kanit mx-4 md:mx-10 my-4`}
     >
-      <div className="uppercase text-2xl my-3 text-slate-800">
-        SEER - <a href="https://fr.seer-dz.com" className="hover:italic hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-green-500 hover:to-red-600"> SALON INTERNATIONAL de l’électricité et des énergies renouvelables - </a>
+      <div className="tracking-wider uppercase text-[26px] my-3 text-slate-50 dark:text-slate-200 font-light">
+        SEER - 
+        &nbsp;
+        <a href="https://fr.seer-dz.com" className=" hover:italic hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-green-500 hover:to-red-600"> 
+          SALON INTERNATIONAL de l’électricité et des énergies renouvelables 
+        </a>
+        &nbsp;
+        -
       </div>
-      <div className=" text-slate-600 text-justify w-[60%]">
+      <div className=" text-slate-900 dark:text-slate-300 text-justify w-[60%] tracking-wider">
         SEER est le premier événement commercial international en Algérie, dédié simultanément aux industries de l’électricité et des énergies renouvelables.
         <br />
         Via une large gamme de produits et solutions exposés, le salon rassemble différents opérateurs (Fabricants d’équipements, distributeurs, bureaux d’études, 

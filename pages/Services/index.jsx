@@ -8,7 +8,8 @@ import Graphisme from "../../Components/pages/Services/Graphisme";
 import Branding from "../../Components/pages/Services/Branding";
 import Video from "../../Components/pages/Services/Video";
 import styled from "styled-components";
-const index = () => {
+
+export default function Events() {
   const { page, subPage, setSubPage } = useContext(State);
   const [animate, setAnimate] = useState(true);
   const Transition = useTransition(animate, {
@@ -17,21 +18,57 @@ const index = () => {
     leave: { left: "-100%", opacity: 0 },
   });
 
+  const handleKeyDown = (e) => {
+    console.log(e);
+    if ((e.key = "ArrowRight")) {
+      if (subPage === "Digital") {
+        setSubPage("Evenement");
+      }
+      if (subPage === "Evenement") {
+        setSubPage("Graphisme");
+      }
+      if (subPage === "Graphisme") {
+        setSubPage("Branding");
+      }
+      if (subPage === "Branding") {
+        setSubPage("Video");
+      }
+      if (subPage === "Video") {
+        setSubPage("Digital");
+      }
+    }
+    if ((e.key = "ArrowLeft")) {
+      if (subPage === "Digital") {
+        setSubPage("Video");
+      }
+      if (subPage === "Video") {
+        setSubPage("Branding");
+      }
+      if (subPage === "Branding") {
+        setSubPage("Graphisme");
+      }
+      if (subPage === "Graphisme") {
+        setSubPage("Evenement");
+      }
+      if (subPage === "Evenement") {
+        setSubPage("Digital");
+      }
+    }
+  };
+
   return (
-    <Content className="dark:bg-black">
+    <div
+      className="w-full h-[calc(100%-60px)] absolute top-[60px] dark:bg-[#1f1f1f] "
+      onKeyDown={(e) => handleKeyDown(e)}
+      tabIndex={0}
+    >
       {Transition(
         (style, item) =>
           item && (
             <animated.div
+              config={{ duration: 500 }}
               style={style}
-              className={`${
-                page === "agence" ||
-                page === "services" ||
-                page === "events" ||
-                page === "nosSuccessStory"
-                  ? "top-[60px]"
-                  : "top-0"
-              } absolute  w-full h-full`}
+              className={` top-[0px] left-0 absolute w-full h-full `}
             >
               <Digital subPage={subPage} />
               <Evenement subPage={subPage} />
@@ -41,18 +78,7 @@ const index = () => {
             </animated.div>
           )
       )}
-    </Content>
+    </div>
   );
 };
 
-export default index;
-const Content = styled.div`
-  overflow-y: auto;
-  &::-webkit-scrollbar {
-    width: 6px;
-  }
-  &::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #c084fc;
-  }
-`;

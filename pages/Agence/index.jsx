@@ -7,6 +7,7 @@ import Valeur from "../../Components/pages/Agence/Valeur";
 import Vision from "../../Components/pages/Agence/Vision";
 import Philosophie from "../../Components/pages/Agence/Philosophie";
 import styled from "styled-components";
+
 export default function Events({ showMeni }) {
   const { page, subPage, setSubPage } = useContext(State);
   const [animate, setAnimate] = useState(true);
@@ -15,6 +16,7 @@ export default function Events({ showMeni }) {
     enter: { left: "0", opacity: 1 },
     leave: { left: "-100%", opacity: 0 },
   });
+
   const handleKeyDown = (e) => {
     console.log(e);
     if ((e.key = "ArrowRight")) {
@@ -40,9 +42,10 @@ export default function Events({ showMeni }) {
       }
     }
   };
+  
   return (
     <div
-      className="w-full h-[calc(100%-60px)] absolute top-[60px] overflow-hidden text-black dark:text-white dark:bg-black"
+      className="w-full h-[calc(100%-60px)] absolute top-[60px] dark:bg-[#1f1f1f] "
       onKeyDown={(e) => handleKeyDown(e)}
       tabIndex={0}
     >

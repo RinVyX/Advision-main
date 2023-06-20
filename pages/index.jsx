@@ -50,11 +50,11 @@ export default function Home({}) {
                   <div className="text-[55px] leading-[100px] inline-flex tracking-wide">
                     <div className="font-light dark:text-gray-200"> Unleashing the Power of </div>
                     &nbsp;
-                    <div className=" text-[#ff97dc]"> Global Vision </div>
+                    <div className="text-[#661a4d] dark:text-[#ff97dc]"> Global Vision </div>
                     &nbsp;
                     <div className="font-light dark:text-gray-200"> in </div>
                     &nbsp;
-                    <div className=" text-[#ff97dc]"> Communication. </div>                      
+                    <div className="text-[#661a4d] dark:text-[#ff97dc]"> Communication. </div>                      
                   </div>
                 </div>
               </div>

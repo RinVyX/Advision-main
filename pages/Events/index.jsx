@@ -7,6 +7,7 @@ import Eic from "../../Components/pages/Events/Eic";
 import Niae from "../../Components/pages/Events/Niae";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+
 export default function Events() {
   const { page, subPage, setSubPage } = useContext(State);
   const [animate, setAnimate] = useState(true);
@@ -16,43 +17,23 @@ export default function Events() {
     leave: { left: "-100%", opacity: 0 },
   });
   return (
-    <div className="w-full h-full dark:bg-black">
+    <div className="w-full h-[calc(100%-60px)] absolute top-[60px] dark:bg-[#1f1f1f] ">
       {Transition(
         (style, item) =>
           item && (
             <animated.div
               config={{ duration: 500 }}
               style={style}
-              className={`${
-                page === "agence" ||
-                page === "services" ||
-                page === "events" ||
-                page === "nosSuccessStory"
-                  ? "top-[60px]"
-                  : "top-0"
-              } absolute  w-full h-full`}
+              className={` top-[0px] left-0 absolute w-full h-full `}
             >
-              <PageWrapper>
-                <Niae subPage={subPage} />
-                <Seer subPage={subPage} />
-                <Eic subPage={subPage} />
-              </PageWrapper>
+            
+              <Niae subPage={subPage} />
+              <Seer subPage={subPage} />
+              <Eic subPage={subPage} />
+            
             </animated.div>
           )
       )}
     </div>
   );
 }
-
-const PageWrapper = styled.div`
-  overflow: auto;
-  &::-webkit-scrollbar {
-    width: 6px;
-  }
-  &::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #c084fc;
-  }
-  width: 100%;
-  height: 100%;
-`;

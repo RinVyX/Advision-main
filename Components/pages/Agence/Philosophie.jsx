@@ -4,16 +4,14 @@ import vision from "../../../Lottie/vision.json";
 const Philosophie = ({ subPage }) => {
   return (
     <Container
-      className={`w-full h-full absolute ${
-        subPage === "philosophie" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
-      } flex justify-start items-center flex-col top-0 pl-48
-      ease transform duration-300 transition-all
-      lg:justify-center my-auto lg:flex-row lg:gap-4 font-Kanit`}
+      className={`w-full absolute ${
+        subPage === "philosophie" ? "left-0" : "left-[-200%]"
+      } flex ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-kanit mx-4 md:mx-10 my-4`}
     >
       {/* <div className="w-[90%] mx-auto md:my-[100px] lg:w-[600px] lg:flex lg:justify-center lg:h-full lg:items-center my-[20px]">
         <Lottie animationData={vision} />
       </div> */}
-      <div className=" lg:h-full lg:flex lg:justify-center lg:items-start lg:flex-col w-[90%] lg:w-[50%] mx-[20px] lg:translate-y-14 font-Signika">
+      <div className=" lg:h-full lg:items-start lg:flex-col w-[90%] lg:w-[50%] mx-[20px] lg:translate-y-14 font-Signika">
         <div className="text-base mt-2">
           Au fil du temps, une identité s'est forgée, une culture et des valeurs se sont naturellement imposées.
         </div>

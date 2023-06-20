@@ -8,7 +8,7 @@ const TopNav = () => {
   const { setPage, showRightMenu, setShowRightMenu } = useContext(State);
   const genericHamburgerLine = `h-[2px] my-[4px] rounded-full bg-black dark:bg-white transition ease transform duration-300`;
   return (
-    <nav className="top-0 absolute left-0 w-full h-[80px] dark:bg-[#1f1f1f] flex justify-between items-center border-gray-400 dark:border-gray-100 dark:text-white text-black">
+    <nav className="top-0 absolute left-0 w-full h-[80px] dark:bg-inherit flex justify-between items-center ">
       {/* logo */}
       <div
         className="w-[170px] flex justify-center items-center ml-1 md:ml-10"
@@ -35,26 +35,6 @@ const TopNav = () => {
           }  cursor-pointer transition ease transform duration-300`}
         >
           Acceuil
-        </p>
-        <p
-          onClick={() => {
-            setPage("agence"), router.push("/Agence");
-          }}
-          className={`mx-4 font-Signika font-medium ${
-            showRightMenu ? "opacity-0" : "opacity-1"
-          } cursor-pointer transition ease transform duration-300`}
-        >
-          Nous connaître
-        </p>
-        <p
-          onClick={() => {
-            setPage("contact"), router.push("/Contact");
-          }}
-          className={`mx-4 font-Signika font-medium ${
-            showRightMenu ? "opacity-0" : "opacity-1"
-          } cursor-pointer transition ease transform duration-300`}
-        >
-          Contact
         </p> */}
         <div
           className={`mx-4 font-Signika font-medium ${
@@ -68,7 +48,7 @@ const TopNav = () => {
           onClick={() => setShowRightMenu(!showRightMenu)}
         >
           <div
-            className={`${genericHamburgerLine} w-6 ${
+            className={`${genericHamburgerLine} w-8 ${
               showRightMenu
                 ? "rotate-45 translate-y-[10px]  opacity-50 group-hover:opacity-100"
                 : "opacity-50 group-hover:opacity-100"
@@ -77,15 +57,15 @@ const TopNav = () => {
           <div
             className={`${genericHamburgerLine} ${
               showRightMenu
-                ? "opacity-0 w-6"
-                : "opacity-50 group-hover:opacity-100 w-6"
+                ? "opacity-0 w-8"
+                : "opacity-50 group-hover:opacity-100 w-8"
             }`}
           />
           <div
-            className={`${genericHamburgerLine} w-6 ${
+            className={`${genericHamburgerLine} w-8 ${
               showRightMenu
                 ? "-rotate-45 -translate-y-[10px] opacity-50 group-hover:opacity-100"
-                : "opacity-50 group-hover:opacity-100 w-6"
+                : "opacity-50 group-hover:opacity-100 w-8"
             }`}
           />
         </button>

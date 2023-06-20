@@ -67,7 +67,7 @@ export default function Events() {
     }
   };
   return (
-    <div className="w-[100%] h-[100%] relative dark:text-white  text-black dark:bg-black">
+    <div className="w-[100%] h-[100%] relative dark:text-gray-300 dark:bg-[#1f1f1f]">
       {Transition(
         (style, item) =>
           item && (
@@ -77,7 +77,7 @@ export default function Events() {
             >
               <div className="mt-10">
                 <div className="w-full justify-center items-center flex flex-col mb-4">
-                  <p className="font-semibold my-4 text-4xl dark:text-white text-black">
+                  <p className="font-semibold my-4 text-4xl">
                     Contact
                   </p>
                 </div>
@@ -88,7 +88,7 @@ export default function Events() {
                       onChange={(e) => setEmail(e.target.value)}
                       type="email"
                       id="email"
-                      className=" bg-gray-200  text-white text-sm rounded-l block w-full p-2.5 lg:w-[400px]"
+                      className=" bg-gray-200 text-sm rounded-l block w-full p-2.5 lg:w-[400px]"
                       placeholder="Email"
                       required
                     />
@@ -99,7 +99,7 @@ export default function Events() {
                       onChange={(e) => setSubject(e.target.value)}
                       type="text"
                       id="subject"
-                      className=" bg-gray-200  text-white text-sm rounded-l block w-full p-2.5 lg:w-[400px]"
+                      className=" bg-gray-200 text-sm rounded-l block w-full p-2.5 lg:w-[400px]"
                       placeholder="Subject"
                       required
                     />
@@ -110,7 +110,7 @@ export default function Events() {
                       onChange={(e) => setComment(e.target.value)}
                       id="message"
                       rows="5"
-                      className=" bg-gray-200  text-white text-sm rounded-l block w-full p-2.5 lg:w-[400px]"
+                      className=" bg-gray-200  text-sm rounded-l block w-full p-2.5 lg:w-[400px]"
                       placeholder="Leave a comment..."
                     ></textarea>
                   </div>
@@ -143,14 +143,14 @@ export default function Events() {
                   <div
                     className={`${
                       copys1 ? "absolute" : "hidden"
-                    } top-[-45px] left-[-75px] sm:left-[-10px] text-white text-xs px-[5px] py-[4px] bg-gray-400 whitespace-nowrap	 rounded-md text`}
+                    } top-[-45px] left-[-75px] sm:left-[-10px] text-xs px-[5px] py-[4px] bg-gray-300 whitespace-nowrap rounded-md text`}
                   >
                     Email copied
                   </div>
                 </div>
               </div>
               <div className="flex justify-center items-center sm:gap-2 gap-1">
-                <p className="dark:text-white text-black">
+                <p className="">
                   recrutement@advision-dz.net
                 </p>
                 <div className="w-[30px] h-[30px] relative">
@@ -161,14 +161,14 @@ export default function Events() {
                   <div
                     className={`${
                       copys2 ? "absolute" : "hidden"
-                    } top-[-45px] left-[-75px] sm:left-[-10px] text-white text-xs px-[5px] py-[4px] bg-gray-400 whitespace-nowrap	 rounded-md text`}
+                    } top-[-45px] left-[-75px] sm:left-[-10px] text-xs px-[5px] py-[4px] bg-gray-300 whitespace-nowrap rounded-md text`}
                   >
                     Email copied
                   </div>
                 </div>
               </div>
               <div className="flex justify-center items-center sm:gap-2 gap-1 mb-2">
-                <p className="dark:text-white text-black">
+                <p className="">
                   advision.contact@gmail.com
                 </p>
                 <div className="w-[30px] h-[30px] relative">
@@ -179,13 +179,13 @@ export default function Events() {
                   <div
                     className={`${
                       copys3 ? "absolute" : "hidden"
-                    } top-[-45px] left-[-75px] sm:left-[-10px] text-white text-xs px-[5px] py-[4px] bg-gray-400 whitespace-nowrap	 rounded-md text`}
+                    } top-[-45px] left-[-75px] sm:left-[-10px] text-xs px-[5px] py-[4px] bg-gray-300 whitespace-nowrap rounded-md text`}
                   >
                     Email copied
                   </div>
                 </div>
               </div>
-              <div className="text-white flex justify-center items-center gap-4">
+              <div className="flex justify-center items-center gap-4">
                 <a href="https://www.youtube.com/@advision6492/videos" target="_blank">
                   <FlipIcon icon="/images/youtube.png" color="#0a66c2" />
                 </a>
