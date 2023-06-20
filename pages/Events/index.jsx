@@ -16,7 +16,7 @@ export default function Events() {
     leave: { left: "-100%", opacity: 0 },
   });
   return (
-    <div className="w-full h-full bg-white dark:bg-black">
+    <div className="w-full h-full dark:bg-black">
       {Transition(
         (style, item) =>
           item && (
