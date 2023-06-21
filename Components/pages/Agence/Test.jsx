@@ -7,7 +7,7 @@ const Test = ({ subPage }) => {
     <Container
       className={`w-full h-full absolute ${
         subPage === "test" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
-      }  font-Kanit`}
+      } font-Kanit`}
     >
         <div className="container px-6 py-10 mx-auto ">
             <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Portfolio</h1>

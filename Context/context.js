@@ -42,7 +42,7 @@ function Context({ children }) {
       : page === "events"
       ? "seer"
       : page === "nosSuccessStory"
-      ? "prestation"
+      ? "event"
       : ""
   );
   useEffect(() => {
@@ -59,7 +59,7 @@ function Context({ children }) {
       setSubPage("seer");
     }
     if (page === "nosSuccessStory") {
-      setSubPage("prestation");
+      setSubPage("event");
     }
   }, [page]);
   return (
