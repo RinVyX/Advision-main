@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 const Seer = ({ subPage }) => {
   return (
-    <Content
+    <Container
       className={`w-full  absolute ${
         subPage === "seer" ? "left-0" : "left-[-200%]"
-      } flex  ease transform duration-500 transition-all w-[95%] md:w-[95%] flex-col font-kanit mx-4 md:mx-10 my-4`}
+      } flex ease transform duration-500 transition-all md:w-[95%] flex-col font-kanit mx-4 my-4`}
     >
       <div className="tracking-wider uppercase text-[26px] my-3 text-slate-50 dark:text-slate-200 font-light">
         SEER - 
@@ -44,17 +44,12 @@ const Seer = ({ subPage }) => {
         <iframe src="https://embed.lottiefiles.com/animation/117720"></iframe>
       </div> */}
       <div className="w-full h-[140px] "></div>
-    </Content>
+    </Container>
   );
 };
 
 export default Seer;
-
-const ContentText = styled.p`
-  color: gray;
-  font-size: 18px;
-`;
-const Content = styled.div`
+const Container = styled.div`
   overflow-y: scroll;
   &::-webkit-scrollbar {
     width: 6px;

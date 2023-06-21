@@ -16,10 +16,10 @@ const SecondaryMenu = ({
 
   useEffect(() => {
     if (
-      page === "agence" ||
+      page === "agency" ||
       page === "services" ||
       page === "events" ||
-      page === "nosSuccessStory"
+      page === "ourSuccessStories"
     ) {
       setSecondaryMenuTransition(true);
     } else {
@@ -41,18 +41,18 @@ const SecondaryMenu = ({
             >
               <SNav
                 className={`w-full h-[60px] absolute ${
-                  page === "agence" ? "left-0" : "left-[-100%]"
+                  page === "agency" ? "left-0" : "left-[-100%]"
                 } flex justify-start items-center gap-6 pl-5 md:pl-10 ease transform duration-500 transition-all overflow-x-auto`}
               >
                 <div
                   className={`cursor-pointer font-semibold mr-2 ${
-                    subPage === "philosophie"
+                    subPage === "philosophy"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("philosophie")}
+                  onClick={() => setSubPage("philosophy")}
                 >
-                  Philosophie
+                  Philosophy
                 </div>
                 <div
                   className={`cursor-pointer font-semibold ${
@@ -66,13 +66,13 @@ const SecondaryMenu = ({
                 </div>
                 <div
                   className={`cursor-pointer font-semibold ${
-                    subPage === "valeur"
+                    subPage === "value"
                       ? "text-purple-400"
                       : "text-black dark:text-white"
                   }`}
-                  onClick={() => setSubPage("valeur")}
+                  onClick={() => setSubPage("value")}
                 >
-                  Valeur
+                  Value
                 </div>
               </SNav>
               <SNav
@@ -169,7 +169,7 @@ const SecondaryMenu = ({
               </SNav>
               <SNav
                 className={`w-full h-[60px] absolute ${
-                  page === "nosSuccessStory" ? "left-0" : "left-[-100%]"
+                  page === "ourSuccessStories" ? "left-0" : "left-[-100%]"
                 } flex justify-start items-center  gap-6  ease pl-5 md:pl-10 transform duration-500 transition-all overflow-x-auto whitespace-nowrap`}
               >
                 <p

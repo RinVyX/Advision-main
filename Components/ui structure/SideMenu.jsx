@@ -15,13 +15,13 @@ const SideMenu = () => {
       <div className="ml-[2%] w-full flex gap-4 flex-col mt-[100px] text-5xl md:text-8xl font-kanit font-bold uppercase text-white">
         <p
           className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.125rem] hover:italic ${
-            page === "agence" ? "text-[#380f27] italic" : "text-white"
+            page === "agency" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
-            setPage("agence"), router.push("/Agence"), setShowRightMenu(false);
+            setPage("agency"), router.push("/Agency"), setShowRightMenu(false);
           }}
         >
-          Agence
+          Agency
         </p>
         <p
           className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.125rem] hover:italic ${
@@ -37,13 +37,13 @@ const SideMenu = () => {
         </p>
         <p
           className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.125rem] hover:italic ${
-            page === "nosSuccessStory" ? "text-[#380f27] italic" : "text-white"
+            page === "ourSuccessStories" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
-            setPage("nosSuccessStory"), router.push("/NosSuccessStory"), setShowRightMenu(false);
+            setPage("ourSuccessStories"), router.push("/OurSuccessStories"), setShowRightMenu(false);
           }}
         >
-          Nos Success Story
+          Our Success Stories
         </p>
       </div>
       <hr className="w-[50%] h-1 border-none bg-gradient-to-r from-[#380f27] to-transparent rounded-xl ml-[2%] mt-[2%]" ></hr>
@@ -73,9 +73,9 @@ const SideMenu = () => {
           Contact
         </p>
       </div>
-      {/* <div className="absolute bottom-20 right-4">
+      <div className="cols-2">
         <DarkModeToggle />
-      </div> */}
+      </div>
     </div>
   );
 };

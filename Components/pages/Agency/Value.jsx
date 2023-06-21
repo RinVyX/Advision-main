@@ -1,19 +1,19 @@
 import Lottie from "lottie-react";
 import styled from "styled-components";
 import vision from "../../../Lottie/vision.json";
-const Valeur = ({ subPage }) => {
+const Value = ({ subPage }) => {
   return (
     <Container
       className={`w-full h-full absolute ${
-        subPage === "valeur" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
+        subPage === "value" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       } flex justify-start items-center flex-col top-0 pl-48
       ease transform duration-300 transition-all
-      lg:justify-center my-auto lg:flex-row lg:gap-4 font-Signika`}
+      lg:justify-center my-auto lg:flex-row lg:gap-4 font-kanit`}
     >
       {/* <div className="w-[90%] mx-auto md:my-[100px] lg:w-[600px] lg:flex lg:justify-center lg:h-full lg:items-center my-[20px]">
         <Lottie animationData={vision} />
       </div> */}
-      <div className=" lg:h-full lg:flex lg:justify-center lg:items-start lg:flex-col w-[80%] lg:w-[90%] mx-[20px] lg:translate-y-14 font-Signika">
+      <div className=" lg:h-full lg:flex lg:justify-center lg:items-start lg:flex-col w-[80%] lg:w-[90%] mx-[20px] lg:translate-y-14">
         <div className="text-xl my-4">
         Chez nous, la créativité est notre moteur, nous croyons en la puissance des idées novatrices et originales pour créer des campagnes qui captivent notre public.
         </div>
@@ -47,7 +47,7 @@ const Valeur = ({ subPage }) => {
   );
 };
 
-export default Valeur;
+export default Value;
 const Container = styled.div`
   overflow-y: scroll;
   &::-webkit-scrollbar {

@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { useTransition, animated } from "react-spring";
 import { useContext } from "react";
 import { State } from "../../Context/context";
-import Event from "../../Components/pages/NosSuccessStory/Event";
-import Graphics from "../../Components/pages/NosSuccessStory/Graphics";
-import Digital from "../../Components/pages/NosSuccessStory/Digital";
+import Event from "../../Components/pages/OurSuccessStories/Event";
+import Graphics from "../../Components/pages/OurSuccessStories/Graphics";
+import Digital from "../../Components/pages/OurSuccessStories/Digital";
 import styled from "styled-components";
 
 export default function Events() {
@@ -16,7 +16,7 @@ export default function Events() {
     leave: { left: "-100%", opacity: 0 },
   });
   useEffect(() => {
-    if (page === "nosSuccessStory") {
+    if (page === "ourSuccessStories") {
       setAnimate(true);
     } else {
       setAnimate(false);

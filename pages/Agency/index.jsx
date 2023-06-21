@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import { useTransition, animated } from "react-spring";
 import { useContext } from "react";
 import { State } from "../../Context/context";
-import Valeur from "../../Components/pages/Agence/Valeur";
-import Vision from "../../Components/pages/Agence/Vision";
-import Philosophie from "../../Components/pages/Agence/Philosophie";
+import Value from "../../Components/pages/Agency/Value";
+import Vision from "../../Components/pages/Agency/Vision";
+import Philosophy from "../../Components/pages/Agency/Philosophy";
 import styled from "styled-components";
 
 export default function Events({ showMeni }) {
@@ -20,25 +20,25 @@ export default function Events({ showMeni }) {
   const handleKeyDown = (e) => {
     console.log(e);
     if ((e.key = "ArrowRight")) {
-      if (subPage === "valeur") {
+      if (subPage === "value") {
         setSubPage("vision");
       }
       if (subPage === "vision") {
-        setSubPage("philosophie");
+        setSubPage("philosophy");
       }
-      if (subPage === "philosophie") {
-        setSubPage("valeur");
+      if (subPage === "philosophy") {
+        setSubPage("value");
       }
     }
     if ((e.key = "ArrowLeft")) {
-      if (subPage === "valeur") {
-        setSubPage("philosophie");
+      if (subPage === "value") {
+        setSubPage("philosophy");
       }
-      if (subPage === "philosophie") {
+      if (subPage === "philosophy") {
         setSubPage("vision");
       }
       if (subPage === "vision") {
-        setSubPage("valeur");
+        setSubPage("value");
       }
     }
   };
@@ -57,9 +57,9 @@ export default function Events({ showMeni }) {
               style={style}
               className={` top-[0px] left-0 absolute w-full h-full `}
             >
-              <Valeur subPage={subPage} />
+              <Value subPage={subPage} />
               <Vision subPage={subPage} />
-              <Philosophie subPage={subPage} />              
+              <Philosophy subPage={subPage} />              
             </animated.div>
           )
       )}

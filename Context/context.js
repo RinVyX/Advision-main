@@ -35,8 +35,8 @@ function Context({ children }) {
   const [subPage, setSubPage] = useState(
     typeof window !== "undefined" && sessionStorage.getItem("setSubPage")
       ? sessionStorage.getItem("setSubPage")
-      : page === "agence"
-      ? "philosophie"
+      : page === "agency"
+      ? "philosophy"
       : page === "services"
       ? "branding"
       : page === "events"
@@ -49,8 +49,8 @@ function Context({ children }) {
     sessionStorage.setItem("subPage", subPage);
   }, [subPage]);
   useEffect(() => {
-    if (page === "agence") {
-      setSubPage("philosophie");
+    if (page === "agency") {
+      setSubPage("philosophy");
     }
     if (page === "services") {
       setSubPage("branding");
