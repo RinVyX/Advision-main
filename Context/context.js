@@ -13,6 +13,7 @@ function Context({ children }) {
       ? sessionStorage.getItem("showRightMenu")
       : false
   );
+
   useEffect(() => {
     sessionStorage.setItem("showRightMenu", showRightMenu);
   }, [showRightMenu]);
@@ -22,16 +23,18 @@ function Context({ children }) {
       ? sessionStorage.getItem("page")
       : removeFirstLetter(router.pathname)
   );
+
   useEffect(() => {
     console.log("setting page to", page);
     if (page) {
       sessionStorage.setItem("page", page);
-      console.log("page run");
+      /* console.log("page run"); */
     } else {
       setPage("home");
       sessionStorage.setItem("page", "home");
     }
   }, [page]);
+
   const [subPage, setSubPage] = useState(
     typeof window !== "undefined" && sessionStorage.getItem("setSubPage")
       ? sessionStorage.getItem("setSubPage")
@@ -41,13 +44,15 @@ function Context({ children }) {
       ? "branding"
       : page === "events"
       ? "seer"
-      : page === "nosSuccessStory"
-      ? "digital"
+      : page === "ourSuccessStories"
+      ? "Event"
       : ""
   );
+
   useEffect(() => {
     sessionStorage.setItem("subPage", subPage);
   }, [subPage]);
+  
   useEffect(() => {
     if (page === "agency") {
       setSubPage("philosophy");
@@ -58,10 +63,11 @@ function Context({ children }) {
     if (page === "events") {
       setSubPage("seer");
     }
-    if (page === "nosSuccessStory") {
-      setSubPage("digital");
+    if (page === "ourSuccessStories") {
+      setSubPage("Event");
     }
   }, [page]);
+
   return (
     <State.Provider
       value={{

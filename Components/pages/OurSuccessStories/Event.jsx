@@ -1,9 +1,12 @@
 import styled from "styled-components";
-import { State } from "../../../Context/context";
+import { useRouter } from "next/router";
 import { useContext } from "react";
+import { State } from "../../../Context/context";
 
-const Event = () => {
-  const { page, setSubPage } = useContext(State);
+const Event = ({ subPage }) => {
+  const router = useRouter();
+  const { page, setPage, setSubPage, showRightMenu, setShowRightMenu } = useContext(State);
+
   return (
     <Content
       className={`w-full  absolute ${
