@@ -3,6 +3,7 @@ import { createContext, useEffect, useState } from "react";
 export const State = createContext(null);
 
 function Context({ children }) {
+  
   const router = useRouter();
   function removeFirstLetter(str) {
     let newStr = str.slice(1); // remove first character
