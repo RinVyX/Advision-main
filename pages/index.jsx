@@ -25,40 +25,44 @@ export default function Home({}) {
             <animated.div
               config={{ duration: 500 }}
               style={style}
-              className="absolute w-full h-full"
+              className="absolute w-full h-full mx-[5%] my-[200px]"
             >
-              <div className="w-full h-[calc(100vh-100px)] m-[100px] my-[200px]">
+              <div className="w-full h-full ">
                 <div className="font-Kanit text-black bg-clip-text">
-                  <div className="text-[106px] leading-[100px]">
-                    <div className="inline-flex">
+                  <div className="min-[1430px]:text-[106px] min-[900px]:text-[90px] min-[800px]:text-[70px] text-[50px] md:leading-[100px]">
+                    <div className="inline">
                       <span className="font-bold text-[#1f1f1f] 
-                                       dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] dark:from-rose-500 dark:to-fuchsia-800 dark:text-transparent dark:bg-clip-text">
+                                       dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] dark:from-rose-500 dark:to-fuchsia-800 
+                                       dark:text-transparent dark:bg-clip-text">
                         We speak 
                       </span>
                       &nbsp;
-                      <div className="font-light dark:text-gray-200"> your language, </div>
+                      <span className="font-light dark:text-gray-200"> your language, </span>
                     </div>
-                    <div className="inline-flex tracking-wide"> 
-                      <div className="font-bold italic text-[#1f1f1f]
-                                     dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] dark:from-rose-500 dark:to-fuchsia-800 dark:text-transparent dark:bg-clip-text"> 
+                    <div className="inline-ex tracking-wide"> 
+                      <span className="font-bold italic text-[#1f1f1f]
+                                     dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] dark:from-rose-500 dark:to-fuchsia-800 
+                                     dark:text-transparent dark:bg-clip-text"> 
                         wherever 
-                      </div>
+                      </span>
                      &nbsp;
-                     <div className="font-light dark:text-gray-200"> you are. </div>                       
+                     <span className="font-light dark:text-gray-200"> you are. </span>                       
                     </div>
                   </div>
-                  <div className="text-[55px] leading-[100px] inline-flex tracking-wide">
-                    <div className="font-light dark:text-gray-200"> Unleashing the Power of </div>
+                  <div className="min-[1430px]:text-[55px] min-[900px]:text-[35px] min-[700px]:text-[25px] text-[20px] leading-[100px] inline">
+                    <span className="font-light dark:text-gray-200"> Unleashing the Power of </span>
                     &nbsp;
-                    <div className="bg-gradient-to-r from-pink-700 to-pink-200 bg-[length:100%_4px] bg-no-repeat pb-[-5px] bg-bottom
-                                    dark:bg-gradient-to-r dark:from-rose-500 dark:to-fuchsia-600 dark:bg-[length:100%_4px] dark:bg-no-repeat dark:pb-[-5px] dark:bg-bottom dark:text-gray-100"> 
-                         Global Vision </div>
+                    <span className="bg-gradient-to-r from-pink-700 to-pink-200 bg-[length:100%_4px] bg-no-repeat pb-[-5px] bg-bottom
+                                    dark:bg-gradient-to-r dark:from-rose-500 dark:to-fuchsia-600 dark:bg-[length:100%_4px] 
+                                    dark:bg-no-repeat dark:pb-[-5px] dark:bg-bottom dark:text-gray-100"> 
+                         Global Vision </span>
                     &nbsp;
-                    <div className="font-light dark:text-gray-200"> in </div>
+                    <span className="font-light dark:text-gray-200"> in </span>
                     &nbsp;
-                    <div className="bg-gradient-to-r from-pink-700 to-pink-200 bg-[length:100%_4px] bg-no-repeat pb-[-5px] bg-bottom
-                                    dark:bg-gradient-to-r dark:from-rose-500 dark:to-fuchsia-600 dark:bg-[length:100%_4px] dark:bg-no-repeat dark:pb-[-5px] dark:bg-bottom dark:text-gray-100">
-                         Communication. </div>                      
+                    <span className="bg-gradient-to-r from-pink-700 to-pink-200 bg-[length:100%_4px] bg-no-repeat pb-[-5px] bg-bottom
+                                    dark:bg-gradient-to-r dark:from-rose-500 dark:to-fuchsia-600 dark:bg-[length:100%_4px] 
+                                    dark:bg-no-repeat dark:pb-[-5px] dark:bg-bottom dark:text-gray-100">
+                         Communication. </span>                      
                   </div>
                 </div>
               </div>
