@@ -5,8 +5,8 @@ const Vision = ({ subPage }) => {
   return (
     <Container
       className={`w-full h-full  absolute ${
-        subPage === "vision" ? "left-0" : "left-[-200%]"
-      } flex ease transform duration-500 transition-all w-[95%] flex-col font-kanit mx-4 my-4`}
+        subPage === "vision" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
+      } flex flex-col justify-start ease transform duration-300 transition-all font-kanit`}
     >
       {/* <div className="w-[90%] mx-auto md:my-[100px] lg:w-[600px] lg:flex lg:justify-center lg:h-full lg:items-center my-[20px]">
         <Lottie animationData={vision} />
