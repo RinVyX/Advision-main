@@ -19,7 +19,7 @@ const Philosophy = ({ subPage }) => {
         <div className="text-xl my-4">
           Happy together. Always curious and vibrant!
         </div>
-        <div className="dark:text-gray-200 text-gray-500 text-xs lg:text-base">
+        <div className="dark:text-gray-200 text-gray-800 text-xs lg:text-base">
         Be happy. Ignite energy and desire both within and in daily relationships with our clients. Life is too short to worry!
         Creativity, collaboration, sharing, and mentoring infuse a fresh and invigorating spirit into this fundamentally human journey.
         </div>
@@ -27,7 +27,7 @@ const Philosophy = ({ subPage }) => {
         <div className="text-xl my-4">
           Committed, loyal, and sometimes cheeky!
         </div>
-        <div className="dark:text-gray-200 text-gray-500 text-xs lg:text-base text-justify">
+        <div className="dark:text-gray-200 text-gray-800 text-xs lg:text-base text-justify">
           We have a commitment to delivering high-quality work, and we dedicate ourselves to our clients. Engaging with a client means offering attentive listening, our creativity, 
           and technical expertise. But it also means daring to be bold, taking firm stances, and refusing to compromise! 
           Strong and assertive positions are taken with mutual respect... With our clients, we work collaboratively. It's our trademark. 
@@ -36,7 +36,7 @@ const Philosophy = ({ subPage }) => {
         <div className="text-xl my-4">
           Creative and responsible, visionary and technological.
         </div>
-        <div className="dark:text-gray-200 text-gray-500 text-xs lg:text-base">
+        <div className="dark:text-gray-200 text-gray-800 text-xs lg:text-base">
         Today and tomorrow, AdVision wants to grow and expand. Supporting sustainable growth and embracing a collective project remain at the core of its challenges. 
         In the face of constantly evolving technologies, AdVision Verte is always on the lookout to invent the communication methods of tomorrow. 
         Having a competitive edge to better guide our clients is also what excites us and keeps us motivated!
