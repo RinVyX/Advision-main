@@ -13,7 +13,7 @@ function DarkModeToggle() {
 
   return (
     <button
-      className="p-2 rounded-md text-gray-800 dark:text-white"
+      className="p-2 rounded-md text-white"
       onClick={toggleDarkMode}
     >
       {darkModeEnabled ? <CiDark /> : <MdOutlineLightMode />}
