@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useTransition, animated } from "react-spring";
 import { useContext } from "react";
 import { State } from "../Context/context";
+
 export default function Home({}) {
   const { page } = useContext(State);
   const [animate, setAnimate] = useState(true);
@@ -18,7 +19,7 @@ export default function Home({}) {
     }
   }, [page]);
   return (
-    <div className="w-[100%] h-[100%] dark:bg-[#1f1f1f] select-none">
+    <div className="w-[100%] h-[100%] select-none">
       {Transition(
         (style, item) =>
           item && (
@@ -26,7 +27,7 @@ export default function Home({}) {
               config={{ duration: 500 }}
               style={style}
               className="absolute w-full h-full mx-[5%] my-[200px]"
-            >
+              >
               <div className="w-full h-full ">
                 <div className="font-Kanit text-black bg-clip-text">
                   <div className="min-[1430px]:text-[106px] min-[900px]:text-[90px] min-[800px]:text-[70px] text-[50px] md:leading-[100px]">
@@ -52,17 +53,18 @@ export default function Home({}) {
                   <div className="min-[1430px]:text-[55px] min-[900px]:text-[35px] min-[700px]:text-[25px] text-[20px] leading-[100px] inline">
                     <span className="font-light dark:text-gray-200"> Unleashing the Power of </span>
                     &nbsp;
-                    <span className="bg-gradient-to-r from-pink-700 to-pink-200 bg-[length:100%_4px] bg-no-repeat pb-[-5px] bg-bottom
+                    <span className=" text-[#1f1f1f] 
                                     dark:bg-gradient-to-r dark:from-rose-500 dark:to-fuchsia-600 dark:bg-[length:100%_4px] 
                                     dark:bg-no-repeat dark:pb-[-5px] dark:bg-bottom dark:text-gray-100"> 
                          Global Vision </span>
                     &nbsp;
                     <span className="font-light dark:text-gray-200"> in </span>
                     &nbsp;
-                    <span className="bg-gradient-to-r from-pink-700 to-pink-200 bg-[length:100%_4px] bg-no-repeat pb-[-5px] bg-bottom
-                                    dark:bg-gradient-to-r dark:from-rose-500 dark:to-fuchsia-600 dark:bg-[length:100%_4px] 
-                                    dark:bg-no-repeat dark:pb-[-5px] dark:bg-bottom dark:text-gray-100">
-                         Communication. </span>                      
+                    <span className=" text-[#1f1f1f] 
+                                     dark:bg-gradient-to-r dark:from-rose-500 dark:to-fuchsia-600 dark:bg-[length:100%_4px] 
+                                     dark:bg-no-repeat dark:pb-[-5px] dark:bg-bottom dark:text-gray-100">
+                          Communication. </span>
+                    
                   </div>
                 </div>
               </div>
