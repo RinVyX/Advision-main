@@ -17,7 +17,7 @@ export default function Events() {
     leave: { left: "-100%", opacity: 0 },
   });
   return (
-    <div className="w-full h-[calc(100%-60px)] absolute top-[60px] dark:bg-[#1f1f1f] ">
+    <div className="w-full h-[calc(100%-60px)] absolute top-[60px] ">
       {Transition(
         (style, item) =>
           item && (

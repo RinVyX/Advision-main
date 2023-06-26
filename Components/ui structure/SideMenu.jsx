@@ -58,7 +58,7 @@ const SideMenu = () => {
               setShowRightMenu(false);
           }}
         >
-          Nos évenements
+          Our events
         </p>
         <p
           className={`my-4 mt-[1%] cursor-pointer hover:text-[#380f27] hover:italic hover:text-[4.7rem] capitalize ${
@@ -70,7 +70,7 @@ const SideMenu = () => {
               setShowRightMenu(false);
           }}
         >
-          Contact
+          Contact us
         </p>
       </div>
       <div className="cols-2">
