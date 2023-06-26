@@ -73,7 +73,7 @@ export default function Events() {
           item && (
             <animated.div
               style={style}
-              className="absolute w-[100%] h-full font-Signika"
+              className="absolute w-[100%] h-full font-kanit"
             >
               <div className="mt-10">
                 <div className="w-full justify-center items-center flex flex-col mb-4">
@@ -118,12 +118,12 @@ export default function Events() {
                     <button
                       onClick={() => sendEmail()}
                       type="submit"
-                      className="py-2 hover:bg-[#34568B] hover:text-white hover:animate-pulse px-2 text-sm justify-items-end font-medium text-center border-2 rounded-md border-black dark:border-white dark:text-white text-black">
+                      className="py-2 hover:bg-[#34568B] hover:text-white hover:animate-pulse px-2 text-sm justify-items-end font-medium text-center border-2 rounded-md border-black dark:border-white dark:text-white text-slate-800">
                       Send message
                     </button>
                   </div>
                   <div
-                    className={`w-full flex justify-center items-center dark:text-white text-black my-1 ${
+                    className={`w-full flex justify-center items-center dark:text-white text-slate-800 my-1 ${
                       success ? "visible" : "invisible"
                     }`}
                   >
@@ -132,7 +132,7 @@ export default function Events() {
                 </form>
               </div>
               <div className="flex justify-center items-center sm:gap-2 gap-1">
-                <p className="dark:text-white text-black">
+                <p className="dark:text-white text-slate-800">
                   contact@advision-dz.net
                 </p>
                 <div className="w-[30px] h-[30px] relative">

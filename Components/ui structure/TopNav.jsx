@@ -7,7 +7,7 @@ import styled from "styled-components";
 const TopNav = () => {
   const router = useRouter();
   const { setPage, showRightMenu, setShowRightMenu } = useContext(State);
-  const genericHamburgerLine = `h-[2px] my-[4px] rounded-full bg-gray-100 dark:bg-white transition ease transform duration-300`;
+  const genericHamburgerLine = `h-[2px] my-[4px] rounded-full bg-black dark:bg-white transition ease transform duration-300`;
   return (
     <GlassCard>    
       <nav className="top-0 absolute left-0 w-full h-[80px] dark:bg-inherit flex justify-between items-center ">
