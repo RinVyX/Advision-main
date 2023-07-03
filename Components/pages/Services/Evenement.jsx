@@ -7,7 +7,7 @@ const Evenement = ({ subPage }) => {
         subPage === "evenement" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       }`}
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto text-justify p-8">
         In a world where customers are increasingly volatile, constantly adapting their behavior based on economic circumstances and values, it is crucial to take action and actively engage to establish your brand's existence. Simply waiting on the sidelines won't capture their attention or sustain their interest.
 
         At our agency, we understand the importance of continuous action, appreciation, renewal, innovation, and surprise to attract and retain customers. We believe in creating moments that make an impact, generating excitement and leaving a lasting impression. It's time to create the event!

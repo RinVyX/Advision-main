@@ -11,7 +11,7 @@ const Ui = ({ children }) => {
   return (
     <div className=" bg-[url('/images/abstract-3840x2160-3d-colorful-8k-21242.png')] bg-cover
                      relative w-screen h-screen overflow-hidden dark:text-white text-slate-800 dark:bg-[url('/images/abstract-3840x2160dark.png')]
-                    select-none">
+                    ">
       {/* <div className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-pink-900 via-pink-200 to-white 
                     bg-opacity-50 relative w-screen h-screen overflow-hidden dark:text-white text-black dark:bg-[#1f1f1f]
                     select-none"> */}

@@ -9,9 +9,7 @@ const Digital = ({ subPage }) => {
     >
       <div className="container mx-auto text-justify p-8">
         Looking to explore alternative means of travel beyond the web? Look no further! While creating a website may seem like a simple task, many have already ventured into this domain. However, at AdVision agency, we go above and beyond by crafting and implementing a cutting-edge digital strategy for your brand that seamlessly aligns with your offline communication channels.
-
         Our team specializes in constructing user-friendly interfaces that effectively cater to your brand's target audience, ensuring optimal browsing comfort to foster customer loyalty. We also provide comprehensive assistance in "intelligent writing" techniques to generate compelling content that enhances your search engine optimization (SEO) efforts.
-
         But that's not all—we are committed to curating a memorable experience for your users, evoking emotions and creating lasting memories. Understanding that outcomes are paramount, we develop online marketing tools that enhance your website's performance and optimize your return on investment (ROI).
         <br />
         Here's a glimpse of what we offer:

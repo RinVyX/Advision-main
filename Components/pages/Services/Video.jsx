@@ -7,7 +7,7 @@ const Video = ({ subPage }) => {
         subPage === "video" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       }`}
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto text-justify p-8">
         At AdVision, we provide comprehensive support for your audiovisual projects and productions, taking you through the entire process from design to distribution strategy. Our expertise lies in producing a wide range of content, including corporate films, seminar recordings, video reports, marketing buzz or viral videos, as well as interviews and testimonials.
 
         We take pride in our commitment to creativity and originality, ensuring that our deliverables cater to communication and information projects, regardless of whether they are conventional or offbeat. Our team at AdVision possesses the necessary know-how and expertise in audiovisual production, enabling us to meet your specific needs and desires, creating a powerful message that truly represents you.
