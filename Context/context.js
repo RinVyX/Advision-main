@@ -41,7 +41,7 @@ function Context({ children }) {
       : page === "agency"
       ? "philosophy"
       : page === "services"
-      ? "branding"
+      ? "service"
       : page === "events"
       ? "seer"
       : page === "ourSuccessStories"
@@ -58,13 +58,13 @@ function Context({ children }) {
       setSubPage("philosophy");
     }
     if (page === "services") {
-      setSubPage("branding");
+      setSubPage("service");
     }
     if (page === "events") {
       setSubPage("seer");
     }
     if (page === "ourSuccessStories") {
-      setSubPage("Event");
+      setSubPage("event");
     }
   }, [page]);
 
