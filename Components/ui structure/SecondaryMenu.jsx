@@ -75,20 +75,20 @@ const SecondaryMenu = ({
                   Value
                 </div>
               </SNav>
-              <SNav
+              {/* <SNav
                 className={`w-full h-[60px] absolute ${
                   page === "services" ? "left-0" : "left-[-100%]"
                 } flex justify-start items-center gap-6 pl-5 md:pl-10 ease transform duration-500 transition-all overflow-x-auto`}
               >
                 <p
                   className={`cursor-pointer ${
-                    subPage === "branding"
+                    subPage === "service"
                       ? "text-purple-400"
                       : "text-slate-900 dark:text-white"
                   }`}
-                  onClick={() => setSubPage("branding")}
+                  onClick={() => setSubPage("service")}
                 >
-                  Branding
+                  Service
                 </p>
                 <p
                   className={`cursor-pointer ${
@@ -129,8 +129,8 @@ const SecondaryMenu = ({
                   onClick={() => setSubPage("evenement")}
                 >
                   Evenement
-                </p>                
-              </SNav>
+                </p>         
+              </SNav> */}  
               <SNav
                 className={`w-full h-[60px] absolute ${
                   page === "events" ? "left-0" : "left-[-100%]"

@@ -2,11 +2,7 @@ import { useEffect, useState } from "react";
 import { useTransition, animated } from "react-spring";
 import { useContext } from "react";
 import { State } from "../../Context/context";
-import Digital from "../../Components/pages/Services/Digital";
-import Evenement from "../../Components/pages/Services/Evenement";
-import Graphisme from "../../Components/pages/Services/Graphisme";
-import Branding from "../../Components/pages/Services/Branding";
-import Video from "../../Components/pages/Services/Video";
+import Service from "../../Components/pages/Services/Service";
 import styled from "styled-components";
 
 export default function Events() {
@@ -20,40 +16,7 @@ export default function Events() {
 
   const handleKeyDown = (e) => {
     console.log(e);
-    if ((e.key = "ArrowRight")) {
-      if (subPage === "Digital") {
-        setSubPage("Evenement");
-      }
-      if (subPage === "Evenement") {
-        setSubPage("Graphisme");
-      }
-      if (subPage === "Graphisme") {
-        setSubPage("Branding");
-      }
-      if (subPage === "Branding") {
-        setSubPage("Video");
-      }
-      if (subPage === "Video") {
-        setSubPage("Digital");
-      }
-    }
-    if ((e.key = "ArrowLeft")) {
-      if (subPage === "Digital") {
-        setSubPage("Video");
-      }
-      if (subPage === "Video") {
-        setSubPage("Branding");
-      }
-      if (subPage === "Branding") {
-        setSubPage("Graphisme");
-      }
-      if (subPage === "Graphisme") {
-        setSubPage("Evenement");
-      }
-      if (subPage === "Evenement") {
-        setSubPage("Digital");
-      }
-    }
+    
   };
 
   return (
@@ -70,11 +33,7 @@ export default function Events() {
               style={style}
               className={` top-[0px] left-0 absolute w-full h-full `}
             >
-              <Digital subPage={subPage} />
-              <Evenement subPage={subPage} />
-              <Graphisme subPage={subPage} />
-              <Branding subPage={subPage} />
-              <Video subPage={subPage} />
+              <Service subPage={subPage} />
             </animated.div>
           )
       )}

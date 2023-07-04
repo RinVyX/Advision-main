@@ -8,7 +8,7 @@ const Event = ({ subPage }) => {
   const { page, setPage, setSubPage, showRightMenu, setShowRightMenu } = useContext(State);
 
   return (
-    <Content
+    <Container
       className={`w-full  absolute ${
         subPage === "event" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       } font-Kanit`}
@@ -66,12 +66,12 @@ const Event = ({ subPage }) => {
             </div>
         </div>
       </div>
-    </Content>
+    </Container>
   );
 };
 
 export default Event;
-const Content = styled.div`
+const Container = styled.div`
   overflow-y: scroll;
   &::-webkit-scrollbar {
     width: 6px;

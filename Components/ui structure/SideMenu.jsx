@@ -12,9 +12,9 @@ const SideMenu = () => {
         !showRightMenu ? "right-[-100%]" : "right-0"
       } z-40 translate-y-[-50%] flex-col flex justify-start ease transform duration-500 transition-all`}
     >
-      <div className="ml-[2%] w-full flex gap-4 flex-col mt-[100px] text-5xl md:text-8xl font-kanit font-bold uppercase text-white">
+      <div className="ml-[2%] w-full flex gap-4 flex-col mt-[100px] text-3xl md:text-6xl font-kanit font-bold uppercase text-white">
         <p
-          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.125rem] hover:italic ${
+          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[4rem] hover:italic ${
             page === "agency" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
@@ -24,7 +24,7 @@ const SideMenu = () => {
           Agency
         </p>
         <p
-          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.125rem] hover:italic ${
+          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[4rem] hover:italic ${
             page === "services" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
@@ -36,20 +36,20 @@ const SideMenu = () => {
           Services
         </p>
         <p
-          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.125rem] hover:italic ${
+          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[4rem] hover:italic ${
             page === "ourSuccessStories" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
             setPage("ourSuccessStories"), router.push("/OurSuccessStories"), setShowRightMenu(false);
           }}
         >
-          Our Success Stories
+          Work
         </p>
       </div>
       <hr className="w-[50%] h-1 border-none bg-gradient-to-r from-[#380f27] to-transparent rounded-xl ml-[2%] mt-[2%]" ></hr>
-      <div className="ml-[2%] mt-[1%] text-7xl">
+      <div className="ml-[2%] mt-[1%] text-2xl">
         <p
-          className={`my-4 cursor-pointer hover:text-[#380f27] hover:italic hover:text-[4.7rem] capitalize ${
+          className={`my-4 cursor-pointer hover:text-[#380f27] hover:italic hover:text-[1.7rem] capitalize ${
             page === "events" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
@@ -61,7 +61,7 @@ const SideMenu = () => {
           Our events
         </p>
         <p
-          className={`my-4 mt-[1%] cursor-pointer hover:text-[#380f27] hover:italic hover:text-[4.7rem] capitalize ${
+          className={`my-4 mt-[1%] cursor-pointer hover:text-[#380f27] hover:italic hover:text-[1.7rem] capitalize ${
             page === "contact" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
