@@ -59,7 +59,7 @@ export default function Events({ showMeni }) {
             >
               <Value subPage={subPage} />
               <Vision subPage={subPage} />
-              <Philosophy subPage={subPage} />              
+              <Philosophy subPage={subPage} />
             </animated.div>
           )
       )}

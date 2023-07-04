@@ -3,46 +3,111 @@ import styled from "styled-components";
 import vision from "../../../Lottie/vision.json";
 
 const Philosophy = ({ subPage }) => {
-  return (
-    <Container
-      className={`w-full absolute ${
-        subPage === "philosophy" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
-      } flex flex-col justify-start ease transform duration-300 transition-all font-kanit`}
-    >
-      {/* <div className="w-[90%] mx-auto md:my-[100px] lg:w-[600px] lg:flex lg:justify-center lg:h-full lg:items-center my-[20px]">
-        <Lottie animationData={vision} />
-      </div> */}
-      <div className="lg:h-full lg:items-start lg:flex-col w-[100%] lg:w-[50%] mx-[20px] lg:translate-y-14">
-        <div className="text-base mt-2">
-          Over time, an identity has been forged, a culture and values have naturally emerged.
+  function switchNext() {
+    console.log('1:', document.getElementById('1'));
+    console.log('2:', document.getElementById('2'));
+    console.log('3:', document.getElementById('3'));
+    console.log('4:', document.getElementById('4'));
+    if (document.getElementById('1').style.display == 'block') {
+        document.getElementById('1').style.display = 'none';
+        document.getElementById('2').style.display = 'block';
+        document.getElementById('3').style.display = 'none';
+        document.getElementById('4').style.display = 'none';
+    }
+    else if (document.getElementById('2').style.display == 'block') {
+        document.getElementById('1').style.display = 'none';
+        document.getElementById('2').style.display = 'none';
+        document.getElementById('3').style.display = 'block';
+        document.getElementById('4').style.display = 'none';
+    }
+    else if (document.getElementById('3').style.display == 'block') {
+        document.getElementById('1').style.display = 'none';
+        document.getElementById('2').style.display = 'none';
+        document.getElementById('3').style.display = 'none';
+        document.getElementById('4').style.display = 'block';
+    }
+    else if (document.getElementById('4').style.display == 'block') {
+        document.getElementById('1').style.display = 'block';
+        document.getElementById('2').style.display = 'none';
+        document.getElementById('3').style.display = 'none';
+        document.getElementById('4').style.display = 'none';
+    }    
+  }
+  function switchPrevious() {
+    console.log('1:', document.getElementById('1'));
+    console.log('2:', document.getElementById('2'));
+    console.log('3:', document.getElementById('3'));
+    console.log('4:', document.getElementById('4'));
+    if (document.getElementById('4').style.display == 'block') {
+        document.getElementById('1').style.display = 'none';
+        document.getElementById('2').style.display = 'none';
+        document.getElementById('3').style.display = 'block';
+        document.getElementById('4').style.display = 'none';
+    }
+    else if (document.getElementById('3').style.display == 'block') {
+        document.getElementById('1').style.display = 'none';
+        document.getElementById('2').style.display = 'block';
+        document.getElementById('3').style.display = 'none';
+        document.getElementById('4').style.display = 'none';
+    }
+    else if (document.getElementById('2').style.display == 'block') {
+        document.getElementById('1').style.display = 'block';
+        document.getElementById('2').style.display = 'none';
+        document.getElementById('3').style.display = 'none';
+        document.getElementById('4').style.display = 'none';
+    }
+    else if (document.getElementById('1').style.display == 'block') {
+        document.getElementById('1').style.display = 'none';
+        document.getElementById('2').style.display = 'none';
+        document.getElementById('3').style.display = 'none';
+        document.getElementById('4').style.display = 'block';
+    }    
+  }
+
+return (
+  <Container
+    className={`w-full h-full absolute ${
+      subPage === "philosophy" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
+    } font-kanit `}
+  >
+    <div className="grid grid-cols-12">
+      <div className="mt-2 m-12 col-start-2 col-end-12 ">
+        <div id="1" className="my-[15%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "block"}}>          
+          <span>Over time,</span>&nbsp;
+          <span className="font-bold">an identity</span>&nbsp;
+          <span>has been forged,</span>&nbsp;
+          <span className="font-bold block">a culture</span>&nbsp;
+          <span>and</span>&nbsp;
+          <span className="font-bold">values</span>&nbsp; have naturally emerged.          
         </div>
-        <div className="text-xl my-4">
-          Happy together. Always curious and vibrant!
+        <div id="2" className="my-[10%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "none"}}>
+          <span className="font-semibold block p-12">Happy together. Always curious and vibrant!</span>&nbsp;
+          <span>Be happy. Ignite energy and desire both within and in daily relationships with </span>&nbsp;
+          <span>our clients. Life is too short to worry! Creativity, collaboration, sharing, and</span>&nbsp;
+          <span>mentoring infuse a fresh and invigorating spirit into this fundamentally human journey.</span>          
         </div>
-        <div className="dark:text-gray-200 text-gray-800 text-xs lg:text-base">
-        Be happy. Ignite energy and desire both within and in daily relationships with our clients. Life is too short to worry!
-        Creativity, collaboration, sharing, and mentoring infuse a fresh and invigorating spirit into this fundamentally human journey.
+        <div id="3" className="my-[5%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "none"}}>
+            <span className="font-semibold block p-12">Committed, loyal, and sometimes cheeky!</span>
+            <span>We have a commitment to delivering high-quality work, and we dedicate</span>&nbsp;
+            <span>ourselves to our clients. Engaging with a client means offering attentive listening,</span>&nbsp;
+            <span>our creativity, and technical expertise. But it also means daring to be bold, taking</span>&nbsp;
+            <span>taken with mutual respect... With our clients, we work collaboratively. It's our</span>&nbsp;
+            <span>trademark. It's also what allows us to forge long-lasting relationships and partnerships.</span>
         </div>
-        
-        <div className="text-xl my-4">
-          Committed, loyal, and sometimes cheeky!
+        <div id="4" className="my-[3%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "none"}}>
+          <span className="font-semibold block p-12">Creative and responsible, visionary and technological.</span>
+          <span>Today and tomorrow, AdVision wants to grow and expand. Supporting</span>&nbsp;
+          <span>sustainable growth and embracing a collective project remain at the core of its</span>&nbsp;
+          <span>challenges. In the face of constantly evolving technologies, AdVision Verte is</span>&nbsp;
+          <span>always on the lookout to invent the communication methods of tomorrow.</span>&nbsp;
+          <span>Having a competitive edge to better guide our clients is also what excites us and keeps us motivated!</span>
         </div>
-        <div className="dark:text-gray-200 text-gray-800 text-xs lg:text-base text-justify">
-          We have a commitment to delivering high-quality work, and we dedicate ourselves to our clients. Engaging with a client means offering attentive listening, our creativity, 
-          and technical expertise. But it also means daring to be bold, taking firm stances, and refusing to compromise! 
-          Strong and assertive positions are taken with mutual respect... With our clients, we work collaboratively. It's our trademark. 
-          It's also what allows us to forge long-lasting relationships and partnerships.
-        </div>
-        <div className="text-xl my-4">
-          Creative and responsible, visionary and technological.
-        </div>
-        <div className="dark:text-gray-200 text-gray-800 text-xs lg:text-base">
-        Today and tomorrow, AdVision wants to grow and expand. Supporting sustainable growth and embracing a collective project remain at the core of its challenges. 
-        In the face of constantly evolving technologies, AdVision Verte is always on the lookout to invent the communication methods of tomorrow. 
-        Having a competitive edge to better guide our clients is also what excites us and keeps us motivated!
-        </div>
-        <div className="w-[30px] h-[250px]"></div>
       </div>
+    </div>
+    <div className="grid grid-cols-6 text-4xl">
+      <div className="m-32 cursor-pointer col-start-1 col-end-3 absolute bottom-0 left-0" id="previous" onClick={switchPrevious}>Previous</div>
+      <div className="m-32 cursor-pointer col-end-7 col-span-2 absolute bottom-0 right-0" id="next" onClick={switchNext}>Next</div>
+    </div>
     </Container>
   );
 };
