@@ -42,14 +42,15 @@ const SecondaryMenu = ({
               <SNav
                 className={`w-full h-[60px] absolute grid grid-cols-5 
                   ${ page === "agency" ? "left-0" : "left-[-100%]" } 
-                  ${ subPage === "philosophy" ? "bg-[#61045F]/80" : subPage === "vision" ? "bg-[#F09819]/80" : "bg-[#0AB462]/80" }
-                  flex place-items-center text-xl md:text-3xl dark:bg-[#61045F]/30 `}
+                  ${ subPage === "philosophy" ? "bg-[#61045F]/80 dark:bg-[#61045F]/30" : 
+                     subPage === "vision" ? "bg-[#F09819]/80 dark:bg-[#F09819]/30" : "bg-[#0AB462]/80 dark:bg-[#0AB462]/30" }
+                  flex place-items-center text-xl md:text-3xl `}
               >                
                 <div
                   className={`cursor-pointer col-start-2 ${
                     subPage === "philosophy"
-                      ? "text-purple-300 underline underline-offset-2"
-                      : "text-slate-300 dark:text-slate-200"
+                      ? "text-[#ff69c5] underline underline-offset-2"
+                      : "text-slate-300/80 dark:text-slate-200/50"
                   }`}
                   onClick={() => setSubPage("philosophy")}
                 >
@@ -58,8 +59,8 @@ const SecondaryMenu = ({
                 <div
                   className={`cursor-pointer ${
                     subPage === "vision"
-                      ? "text-purple-300 underline underline-offset-2"
-                      : "text-slate-300 dark:text-slate-200"
+                      ? "text-[#EDDE5D] underline underline-offset-2"
+                      : "text-slate-300/80 dark:text-slate-200/50"
                   }`}
                   onClick={() => setSubPage("vision")}
                 >
@@ -68,8 +69,8 @@ const SecondaryMenu = ({
                 <div
                   className={`cursor-pointer ${
                     subPage === "value"
-                      ? "text-purple-300 underline underline-offset-2"
-                      : "text-slate-300 dark:text-slate-200"
+                      ? "text-[#24FE41] underline underline-offset-2"
+                      : "text-slate-300/80 dark:text-slate-200/50"
                   }`}
                   onClick={() => setSubPage("value")}
                 >

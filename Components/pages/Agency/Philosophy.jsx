@@ -4,28 +4,11 @@ import vision from "../../../Lottie/vision.json";
 import React, { useState, useEffect } from 'react';
 
 const Philosophy = ({ subPage }) => {
-  /* const [firstTime, setFirstTime] = useState(true);
-
-  useEffect(() => {
-    if (firstTime) {
-      const ids = ['1', '2', '3', '4'];
   
-      ids.forEach(id => {
-        const element = document.getElementById(id);
-        if (id === '1') {
-          element.style.display = 'block';
-        } else {
-          element.style.display = 'none';
-        }
-      });
-  
-      setFirstTime(false);
-    }
-  }, [firstTime]); */
   console.log("subpage: ",subPage);
 
   function switchNext() {
-    const ids = ['1', '2', '3', '4'];
+    const ids = ['p1', 'p2', 'p3', 'p4'];
     // Find the currently displayed element
     const currentIndex = ids.findIndex(id => document.getElementById(id).style.display === 'block');
     // Hide the current element
@@ -37,7 +20,7 @@ const Philosophy = ({ subPage }) => {
     document.getElementById(ids[nextIndex]).style.display = 'block';    
   }
   function switchPrevious() {
-    const ids = ['1', '2', '3', '4'];
+    const ids = ['p1', 'p2', 'p3', 'p4'];
   
     // Find the currently displayed element
     const currentIndex = ids.findIndex(id => document.getElementById(id).style.display === 'block');
@@ -58,11 +41,11 @@ return (
   <Container
     className={`w-full h-full absolute dark:bg-gradient-to-t bg-gradient-to-t dark:from-[#AA076B]/30 from-[#AA076B]/80 dark:to-[#61045F]/30 to-[#61045F]/80 ${
       subPage === "philosophy" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
-    } font-kanit `}
+    } font-kanit text-slate-200 `}
   >
     <div className="grid grid-cols-12 h-full">
       <div className="col-start-2 col-end-12 flex items-center justify-center">
-        <div id="1" className="text-[70px] text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "block"}}>          
+        <div id="p1" className="text-[70px] text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "block"}}>          
           <span>Over time,</span>&nbsp;
           <span className="font-bold">an identity</span>&nbsp;
           <span>has been forged,</span>&nbsp;
@@ -71,21 +54,25 @@ return (
           <span>and</span>&nbsp;
           <span className="font-bold">values</span>&nbsp; have naturally emerged.          
         </div>
-        <div id="2" className="my-[10%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "none"}}>
+        <div id="p2" className="my-[10%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "none"}}>
           <span className="font-semibold block p-12">Happy together. Always curious and vibrant!</span>&nbsp;
-          <span>Be happy. Ignite energy and desire both within and in daily relationships with </span>&nbsp;
-          <span>our clients. Life is too short to worry! Creativity, collaboration, sharing, and</span>&nbsp;
-          <span>mentoring infuse a fresh and invigorating spirit into this fundamentally human journey.</span>          
+          <span>
+            Be happy. Ignite energy and desire both within and in daily relationships with 
+            our clients. Life is too short to worry! Creativity, collaboration, sharing, and
+            mentoring infuse a fresh and invigorating spirit into this fundamentally human journey.
+          </span>          
         </div>
-        <div id="3" className="my-[5%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "none"}}>
+        <div id="p3" className="my-[5%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "none"}}>
             <span className="font-semibold block p-12">Committed, loyal, and sometimes cheeky!</span>
-            <span>We have a commitment to delivering high-quality work, and we dedicate</span>&nbsp;
-            <span>ourselves to our clients. Engaging with a client means offering attentive listening,</span>&nbsp;
-            <span>our creativity, and technical expertise. But it also means daring to be bold, taking</span>&nbsp;
-            <span>taken with mutual respect... With our clients, we work collaboratively. It's our</span>&nbsp;
-            <span>trademark. It's also what allows us to forge long-lasting relationships and partnerships.</span>
+            <span>
+              We have a commitment to delivering high-quality work, and we dedicate
+              ourselves to our clients. Engaging with a client means offering attentive listening,
+              our creativity, and technical expertise. But it also means daring to be bold, taking
+              taken with mutual respect... With our clients, we work collaboratively. It's our
+              trademark. It's also what allows us to forge long-lasting relationships and partnerships.
+            </span>
         </div>
-        <div id="4" className="my-[3%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "none"}}>
+        <div id="p4" className="my-[3%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "none"}}>
           <span className="font-semibold block p-12">Creative and responsible, visionary and technological.</span>
           <span>Today and tomorrow, AdVision wants to grow and expand. Supporting</span>&nbsp;
           <span>sustainable growth and embracing a collective project remain at the core of its</span>&nbsp;
@@ -96,8 +83,16 @@ return (
       </div>
     </div>
     <div className="grid grid-cols-6 text-4xl">
-      <div className="m-24 cursor-pointer col-start-1 col-end-3 absolute bottom-0 left-0" id="previous" onClick={switchPrevious}>Previous</div>
-      <div className="m-24 cursor-pointer col-end-7 col-span-2 absolute bottom-0 right-0" id="next" onClick={switchNext}>Next</div>
+      <div className="m-24 cursor-pointer col-start-1 col-end-3 absolute bottom-0 left-0" id="previous" onClick={switchPrevious}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-16 h-16">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
+        </svg>
+      </div>
+      <div className="m-24 cursor-pointer col-end-7 col-span-2 absolute bottom-0 right-0" id="next" onClick={switchNext}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-16 h-16">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+        </svg>
+      </div>
     </div>
     </Container>
   );

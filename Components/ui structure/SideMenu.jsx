@@ -73,9 +73,9 @@ const SideMenu = () => {
           Contact us
         </p>
       </div>
-      <div className="cols-2">
+      {/* <div className="cols-2">
         <DarkModeToggle />
-      </div>
+      </div> */}
     </div>
   );
 };

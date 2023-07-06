@@ -2,15 +2,94 @@ import Lottie from "lottie-react";
 import styled from "styled-components";
 import vision from "../../../Lottie/vision.json";
 const Value = ({ subPage }) => {
-  console.log("subpage: ",subPage);
+  function switchNext() {
+    const ids = ['va1', 'va2', 'va3'];
+    // Find the currently displayed element
+    const currentIndex = ids.findIndex(id => document.getElementById(id).style.display === 'block');
+    // Hide the current element
+    document.getElementById(ids[currentIndex]).style.display = 'none';
+    // Calculate the index of the next element
+    const nextIndex = (currentIndex + 1) % ids.length;
 
-  return (
-    <Container
+    // Show the next element
+    document.getElementById(ids[nextIndex]).style.display = 'block';    
+  }
+  function switchPrevious() {
+    const ids = ['va1', 'va2', 'va3'];
+  
+    // Find the currently displayed element
+    const currentIndex = ids.findIndex(id => document.getElementById(id).style.display === 'block');
+  
+    // Hide the current element
+    document.getElementById(ids[currentIndex]).style.display = 'none';
+  
+    // Calculate the index of the previous element
+    const previousIndex = (currentIndex - 1 + ids.length) % ids.length;
+  
+    // Show the previous element
+    document.getElementById(ids[previousIndex]).style.display = 'block';
+  }
+  
+
+return (
+  <Container
     className={`w-full h-full absolute dark:bg-gradient-to-t bg-gradient-to-t dark:from-[#24FE41]/30 from-[#24FE41]/80 dark:to-[#0AB462]/30 to-[#0AB462]/80 ${
       subPage === "value" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
-    } font-kanit `}
+    } font-kanit text-slate-800 dark:text-slate-200`}
   >
-    
+    <div className="grid grid-cols-12 h-full">
+      <div className="col-start-2 col-end-12 flex items-center justify-center">
+        <div id="va1" className="text-[70px] text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "block"}}>          
+          <span className="font-bold"> Unlocking Value </span>
+          <span> Through Advertising and Consulting </span>
+          <span className="font-bold"> Excellence </span>
+        </div>
+        <div id="va2" className="my-[10%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "none"}}>
+          <span> Welcome to </span>
+          <span className="font-bold"> Advision El Djazair, </span>
+          <span> where we are committed to unlocking </span>
+          <span className="font-bold"> exceptional value </span>
+          <span> for our clients. With a focus on strategic advertising and insightful consulting, we drive tangible </span>
+          <span className="font-bold"> results </span>
+          <span> that propel businesses </span>
+          <span className="font-bold"> forward. </span>
+          <span> Our team combines extensive market knowledge with </span>
+          <span className="font-bold"> innovative campaigns </span>
+          <span> to help clients establish strong brand identities, connect with their target audience, and achieve </span>
+          <span className="font-bold"> sustainable growth.</span>          
+        </div>
+        <div id="va3" className="my-[5%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "none"}}>
+            <span>Through </span>
+            <span className="font-bold"> personalized solutions </span>
+            <span> 
+              tailored to each client's unique needs, we empower businesses to maximize their potential and stay ahead in today's competitive landscape.
+              By leveraging our expertise and industry insights, we deliver 
+            </span>
+            <span className="font-bold"> value-driven strategies </span>
+            <span> 
+              that generate measurable outcomes. Our unwavering dedication to client success ensures 
+              that we not only help businesses thrive but also establish 
+            </span>
+            <span className="font-bold">long-lasting partnerships </span>
+            <span> built on </span>
+            <span className="font-bold"> trust </span>
+            <span> and </span>
+            <span className="font-bold"> results.</span>
+        </div>
+      </div>
+    </div>
+    <div className="grid grid-cols-6 text-4xl">
+      <div className="m-24 cursor-pointer col-start-1 col-end-3 absolute bottom-0 left-0" id="previous" onClick={switchPrevious}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-16 h-16">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
+        </svg>
+      </div>
+      <div className="m-24 cursor-pointer col-end-7 col-span-2 absolute bottom-0 right-0" id="next" onClick={switchNext}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-16 h-16">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+        </svg>
+      </div>
+    </div>
     </Container>
   );
 };
