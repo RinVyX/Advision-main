@@ -2,34 +2,54 @@ import Lottie from "lottie-react";
 import styled from "styled-components";
 import vision from "../../../Lottie/vision.json";
 const Value = ({ subPage }) => {
+  const fadeAnimationStyle = `
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  
+    @keyframes fade-out {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+  `;
+
   function switchNext() {
     const ids = ['va1', 'va2', 'va3'];
-    // Find the currently displayed element
     const currentIndex = ids.findIndex(id => document.getElementById(id).style.display === 'block');
-    // Hide the current element
-    document.getElementById(ids[currentIndex]).style.display = 'none';
-    // Calculate the index of the next element
-    const nextIndex = (currentIndex + 1) % ids.length;
+    const currentElement = document.getElementById(ids[currentIndex]);
 
-    // Show the next element
-    document.getElementById(ids[nextIndex]).style.display = 'block';    
+    currentElement.style.animation = 'fade-out 0.5s forwards';
+
+    setTimeout(() => {
+      currentElement.style.display = 'none';
+
+      const nextIndex = (currentIndex + 1) % ids.length;
+      const nextElement = document.getElementById(ids[nextIndex]);
+
+      nextElement.style.animation = 'fade-in 0.5s forwards';
+      nextElement.style.display = 'block';
+    }, 150); // Delay the display change to match the animation duration
   }
+
   function switchPrevious() {
     const ids = ['va1', 'va2', 'va3'];
-  
-    // Find the currently displayed element
     const currentIndex = ids.findIndex(id => document.getElementById(id).style.display === 'block');
-  
-    // Hide the current element
-    document.getElementById(ids[currentIndex]).style.display = 'none';
-  
-    // Calculate the index of the previous element
-    const previousIndex = (currentIndex - 1 + ids.length) % ids.length;
-  
-    // Show the previous element
-    document.getElementById(ids[previousIndex]).style.display = 'block';
+    const currentElement = document.getElementById(ids[currentIndex]);
+
+    currentElement.style.animation = 'fade-out 0.5s forwards';
+
+    setTimeout(() => {
+      currentElement.style.display = 'none';
+
+      const previousIndex = (currentIndex - 1 + ids.length) % ids.length;
+      const previousElement = document.getElementById(ids[previousIndex]);
+
+      previousElement.style.animation = 'fade-in 0.5s forwards';
+      previousElement.style.display = 'block';
+    }, 150); // Delay the display change to match the animation duration
   }
-  
+
 
 return (
   <Container
@@ -37,14 +57,15 @@ return (
       subPage === "value" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
     } font-kanit text-slate-800 dark:text-slate-200`}
   >
+    <style>{fadeAnimationStyle}</style>
     <div className="grid grid-cols-12 h-full">
       <div className="col-start-2 col-end-12 flex items-center justify-center">
-        <div id="va1" className="text-[70px] text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "block"}}>          
+      <div id="va1" className={`text-[70px] text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] ${subPage === 'value' ? 'fade-transition active' : 'fade-transition'}`} style={{ display: 'block' }}>        
           <span className="font-bold"> Unlocking Value </span>
           <span> Through Advertising and Consulting </span>
           <span className="font-bold"> Excellence </span>
         </div>
-        <div id="va2" className="my-[10%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "none"}}>
+        <div id="va2" className={`my-[10%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] ${subPage === 'value' ? 'fade-transition active' : 'fade-transition'}`} style={{ display: 'none' }}>
           <span> Welcome to </span>
           <span className="font-bold"> Advision El Djazair, </span>
           <span> where we are committed to unlocking </span>
@@ -58,7 +79,7 @@ return (
           <span> to help clients establish strong brand identities, connect with their target audience, and achieve </span>
           <span className="font-bold"> sustainable growth.</span>          
         </div>
-        <div id="va3" className="my-[5%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "none"}}>
+        <div id="va3" className={`my-[5%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] ${subPage === 'value' ? 'fade-transition active' : 'fade-transition'}`} style={{ display: 'none' }}>
             <span>Through </span>
             <span className="font-bold"> personalized solutions </span>
             <span> 
