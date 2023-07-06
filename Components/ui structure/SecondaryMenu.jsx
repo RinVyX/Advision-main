@@ -40,39 +40,40 @@ const SecondaryMenu = ({
               onKeyDown={(e) => handleKeyDown(e)}
             >
               <SNav
-                className={`w-full h-[60px] absolute grid grid-cols-3 ${
-                  page === "agency" ? "left-0" : "left-[-100%]"
-                } flex place-items-center text-xl md:text-3xl`}
+                className={`w-full h-[60px] absolute grid grid-cols-5 
+                  ${ page === "agency" ? "left-0" : "left-[-100%]" } 
+                  ${ subPage === "philosophy" ? "bg-[#61045F]/80" : subPage === "vision" ? "bg-[#F09819]/80" : "bg-[#0AB462]/80" }
+                  flex place-items-center text-xl md:text-3xl dark:bg-[#61045F]/30 `}
               >                
                 <div
-                  className={`cursor-pointer ${
+                  className={`cursor-pointer col-start-2 ${
                     subPage === "philosophy"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
+                      ? "text-purple-300 underline underline-offset-2"
+                      : "text-slate-300 dark:text-slate-200"
                   }`}
                   onClick={() => setSubPage("philosophy")}
                 >
-                  Philosophy
+                  PHILOSOPHY
                 </div>
                 <div
                   className={`cursor-pointer ${
                     subPage === "vision"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
+                      ? "text-purple-300 underline underline-offset-2"
+                      : "text-slate-300 dark:text-slate-200"
                   }`}
                   onClick={() => setSubPage("vision")}
                 >
-                  Vision
+                  VISION
                 </div>
                 <div
                   className={`cursor-pointer ${
                     subPage === "value"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
+                      ? "text-purple-300 underline underline-offset-2"
+                      : "text-slate-300 dark:text-slate-200"
                   }`}
                   onClick={() => setSubPage("value")}
                 >
-                  Value
+                  VALUE
                 </div>
               </SNav>
               <SNav

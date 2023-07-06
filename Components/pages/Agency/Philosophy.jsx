@@ -1,82 +1,73 @@
 import Lottie from "lottie-react";
 import styled from "styled-components";
 import vision from "../../../Lottie/vision.json";
+import React, { useState, useEffect } from 'react';
 
 const Philosophy = ({ subPage }) => {
+  /* const [firstTime, setFirstTime] = useState(true);
+
+  useEffect(() => {
+    if (firstTime) {
+      const ids = ['1', '2', '3', '4'];
+  
+      ids.forEach(id => {
+        const element = document.getElementById(id);
+        if (id === '1') {
+          element.style.display = 'block';
+        } else {
+          element.style.display = 'none';
+        }
+      });
+  
+      setFirstTime(false);
+    }
+  }, [firstTime]); */
+  console.log("subpage: ",subPage);
+
   function switchNext() {
-    console.log('1:', document.getElementById('1'));
-    console.log('2:', document.getElementById('2'));
-    console.log('3:', document.getElementById('3'));
-    console.log('4:', document.getElementById('4'));
-    if (document.getElementById('1').style.display == 'block') {
-        document.getElementById('1').style.display = 'none';
-        document.getElementById('2').style.display = 'block';
-        document.getElementById('3').style.display = 'none';
-        document.getElementById('4').style.display = 'none';
-    }
-    else if (document.getElementById('2').style.display == 'block') {
-        document.getElementById('1').style.display = 'none';
-        document.getElementById('2').style.display = 'none';
-        document.getElementById('3').style.display = 'block';
-        document.getElementById('4').style.display = 'none';
-    }
-    else if (document.getElementById('3').style.display == 'block') {
-        document.getElementById('1').style.display = 'none';
-        document.getElementById('2').style.display = 'none';
-        document.getElementById('3').style.display = 'none';
-        document.getElementById('4').style.display = 'block';
-    }
-    else if (document.getElementById('4').style.display == 'block') {
-        document.getElementById('1').style.display = 'block';
-        document.getElementById('2').style.display = 'none';
-        document.getElementById('3').style.display = 'none';
-        document.getElementById('4').style.display = 'none';
-    }    
+    const ids = ['1', '2', '3', '4'];
+    // Find the currently displayed element
+    const currentIndex = ids.findIndex(id => document.getElementById(id).style.display === 'block');
+    // Hide the current element
+    document.getElementById(ids[currentIndex]).style.display = 'none';
+    // Calculate the index of the next element
+    const nextIndex = (currentIndex + 1) % ids.length;
+
+    // Show the next element
+    document.getElementById(ids[nextIndex]).style.display = 'block';    
   }
   function switchPrevious() {
-    console.log('1:', document.getElementById('1'));
-    console.log('2:', document.getElementById('2'));
-    console.log('3:', document.getElementById('3'));
-    console.log('4:', document.getElementById('4'));
-    if (document.getElementById('4').style.display == 'block') {
-        document.getElementById('1').style.display = 'none';
-        document.getElementById('2').style.display = 'none';
-        document.getElementById('3').style.display = 'block';
-        document.getElementById('4').style.display = 'none';
-    }
-    else if (document.getElementById('3').style.display == 'block') {
-        document.getElementById('1').style.display = 'none';
-        document.getElementById('2').style.display = 'block';
-        document.getElementById('3').style.display = 'none';
-        document.getElementById('4').style.display = 'none';
-    }
-    else if (document.getElementById('2').style.display == 'block') {
-        document.getElementById('1').style.display = 'block';
-        document.getElementById('2').style.display = 'none';
-        document.getElementById('3').style.display = 'none';
-        document.getElementById('4').style.display = 'none';
-    }
-    else if (document.getElementById('1').style.display == 'block') {
-        document.getElementById('1').style.display = 'none';
-        document.getElementById('2').style.display = 'none';
-        document.getElementById('3').style.display = 'none';
-        document.getElementById('4').style.display = 'block';
-    }    
+    const ids = ['1', '2', '3', '4'];
+  
+    // Find the currently displayed element
+    const currentIndex = ids.findIndex(id => document.getElementById(id).style.display === 'block');
+  
+    // Hide the current element
+    document.getElementById(ids[currentIndex]).style.display = 'none';
+  
+    // Calculate the index of the previous element
+    const previousIndex = (currentIndex - 1 + ids.length) % ids.length;
+  
+    // Show the previous element
+    document.getElementById(ids[previousIndex]).style.display = 'block';
   }
+
+  
 
 return (
   <Container
-    className={`w-full h-full absolute ${
+    className={`w-full h-full absolute dark:bg-gradient-to-t bg-gradient-to-t dark:from-[#AA076B]/30 from-[#AA076B]/80 dark:to-[#61045F]/30 to-[#61045F]/80 ${
       subPage === "philosophy" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
     } font-kanit `}
   >
-    <div className="grid grid-cols-12">
-      <div className="mt-2 m-12 col-start-2 col-end-12 ">
-        <div id="1" className="my-[15%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "block"}}>          
+    <div className="grid grid-cols-12 h-full">
+      <div className="col-start-2 col-end-12 flex items-center justify-center">
+        <div id="1" className="text-[70px] text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]" style={{display: "block"}}>          
           <span>Over time,</span>&nbsp;
           <span className="font-bold">an identity</span>&nbsp;
           <span>has been forged,</span>&nbsp;
-          <span className="font-bold block">a culture</span>&nbsp;
+          <br />
+          <span className="font-bold">a culture</span>&nbsp;
           <span>and</span>&nbsp;
           <span className="font-bold">values</span>&nbsp; have naturally emerged.          
         </div>
@@ -105,8 +96,8 @@ return (
       </div>
     </div>
     <div className="grid grid-cols-6 text-4xl">
-      <div className="m-32 cursor-pointer col-start-1 col-end-3 absolute bottom-0 left-0" id="previous" onClick={switchPrevious}>Previous</div>
-      <div className="m-32 cursor-pointer col-end-7 col-span-2 absolute bottom-0 right-0" id="next" onClick={switchNext}>Next</div>
+      <div className="m-24 cursor-pointer col-start-1 col-end-3 absolute bottom-0 left-0" id="previous" onClick={switchPrevious}>Previous</div>
+      <div className="m-24 cursor-pointer col-end-7 col-span-2 absolute bottom-0 right-0" id="next" onClick={switchNext}>Next</div>
     </div>
     </Container>
   );
