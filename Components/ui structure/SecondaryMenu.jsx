@@ -40,97 +40,43 @@ const SecondaryMenu = ({
               onKeyDown={(e) => handleKeyDown(e)}
             >
               <SNav
-                className={`w-full h-[60px] absolute ${
-                  page === "agency" ? "left-0" : "left-[-100%]"
-                } flex justify-start items-center gap-6 pl-5 md:pl-10 ease transform duration-500 transition-all overflow-x-auto`}
-              >
+                className={`w-full h-[60px] absolute grid grid-cols-5 
+                  ${ page === "agency" ? "left-0" : "left-[-100%]" } 
+                  ${ subPage === "philosophy" ? "bg-[#61045F]/80 dark:bg-[#61045F]/30" : 
+                     subPage === "vision" ? "bg-[#F09819]/80 dark:bg-[#F09819]/30" : "bg-[#0AB462]/80 dark:bg-[#0AB462]/30" }
+                  flex place-items-center text-xl md:text-3xl `}
+              >                
                 <div
-                  className={`cursor-pointer mr-2 ${
+                  className={`cursor-pointer col-start-2 ${
                     subPage === "philosophy"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
+                      ? "text-[#ff69c5] underline underline-offset-2"
+                      : "text-slate-300/80 dark:text-slate-200/50"
                   }`}
                   onClick={() => setSubPage("philosophy")}
                 >
-                  Philosophy
+                  PHILOSOPHY
                 </div>
                 <div
                   className={`cursor-pointer ${
                     subPage === "vision"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
+                      ? "text-[#EDDE5D] underline underline-offset-2"
+                      : "text-slate-300/80 dark:text-slate-200/50"
                   }`}
                   onClick={() => setSubPage("vision")}
                 >
-                  Vision
+                  VISION
                 </div>
                 <div
                   className={`cursor-pointer ${
                     subPage === "value"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
+                      ? "text-[#24FE41] underline underline-offset-2"
+                      : "text-slate-300/80 dark:text-slate-200/50"
                   }`}
                   onClick={() => setSubPage("value")}
                 >
-                  Value
+                  VALUE
                 </div>
               </SNav>
-              {/* <SNav
-                className={`w-full h-[60px] absolute ${
-                  page === "services" ? "left-0" : "left-[-100%]"
-                } flex justify-start items-center gap-6 pl-5 md:pl-10 ease transform duration-500 transition-all overflow-x-auto`}
-              >
-                <p
-                  className={`cursor-pointer ${
-                    subPage === "service"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("service")}
-                >
-                  Service
-                </p>
-                <p
-                  className={`cursor-pointer ${
-                    subPage === "graphisme"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("graphisme")}
-                >
-                  Graphisme
-                </p>
-                <p
-                  className={`cursor-pointer ${
-                    subPage === "digital"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("digital")}
-                >
-                  Digital
-                </p>
-                <p
-                  className={`cursor-pointer ${
-                    subPage === "video"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("video")}
-                >
-                  Video
-                </p>
-                <p
-                  className={`cursor-pointer mr-4 ${
-                    subPage === "evenement"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("evenement")}
-                >
-                  Evenement
-                </p>         
-              </SNav> */}  
               <SNav
                 className={`w-full h-[60px] absolute ${
                   page === "events" ? "left-0" : "left-[-100%]"
