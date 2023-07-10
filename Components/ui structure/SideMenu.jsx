@@ -8,48 +8,58 @@ const SideMenu = () => {
   const { page, setPage, showRightMenu, setShowRightMenu } = useContext(State);
   return (
     <div
-      className={`w-full md:w-full xl:w-full h-full bg-[#9A1A65] dark:bg-[#691243] absolute top-[50%] ${
+      className={`w-full h-full bg-[#9A1A65] dark:bg-[#691243] absolute top-[50%] ${
         !showRightMenu ? "right-[-100%]" : "right-0"
-      } z-40 translate-y-[-50%] flex-col flex justify-start ease transform duration-500 transition-all`}
+      } z-40 translate-y-[-50%] ease transform duration-500 transition-all`}
     >
-      <div className="ml-[2%] w-full flex gap-4 flex-col mt-[100px] text-5xl md:text-8xl font-kanit font-bold uppercase text-white">
-        <p
-          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.125rem] hover:italic ${
+      <div className="w-full flex gap-4 flex-col max-md:place-items-center max-md:justify-center mt-[100px] text-5xl md:text-7xl font-kanit font-bold uppercase text-white">
+        <div
+          className={`md:ml-[2%] my-2 cursor-pointer hover:text-[#380f27] md:hover:text-[4.7rem] hover:text-[3.125rem] hover:italic ${
             page === "agency" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
-            setPage("agency"), router.push("/Agency"), setShowRightMenu(false);
+            setPage("agency"),
+            router.push("/Agency"),
+            setShowRightMenu(false);
           }}
         >
           Agency
-        </p>
-        <p
-          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.125rem] hover:italic ${
+        </div>
+
+        <hr className="md:w-[50%] w-[100%] max-md:place-item-center h-1 border-none bg-gradient-to-r md:from-[#380f27] md:to-transparent from-transparent via-[#380f27] to-transparent rounded-xl md:ml-[2%] mt-[2%]" ></hr>
+        
+        <div
+          className={`md:ml-[2%] my-2 cursor-pointer hover:text-[#380f27] md:hover:text-[4.7rem] hover:text-[3.125rem] hover:italic ${
             page === "services" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
             setPage("services"),
-              router.push("/Services"),
-              setShowRightMenu(false);
+            router.push("/Services"),
+            setShowRightMenu(false);
           }}
         >
           Services
-        </p>
-        <p
-          className={`my-2 cursor-pointer hover:text-[#380f27] hover:text-[6.125rem] hover:italic ${
+        </div>
+
+        <hr className="md:w-[50%] w-[100%] max-md:place-item-center h-1 border-none bg-gradient-to-r md:from-[#380f27] md:to-transparent from-transparent via-[#380f27] to-transparent rounded-xl md:ml-[2%] mt-[2%]" ></hr>
+        
+        <div
+          className={`md:ml-[2%] my-2 cursor-pointer max-md:text-center hover:text-[#380f27] md:hover:text-[4.7rem] hover:text-[3.125rem] hover:italic ${
             page === "ourSuccessStories" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
-            setPage("ourSuccessStories"), router.push("/OurSuccessStories"), setShowRightMenu(false);
+            setPage("ourSuccessStories"),
+            router.push("/OurSuccessStories"),
+            setShowRightMenu(false);
           }}
         >
           Our Success Stories
-        </p>
-      </div>
-      <hr className="w-[50%] h-1 border-none bg-gradient-to-r from-[#380f27] to-transparent rounded-xl ml-[2%] mt-[2%]" ></hr>
-      <div className="ml-[2%] mt-[1%] text-7xl">
-        <p
-          className={`my-4 cursor-pointer hover:text-[#380f27] hover:italic hover:text-[4.7rem] capitalize ${
+        </div>
+      
+        <hr className="md:w-[50%] w-[100%] max-md:place-item-center h-1 border-none bg-gradient-to-r md:from-[#380f27] md:to-transparent from-transparent via-[#380f27] to-transparent rounded-xl md:ml-[2%] mt-[2%]" ></hr>
+      
+        <div
+          className={`md:ml-[2%] my-2 cursor-pointer hover:text-[#380f27] md:hover:text-[4.7rem] hover:text-[3.125rem] hover:italic ${
             page === "events" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
@@ -59,9 +69,12 @@ const SideMenu = () => {
           }}
         >
           Our events
-        </p>
-        <p
-          className={`my-4 mt-[1%] cursor-pointer hover:text-[#380f27] hover:italic hover:text-[4.7rem] capitalize ${
+        </div>
+
+        <hr className="md:w-[50%] w-[100%] max-md:place-item-center h-1 border-none bg-gradient-to-r md:from-[#380f27] md:to-transparent from-transparent via-[#380f27] to-transparent rounded-xl md:ml-[2%] mt-[2%]" ></hr>
+        
+        <div
+          className={`md:ml-[2%] my-2 cursor-pointer hover:text-[#380f27] md:hover:text-[4.7rem] hover:text-[3.125rem] hover:italic ${
             page === "contact" ? "text-[#380f27] italic" : "text-white"
           }`}
           onClick={() => {
@@ -71,11 +84,11 @@ const SideMenu = () => {
           }}
         >
           Contact us
-        </p>
+        </div>
       </div>
-      <div className="cols-2">
+      {/* <div className="cols-2">
         <DarkModeToggle />
-      </div>
+      </div> */}
     </div>
   );
 };

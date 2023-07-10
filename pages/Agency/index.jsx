@@ -45,7 +45,7 @@ export default function Events({ showMeni }) {
   
   return (
     <div
-      className="w-full h-[calc(100%-60px)] absolute top-[60px] "
+      className="w-full h-[calc(100%-120px)] absolute top-[120px] "
       onKeyDown={(e) => handleKeyDown(e)}
       tabIndex={0}
     >
@@ -55,11 +55,11 @@ export default function Events({ showMeni }) {
             <animated.div
               config={{ duration: 500 }}
               style={style}
-              className={` top-[0px] left-0 absolute w-full h-full `}
+              className={`left-0 absolute w-full h-full `}
             >
               <Value subPage={subPage} />
               <Vision subPage={subPage} />
-              <Philosophy subPage={subPage} />              
+              <Philosophy subPage={subPage} />
             </animated.div>
           )
       )}

@@ -3,11 +3,11 @@ import styled from "styled-components";
 const Seer = ({ subPage }) => {
   return (
     <Container
-      className={`w-full  absolute ${
-        subPage === "seer" ? "left-0" : "left-[-200%]"
-      } flex ease transform duration-500 transition-all md:w-[95%] flex-col font-kanit mx-4 my-4`}
+      className={`w-full h-full absolute ${
+        subPage === "seer" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
+      } flex ease transform duration-500 transition-all md:w-[95%] flex-col font-kanit mx-4 my-5`}
     >
-      <div className="tracking-wider uppercase text-[26px] my-3 text-slate-50 dark:text-slate-200 font-light">
+      <div className=" tracking-wider uppercase text-[26px] text-green-700 dark:text-slate-200 font-light">
         SEER - 
         &nbsp;
         <a href="https://fr.seer-dz.com" className=" hover:italic hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-green-500 hover:to-red-600"> 
@@ -16,7 +16,7 @@ const Seer = ({ subPage }) => {
         &nbsp;
         -
       </div>
-      <div className=" text-slate-900 dark:text-slate-300 text-justify w-[60%] tracking-wider">
+      <div className="mb-10 text-slate-900 dark:text-slate-300 text-justify md:w-[60%] w-[90%] tracking-wider">
         SEER est le premier événement commercial international en Algérie, dédié simultanément aux industries de l’électricité et des énergies renouvelables.
         <br />
         Via une large gamme de produits et solutions exposés, le salon rassemble différents opérateurs (Fabricants d’équipements, distributeurs, bureaux d’études, 
@@ -40,10 +40,6 @@ const Seer = ({ subPage }) => {
         les échanges professionnels et le développement de collaborations fructueuses. Avec son succès continu, le salon contribue activement à promouvoir l'innovation, 
         le développement économique et la transition énergétique en Algérie et au-delà.
       </div>
-      {/* <div className="flex-auto">
-        <iframe src="https://embed.lottiefiles.com/animation/117720"></iframe>
-      </div> */}
-      <div className="w-full h-[140px] "></div>
     </Container>
   );
 };
@@ -58,4 +54,4 @@ const Container = styled.div`
     border-radius: 10px;
     background-color: #c084fc;
   }
-`;
+  `;
