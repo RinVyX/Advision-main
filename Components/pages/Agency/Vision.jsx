@@ -60,13 +60,13 @@ return (
     <style>{fadeAnimationStyle}</style>
     <div className="grid grid-cols-12 h-full">
       <div className="col-start-2 col-end-12 flex items-center justify-center">
-      <div id="v1" className={`xl:text-[70px] lg:text-[60px] md:text-[50px] text-[30px] -mt-[50%] text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+      <div id="v1" className={`xl:text-[70px] lg:text-[60px] md:text-[50px] text-[30px] max-md:-mt-[50%] text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
                               ${subPage === 'vision' ? 'fade-transition active' : 'fade-transition'}`} 
                    style={{ display: 'block' }}>      
           <span className="font-bold">Unleashing Creativity :</span>&nbsp;
           <span>Redefining the Advertising Landscape</span>
         </div>
-        <div id="v2" className={`xl:text-[40px] lg:text-[35px] md:text-[30px] text-[15px] -mt-[50%] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+        <div id="v2" className={`xl:text-[40px] lg:text-[35px] md:text-[30px] text-[15px] max-md:-mt-[50%] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
                                 ${subPage === 'vision' ? 'fade-transition active' : 'fade-transition'}`} 
                      style={{ display: 'none' }}>
           <span className="font-bold">At Advision El Djazair</span>
@@ -81,13 +81,13 @@ return (
           <span> with audiences on a </span>
           <span className="font-bold"> profound level.</span>          
         </div>
-        <div id="v3" className={`xl:text-[70px] lg:text-[60px] md:text-[50px] text-[30px] -mt-[50%] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+        <div id="v3" className={`xl:text-[70px] lg:text-[60px] md:text-[50px] text-[30px] max-md:-mt-[50%] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
                                 ${subPage === 'vision' ? 'fade-transition active' : 'fade-transition'}`} 
                      style={{ display: 'none' }}>
             <span className="font-bold">Partners in Success: </span>
             <span> Building Lasting Relationships and Driving Remarkable Results</span>
         </div>
-        <div id="v4" className={`xl:text-[40px] lg:text-[35px] md:text-[30px] text-[15px] -mt-[50%] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+        <div id="v4" className={`xl:text-[40px] lg:text-[35px] md:text-[30px] text-[15px] max-md:-mt-[50%] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
                                 ${subPage === 'vision' ? 'fade-transition active' : 'fade-transition'}`} 
                      style={{ display: 'none' }}>
           <span> Our vision is to be </span>

@@ -45,23 +45,23 @@ const SecondaryMenu = ({
                   ${ subPage === "philosophy" ? "bg-[#61045F]/80 dark:bg-[#61045F]/30" : 
                      subPage === "vision" ? "bg-[#F09819]/80 dark:bg-[#F09819]/30" : "bg-[#0AB462]/80 dark:bg-[#0AB462]/30" }
                   flex place-items-center text-xl md:text-3xl
-                  flex-col`}
+                  max-md:flex-col`}
               >                
                 <div
-                  className={`cursor-pointer md:col-start-2 pt-2 ${
+                  className={`cursor-pointer md:col-start-2 max-md:pt-2  ${
                     subPage === "philosophy"
                       ? "text-[#ff69c5] underline underline-offset-2"
-                      : "text-slate-300/80 dark:text-slate-200/50"
+                      : "text-slate-700/50 dark:text-slate-200/50 hover:text-[#ff53bd]"
                   }`}
                   onClick={() => setSubPage("philosophy")}
                 >
                   PHILOSOPHY
                 </div>
                 <div
-                  className={`cursor-pointer py-1 ${
+                  className={`cursor-pointer max-md:py-1  ${
                     subPage === "vision"
                       ? "text-[#EDDE5D] underline underline-offset-2"
-                      : "text-slate-300/80 dark:text-slate-200/50"
+                      : "text-slate-700/50 dark:text-slate-200/50 hover:text-[#ebd939]"
                   }`}
                   onClick={() => setSubPage("vision")}
                 >
@@ -71,7 +71,7 @@ const SecondaryMenu = ({
                   className={`cursor-pointer ${
                     subPage === "value"
                       ? "text-[#24FE41] underline underline-offset-2"
-                      : "text-slate-300/80 dark:text-slate-200/50"
+                      : "text-slate-700/50 dark:text-slate-200/50 hover:text-[#2ecc43]"
                   }`}
                   onClick={() => setSubPage("value")}
                 >
