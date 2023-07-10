@@ -28,6 +28,8 @@ class MyDocument extends Document {
 
           <title>AdVision El Djazair</title>
           <meta property="og:title" content="AdVision El Djazair" key="title" />
+          <meta property="og:site_name" content="AdVision El Djazair" key="site_name" />
+          <meta property="og:description" content="Agence de communication" key="description" />
         </Head>
         <body>
           <Main />
