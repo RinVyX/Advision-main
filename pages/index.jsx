@@ -11,6 +11,7 @@ export default function Home({}) {
     enter: { left: "0", opacity: 1 },
     leave: { left: "-100%", opacity: 0 },
   });
+
   useEffect(() => {
     if (page === "home") {
       setAnimate(true);
@@ -18,6 +19,7 @@ export default function Home({}) {
       setAnimate(false);
     }
   }, [page]);
+  
   return (
     <div className="w-[100%] h-[100%] select-none">
       {Transition(

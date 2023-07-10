@@ -29,7 +29,7 @@ const Ui = ({ children }) => {
       <div
         className={` ${
           showRightMenu ? "md:w-[100%]" : "md:w-full"
-        } h-[calc(100%-80px)] absolute w-full top-[80px] left-0  ease transform duration-500 transition-all`}
+        } h-[calc(100%-80px)] absolute w-full top-[80px] left-0 ease transform duration-500 transition-all`}
       >
         <SecondaryMenu
           secondaryMenuTransition={secondaryMenuTransition}

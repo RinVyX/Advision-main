@@ -36,18 +36,19 @@ const SecondaryMenu = ({
           item && (
             <animated.nav
               style={style}
-              className="absolute w-[100%] h-[60px] font-kanit font-bold"
+              className="absolute w-[100%] font-kanit font-bold"
               onKeyDown={(e) => handleKeyDown(e)}
             >
               <SNav
-                className={`w-full h-[60px] absolute grid grid-cols-5 
+                className={`w-full h-[120px] absolute md:grid md:grid-cols-5
                   ${ page === "agency" ? "left-0" : "left-[-100%]" } 
                   ${ subPage === "philosophy" ? "bg-[#61045F]/80 dark:bg-[#61045F]/30" : 
                      subPage === "vision" ? "bg-[#F09819]/80 dark:bg-[#F09819]/30" : "bg-[#0AB462]/80 dark:bg-[#0AB462]/30" }
-                  flex place-items-center text-xl md:text-3xl `}
+                  flex place-items-center text-xl md:text-3xl
+                  flex-col`}
               >                
                 <div
-                  className={`cursor-pointer col-start-2 ${
+                  className={`cursor-pointer md:col-start-2 pt-2 ${
                     subPage === "philosophy"
                       ? "text-[#ff69c5] underline underline-offset-2"
                       : "text-slate-300/80 dark:text-slate-200/50"
@@ -57,7 +58,7 @@ const SecondaryMenu = ({
                   PHILOSOPHY
                 </div>
                 <div
-                  className={`cursor-pointer ${
+                  className={`cursor-pointer py-1 ${
                     subPage === "vision"
                       ? "text-[#EDDE5D] underline underline-offset-2"
                       : "text-slate-300/80 dark:text-slate-200/50"

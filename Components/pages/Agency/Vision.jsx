@@ -60,11 +60,15 @@ return (
     <style>{fadeAnimationStyle}</style>
     <div className="grid grid-cols-12 h-full">
       <div className="col-start-2 col-end-12 flex items-center justify-center">
-      <div id="v1" className={`text-[70px] text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] ${subPage === 'vision' ? 'fade-transition active' : 'fade-transition'}`} style={{ display: 'block' }}>      
+      <div id="v1" className={`xl:text-[70px] lg:text-[60px] md:text-[50px] text-[30px] -mt-[50%] text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+                              ${subPage === 'vision' ? 'fade-transition active' : 'fade-transition'}`} 
+                   style={{ display: 'block' }}>      
           <span className="font-bold">Unleashing Creativity :</span>&nbsp;
           <span>Redefining the Advertising Landscape</span>
         </div>
-        <div id="v2" className={`my-[10%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] ${subPage === 'vision' ? 'fade-transition active' : 'fade-transition'}`} style={{ display: 'none' }}>
+        <div id="v2" className={`xl:text-[40px] lg:text-[35px] md:text-[30px] text-[15px] -mt-[50%] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+                                ${subPage === 'vision' ? 'fade-transition active' : 'fade-transition'}`} 
+                     style={{ display: 'none' }}>
           <span className="font-bold">At Advision El Djazair</span>
           <span>, we envision a world where </span>
           <span className="font-bold">creativity</span>
@@ -77,11 +81,15 @@ return (
           <span> with audiences on a </span>
           <span className="font-bold"> profound level.</span>          
         </div>
-        <div id="v3" className={`my-[5%] text-[70px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] ${subPage === 'vision' ? 'fade-transition active' : 'fade-transition'}`} style={{ display: 'none' }}>
+        <div id="v3" className={`xl:text-[70px] lg:text-[60px] md:text-[50px] text-[30px] -mt-[50%] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+                                ${subPage === 'vision' ? 'fade-transition active' : 'fade-transition'}`} 
+                     style={{ display: 'none' }}>
             <span className="font-bold">Partners in Success: </span>
             <span> Building Lasting Relationships and Driving Remarkable Results</span>
         </div>
-        <div id="v4" className={`my-[3%] text-[40px] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] ${subPage === 'vision' ? 'fade-transition active' : 'fade-transition'}`} style={{ display: 'none' }}>
+        <div id="v4" className={`xl:text-[40px] lg:text-[35px] md:text-[30px] text-[15px] -mt-[50%] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+                                ${subPage === 'vision' ? 'fade-transition active' : 'fade-transition'}`} 
+                     style={{ display: 'none' }}>
           <span> Our vision is to be </span>
           <span className="font-bold"> trusted partners </span>
           <span> in our clients' journey to success, forging long-lasting relationships based on </span>
@@ -97,13 +105,13 @@ return (
       </div>
     </div>
     <div className="grid grid-cols-6 text-4xl">
-      <div className="m-24 cursor-pointer col-start-1 col-end-3 absolute bottom-0 left-0" id="previous" onClick={switchPrevious}>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-16 h-16">
+      <div className="lg:m-24 m-14 cursor-pointer col-start-1 col-end-3 absolute bottom-0 left-0" id="previous" onClick={switchPrevious}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="lg:w-16 lg:h-16 w-10">
           <path strokeLinecap="round" strokeLinejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
         </svg>
       </div>
-      <div className="m-24 cursor-pointer col-end-7 col-span-2 absolute bottom-0 right-0" id="next" onClick={switchNext}>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-16 h-16">
+      <div className="lg:m-24 m-14 cursor-pointer col-end-7 col-span-2 absolute bottom-0 right-0" id="next" onClick={switchNext}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="lg:w-16 lg:h-16 w-10">
           <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
         </svg>
       </div>

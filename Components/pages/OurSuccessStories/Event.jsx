@@ -9,7 +9,7 @@ const Event = ({ subPage }) => {
 
   return (
     <Container
-      className={`w-full  absolute ${
+      className={`w-full h-full absolute ${
         subPage === "event" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
       } font-Kanit`}
     >
