@@ -21,18 +21,19 @@ export default function Home({}) {
   }, [page]);
   
   return (
-    <div className="w-[100%] h-[100%] select-none">
+    <div className="w-full h-full select-none">
       {Transition(
         (style, item) =>
           item && (
             <animated.div
               config={{ duration: 500 }}
               style={style}
-              className="absolute w-full h-full mx-[5%] my-[200px]"
+              className="absolute w-full h-full mx-[5%] sm:my-[200px] my-[25%]"
               >
               <div className="w-full h-full ">
                 <div className="font-Kanit text-black bg-clip-text">
-                  <div className="min-[1600px]:text-[106px] min-[900px]:text-[90px] min-[800px]:text-[70px] text-[50px] md:leading-[100px]">
+                  <div className="min-[1600px]:text-[106px] min-[900px]:text-[90px] min-[800px]:text-[70px] 
+                                  text-[55px] md:leading-[100px]">
                     <div className="inline">
                       <span className="font-bold text-[#1f1f1f] 
                                        dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] dark:from-rose-500 dark:to-fuchsia-800 
@@ -52,7 +53,8 @@ export default function Home({}) {
                      <span className="font-light dark:text-gray-200"> you are. </span>                       
                     </div>
                   </div>
-                  <div className="min-[1600px]:text-[55px] min-[900px]:text-[35px] min-[700px]:text-[25px] text-[20px] leading-[100px] inline">
+                  <div className="min-[1600px]:text-[55px] min-[900px]:text-[35px] min-[700px]:text-[25px]
+                                  text-[20px] sm:leading-[100px] leading-[50px] inline">
                     <span className="font-light dark:text-gray-200"> Unleashing the Power of </span>
                     &nbsp;
                     <span className=" text-[#1f1f1f] 
