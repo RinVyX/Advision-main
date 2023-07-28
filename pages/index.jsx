@@ -28,11 +28,11 @@ export default function Home({}) {
             <animated.div
               config={{ duration: 500 }}
               style={style}
-              className="absolute w-full h-full mx-[5%] my-[200px]"
+              className="absolute w-full h-full mx-[5%] my-[200px] lg:my-[150px]"
               >
               <div className="w-full h-full ">
                 <div className="font-Kanit text-black bg-clip-text">
-                  <div className="min-[1600px]:text-[106px] min-[900px]:text-[90px] min-[800px]:text-[70px] text-[50px] md:leading-[100px]">
+                  <div className="min-[1600px]:text-[106px] min-[800px]:text-[60px] text-[50px] lg:leading-[80px] md:leading-[100px]">
                     <div className="inline">
                       <span className="font-bold text-[#1f1f1f] 
                                        dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] dark:from-rose-500 dark:to-fuchsia-800 
