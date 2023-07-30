@@ -63,7 +63,7 @@ const Philosophy = ({ subPage }) => {
     <style>{fadeAnimationStyle}</style>
     <div className="grid grid-cols-12 h-full">
       <div className="col-start-2 col-end-12 flex items-center justify-center">
-        <div id="p1" className={`xl:text-[70px] lg:text-[40px] md:text-[30px] text-[15px] max-md:-mt-[40%] -mt-20 text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+        <div id="p1" className={`xl:text-[50px] lg:text-[40px] md:text-[30px] text-[15px] max-md:-mt-[40%] -mt-20 text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
                               ${subPage === 'philosophy' ? 'fade-transition active' : 'fade-transition'}`} 
                      style={{ display: 'block' }}>          
           <span>Over time,</span>&nbsp;
@@ -74,7 +74,7 @@ const Philosophy = ({ subPage }) => {
           <span>and</span>&nbsp;
           <span className="font-bold">values</span>&nbsp; have naturally emerged.          
         </div>
-        <div id="p2" className={`xl:text-[40px] lg:text-[30px] md:text-[20px] text-[15px] max-md:-mt-[50%] -mt-20 inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+        <div id="p2" className={`lg:text-[30px] md:text-[20px] text-[15px] max-md:-mt-[50%] -mt-20 inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
                                 ${subPage === 'philosophy' ? 'fade-transition active' : 'fade-transition'}`} 
                      style={{ display: 'none' }}>
           <span className="font-semibold block p-12">Happy together. Always curious and vibrant!</span>&nbsp;
@@ -84,7 +84,7 @@ const Philosophy = ({ subPage }) => {
             mentoring infuse a fresh and invigorating spirit into this fundamentally human journey.
           </span>          
         </div>
-        <div id="p3" className={`xl:text-[40px] lg:text-[30px] md:text-[20px] text-[15px] max-md:-mt-[50%] -mt-20 inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+        <div id="p3" className={`lg:text-[30px] md:text-[20px] text-[15px] max-md:-mt-[50%] -mt-20 inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
                                  ${subPage === 'philosophy' ? 'fade-transition active' : 'fade-transition'}`} 
                      style={{ display: 'none' }}>
             <span className="font-semibold block p-12">Committed, loyal, and sometimes cheeky!</span>
@@ -96,7 +96,7 @@ const Philosophy = ({ subPage }) => {
               trademark. It's also what allows us to forge long-lasting relationships and partnerships.
             </span>
         </div>
-        <div id="p4" className={`xl:text-[40px] lg:text-[30px] md:text-[20px] text-[15px] max-md:-mt-[50%] -mt-20 inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+        <div id="p4" className={`lg:text-[30px] md:text-[20px] text-[15px] max-md:-mt-[50%] -mt-20 inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
                               ${subPage === 'philosophy' ? 'fade-transition active' : 'fade-transition'}`} 
                      style={{ display: 'none' }}>
           <span className="font-semibold block p-12">Creative and responsible, visionary and technological.</span>

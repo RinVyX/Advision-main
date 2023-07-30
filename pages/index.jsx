@@ -32,7 +32,7 @@ export default function Home({}) {
               >
               <div className="w-full h-full ">
                 <div className="font-Kanit text-black bg-clip-text">
-                  <div className="min-[1600px]:text-[106px] min-[800px]:text-[60px] text-[50px] lg:leading-[80px] md:leading-[100px]">
+                  <div className="min-[1600px]:text-[106px] min-[800px]:text-[60px] text-[50px] xl:leading-[150px] lg:leading-[80px] md:leading-[100px]">
                     <div className="inline">
                       <span className="font-bold text-[#1f1f1f] 
                                        dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] dark:from-rose-500 dark:to-fuchsia-800 
