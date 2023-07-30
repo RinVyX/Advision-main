@@ -5,7 +5,7 @@ const Niae = ({ subPage }) => {
     <Container
       className={`w-full h-full absolute ${
         subPage === "niae" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
-      } flex  ease transform duration-500 transition-all w-[95%] flex-col font-kanit mx-4 md:mx-10 my-4`}
+      } flex ease transform duration-500 transition-all w-[97.3%] flex-col font-kanit mx-4 md:mx-10 my-4`}
     >
       <div className="tracking-wider uppercase text-[26px] my-3 text-green-700 dark:text-slate-200 font-light">
         n-iae - 

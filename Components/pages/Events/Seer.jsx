@@ -5,7 +5,7 @@ const Seer = ({ subPage }) => {
     <Container
       className={`w-full h-full absolute ${
         subPage === "seer" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
-      } flex ease transform duration-500 transition-all md:w-[95%] flex-col font-kanit mx-4 my-5`}
+      } flex ease transform duration-500 transition-all w-[99%] flex-col font-kanit mx-4 my-5`}
     >
       <div className=" tracking-wider uppercase text-[26px] text-green-700 dark:text-slate-200 font-light">
         SEER - 
