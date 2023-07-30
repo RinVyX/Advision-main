@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useTransition, animated } from "react-spring";
 import { useContext } from "react";
 import { State } from "../../Context/context";
+import styled from "styled-components";
 import { CgCopy } from "react-icons/cg";
 export default function Events() {
   const { page } = useContext(State);
@@ -67,6 +68,7 @@ export default function Events() {
     }
   };
   return (
+    <Container className={`w-full h-full absolute`}>
     <div className="w-[100%] h-[100%] relative dark:text-gray-300">
       {Transition(
         (style, item) =>
@@ -203,8 +205,19 @@ export default function Events() {
           )
       )}
     </div>
+    </Container>
   );
 }
+const Container = styled.div`
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #c084fc;
+  }
+`;
 const FlipIcon = ({ icon }) => {
   const [hovered, setHovered] = useState(false);
   return (

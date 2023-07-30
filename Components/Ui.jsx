@@ -4,6 +4,7 @@ import SideMenu from "./ui structure/SideMenu";
 import TopNav from "./ui structure/TopNav";
 import { useContext } from "react";
 import { State } from "../Context/context";
+
 const Ui = ({ children }) => {
   const { page, subPage, showRightMenu } = useContext(State);
   const [secondaryMenuTransition, setSecondaryMenuTransition] = useState(false);

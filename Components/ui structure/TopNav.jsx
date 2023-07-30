@@ -1,10 +1,13 @@
 import { useRouter } from "next/router";
 import React from "react";
-import { useContext } from "react";
+import { useEffect, useState , useContext } from "react";
 import { State } from "../../Context/context";
 import DarkModeToggle from "./ToggleButton";
+
 const TopNav = () => {
   const router = useRouter();
+  const [opacity, setOpacity] = useState('opacity-1');
+  useEffect(() => setOpacity('opacity-0'), []);
   const { setPage, showRightMenu, setShowRightMenu } = useContext(State);
   const genericHamburgerLine = `h-[2px] my-[4px] rounded-full bg-white transition ease transform duration-300`;
   return (
@@ -26,40 +29,42 @@ const TopNav = () => {
       </div>
       {/* home contact burger */}
       <div className="h-full ml-10 flex justify-center items-center gap-2 md:gap-2 mr-[2px] md:mr-10 z-50">
-        <div
-          className={`mx-4 font-Kanit font-medium ${
-            showRightMenu ? "opacity-0" : "opacity-1"
-          } cursor-pointer transition ease transform duration-300`}
-        >
-          <DarkModeToggle />
+          <div
+            onClick={() => {
+              setPage("home"), router.push("/");
+            } }
+            className={`mx-4 font-Signika font-medium ${
+              showRightMenu ? `${opacity}` : `${opacity}`
+            } text-black cursor-pointer transition ease transform duration-300`}
+          >
+            Home
+          </div>
+          <div
+            onClick={() => {
+              setPage("contact"), router.push("/Contact");
+            } }
+            className={`mx-4 font-Signika font-medium ${showRightMenu ? `${opacity}` : `${opacity}`} text-black cursor-pointer transition ease transform duration-300`}
+          >
+            Contact
+          </div>
+          <div
+            className="flex flex-col h-12 w-12 justify-center items-center group"
+            onClick={() => setShowRightMenu(!showRightMenu)}
+          >
+            <div
+              className={`${genericHamburgerLine} w-6 ${showRightMenu
+                  ? "rotate-45 translate-y-[10px]  opacity-50 group-hover:opacity-100" 
+                  : "opacity-50 group-hover:opacity-100"}`} />
+            <div
+              className={`${genericHamburgerLine} ${showRightMenu
+                  ? "opacity-0 w-6"
+                  : "opacity-50 group-hover:opacity-100 w-6"}`} />
+            <div
+              className={`${genericHamburgerLine} w-6 ${showRightMenu
+                  ? "-rotate-45 -translate-y-[10px] opacity-50 group-hover:opacity-100"
+                  : "opacity-50 group-hover:opacity-100 w-6"}`} />
+          </div>
         </div>
-        <button
-          className="flex flex-col h-12 w-12 justify-center items-center group"
-          onClick={() => setShowRightMenu(!showRightMenu)}
-        >
-          <div
-            className={`${genericHamburgerLine} w-6 ${
-              showRightMenu
-                ? "rotate-45 translate-y-[10px] opacity-50 group-hover:opacity-100"
-                : "opacity-50 group-hover:opacity-100"
-            }`}
-          />
-          <div
-            className={`${genericHamburgerLine} ${
-              showRightMenu
-                ? "opacity-0 w-6"
-                : "opacity-50 group-hover:opacity-100 w-6"
-            }`}
-          />
-          <div
-            className={`${genericHamburgerLine} w-6 ${
-              showRightMenu
-                ? "-rotate-45 -translate-y-[10px] opacity-50 group-hover:opacity-100"
-                : "opacity-50 group-hover:opacity-100 w-6"
-            }`}
-          />
-        </button>
-      </div>
     </nav>
   );
 };

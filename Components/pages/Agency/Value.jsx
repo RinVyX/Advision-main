@@ -60,14 +60,14 @@ return (
     <style>{fadeAnimationStyle}</style>
     <div className="grid grid-cols-12 h-full">
       <div className="col-start-2 col-end-12 flex items-center justify-center">
-      <div id="va1" className={`xl:text-[70px] lg:text-[60px] md:text-[50px] text-[30px] max-md:-mt-[50%] text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+      <div id="va1" className={`xl:text-[70px] lg:text-[40px] md:text-[30px] text-[15px] max-md:-mt-[40%] -mt-20 text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
                               ${subPage === 'value' ? 'fade-transition active' : 'fade-transition'}`} 
                     style={{ display: 'block' }}>        
           <span className="font-bold"> Unlocking Value </span>
           <span> Through Advertising and Consulting </span>
           <span className="font-bold"> Excellence </span>
         </div>
-        <div id="va2" className={`xl:text-[40px] lg:text-[35px] md:text-[30px] text-[15px] max-md:-mt-[50%] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+        <div id="va2" className={`xl:text-[40px] lg:text-[30px] md:text-[20px] text-[15px] max-md:-mt-[50%] -mt-20 inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
                                 ${subPage === 'value' ? 'fade-transition active' : 'fade-transition'}`} 
                       style={{ display: 'none' }}>
           <span> Welcome to </span>
@@ -83,7 +83,7 @@ return (
           <span> to help clients establish strong brand identities, connect with their target audience, and achieve </span>
           <span className="font-bold"> sustainable growth.</span>          
         </div>
-        <div id="va3" className={`xl:text-[40px] lg:text-[35px] md:text-[30px] text-[15px] max-md:-mt-[50%] inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+        <div id="va3" className={`xl:text-[40px] lg:text-[30px] md:text-[20px] text-[15px] max-md:-mt-[50%] -mt-20 inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
                                 ${subPage === 'value' ? 'fade-transition active' : 'fade-transition'}`} 
                       style={{ display: 'none' }}>
             <span>Through </span>
