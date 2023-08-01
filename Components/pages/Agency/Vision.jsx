@@ -66,7 +66,7 @@ return (
           <span className="font-bold">Unleashing Creativity :</span>&nbsp;
           <span>Redefining the Advertising Landscape</span>
         </div>
-        <div id="v2" className={`lg:text-[30px] md:text-[20px] text-[15px] max-md:-mt-[50%] -mt-20 inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+        <div id="v2" className={`lg:text-[25px] md:text-[20px] text-[15px] max-md:-mt-[50%] -mt-20 inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] md:leading-8
                                 ${subPage === 'vision' ? 'fade-transition active' : 'fade-transition'}`} 
                      style={{ display: 'none' }}>
           <span className="font-bold">At Advision El Djazair</span>
@@ -87,7 +87,7 @@ return (
             <span className="font-bold">Partners in Success: </span>
             <span> Building Lasting Relationships and Driving Remarkable Results</span>
         </div>
-        <div id="v4" className={`lg:text-[30px] md:text-[20px] text-[15px] max-md:-mt-[50%] -mt-20 inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] 
+        <div id="v4" className={`lg:text-[25px] md:text-[20px] text-[15px] max-md:-mt-[50%] -mt-20 inline text-center drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] md:leading-8
                                 ${subPage === 'vision' ? 'fade-transition active' : 'fade-transition'}`} 
                      style={{ display: 'none' }}>
           <span> Our vision is to be </span>
@@ -105,13 +105,13 @@ return (
       </div>
     </div>
     <div className="grid grid-cols-6 text-4xl">
-      <div className="lg:m-24 m-14 cursor-pointer col-start-1 col-end-3 absolute bottom-0 left-0" id="previous" onClick={switchPrevious}>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="lg:w-16 lg:h-16 w-10">
+      <div className="lg:m-22 m-14 cursor-pointer col-start-1 col-end-3 absolute bottom-0 left-0" id="previous" onClick={switchPrevious}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="lg:w-9 w-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
         </svg>
       </div>
-      <div className="lg:m-24 m-14 cursor-pointer col-end-7 col-span-2 absolute bottom-0 right-0" id="next" onClick={switchNext}>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="lg:w-16 lg:h-16 w-10">
+      <div className="lg:m-22 m-14 cursor-pointer col-end-7 col-span-2 absolute bottom-0 right-0" id="next" onClick={switchNext}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="lg:w-9 w-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
         </svg>
       </div>
