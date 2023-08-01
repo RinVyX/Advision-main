@@ -6,13 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preview-email": "email dev"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@material-tailwind/react": "^1.2.4",
     "@mui/material": "^5.11.13",
+    "@react-email/container": "0.0.8",
+    "@react-email/html": "0.0.4",
+    "@react-email/section": "0.0.9",
+    "@react-email/text": "0.0.5",
     "@tailwindui/react": "^0.1.1",
     "@u-wave/react-youtube": "^0.7.4",
     "framer-motion": "^10.2.5",
@@ -20,14 +25,17 @@
     "lottie-react": "^2.4.0",
     "next": "12.3.0",
     "next-themes": "^0.2.1",
+    "nodemailer": "^6.9.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-email": "1.9.4",
     "react-icons": "^4.8.0",
     "react-spring": "^9.7.1",
     "react-youtube": "^10.1.0",
     "styled-components": "^5.3.8"
   },
   "devDependencies": {
+    "@types/nodemailer": "^6.4.9",
     "autoprefixer": "^10.4.11",
     "daisyui": "^3.1.6",
     "eslint": "8.23.0",
