@@ -4,6 +4,8 @@ import SideMenu from "./ui structure/SideMenu";
 import TopNav from "./ui structure/TopNav";
 import { useContext } from "react";
 import { State } from "../Context/context";
+import { Toaster } from "react-hot-toast";
+
 const Ui = ({ children }) => {
   const { page, subPage, showRightMenu } = useContext(State);
   const [secondaryMenuTransition, setSecondaryMenuTransition] = useState(false);
@@ -18,6 +20,7 @@ const Ui = ({ children }) => {
       {/* <video loop autoPlay playsInline className="h-max w-max opacity-20">
         <source src="/Pattern.mp4" type="video/mp4" />
       </video> */}
+
       {/* top navigation */}
       <TopNav className="dark:bg-inherit" setSecondaryMenuTransition={setSecondaryMenuTransition} />
       {/* side Nave showRightMenu */}
@@ -25,6 +28,8 @@ const Ui = ({ children }) => {
         setSecondaryMenuTransition={setSecondaryMenuTransition}
         secondaryMenuTransition={secondaryMenuTransition}
       />
+      {/* Notification || */}
+      <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
       {/* main */}
       <div
         className={` ${

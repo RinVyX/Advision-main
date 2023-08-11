@@ -14,15 +14,10 @@ export default function Events() {
     leave: { left: "-100%", opacity: 0 },
   });
 
-  const handleKeyDown = (e) => {
-    console.log(e);
-    
-  };
-
+ 
   return (
     <div
       className="w-full h-[calc(100%-60px)] absolute top-[60px]"
-      onKeyDown={(e) => handleKeyDown(e)}
       tabIndex={0}
     >
       {Transition(

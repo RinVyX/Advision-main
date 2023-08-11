@@ -45,7 +45,9 @@ function Context({ children }) {
       : page === "events"
       ? "seer"
       : page === "ourSuccessStories"
-      ? "Event"
+      ? "event"
+      : page === "contact"
+      ? "formcontact"
       : ""
   );
 
@@ -65,6 +67,9 @@ function Context({ children }) {
     }
     if (page === "ourSuccessStories") {
       setSubPage("event");
+    }
+    if (page === "contact") {
+      setSubPage("formcontact");
     }
   }, [page]);
 

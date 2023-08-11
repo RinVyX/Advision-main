@@ -75,62 +75,7 @@ const SecondaryMenu = ({
                   Value
                 </div>
               </SNav>
-              {/* <SNav
-                className={`w-full h-[60px] absolute ${
-                  page === "services" ? "left-0" : "left-[-100%]"
-                } flex justify-start items-center gap-6 pl-5 md:pl-10 ease transform duration-500 transition-all overflow-x-auto`}
-              >
-                <p
-                  className={`cursor-pointer ${
-                    subPage === "service"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("service")}
-                >
-                  Service
-                </p>
-                <p
-                  className={`cursor-pointer ${
-                    subPage === "graphisme"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("graphisme")}
-                >
-                  Graphisme
-                </p>
-                <p
-                  className={`cursor-pointer ${
-                    subPage === "digital"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("digital")}
-                >
-                  Digital
-                </p>
-                <p
-                  className={`cursor-pointer ${
-                    subPage === "video"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("video")}
-                >
-                  Video
-                </p>
-                <p
-                  className={`cursor-pointer mr-4 ${
-                    subPage === "evenement"
-                      ? "text-purple-400"
-                      : "text-slate-900 dark:text-white"
-                  }`}
-                  onClick={() => setSubPage("evenement")}
-                >
-                  Evenement
-                </p>         
-              </SNav> */}  
+              
               <SNav
                 className={`w-full h-[60px] absolute ${
                   page === "events" ? "left-0" : "left-[-100%]"
