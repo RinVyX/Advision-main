@@ -26,6 +26,9 @@ class MyDocument extends Document {
           rel="stylesheet"
           ></link>
 
+          <script src="https://smtpjs.com/v3/smtp.js">
+          </script>
+
           <title>AdVision El Djazair</title>
           <meta property="og:title" content="AdVision El Djazair" key="title" />
           <meta property="og:site_name" content="AdVision El Djazair" key="site_name" />
