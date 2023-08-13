@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { State } from "../../Context/context";
 import styled from "styled-components";
 import emailjs from '@emailjs/browser';
+import {useRef} from 'react';
 
 export default function Events() {
   const { page } = useContext(State);
@@ -21,16 +22,40 @@ export default function Events() {
     }
   }, [page]);
 
+  const name = useRef(null);
+  const email = useRef(null);
+  const subject = useRef(null);
+  const message = useRef(null);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     /* emailjs.sendForm('service_i0j9asi', 'template_vx63a5n', e.target, '8v47NOKvNz6V_Sj9y'); */
     Email.send({
       SecureToken : 'fad7d214-1e60-4141-ac46-eb6bebc6e6e2',
-      To : 'linaagg19@gmail.com',
-      From : "dev@advision-dz.net",
-      Subject : "This is the subject",
-      Body : "And this is the body"
+      To : "dev@advision-dz.net",
+      From : "contact@advision-dz.net",
+      Subject : subject.current.value,
+      Body : `
+      <div className="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+        <div className="">
+            <div className="">Nom et Prénom :</div>
+            <div className="">`+name.current.value+`</div>
+        </div>
+        <div className="">
+            <div className="">Adresse Email :</div>
+            <div className="">`+email.current.value+`</div>
+        </div>
+        <div className="">
+            <div className="">Sujet :</div>
+            <div className="">`+subject.current.value+`</div>
+        </div>
+        <div className="">
+            <div className="">Message :</div>
+            <div className="">`+message.current.value+`</div>
+        </div>
+      </div> 
+      `
     }).then(
       message => alert(message)
     );
@@ -44,60 +69,52 @@ export default function Events() {
           item && (
             <animated.div
               style={style}
-              className="absolute w-[100%] h-full font-kanit"
+              className="w-[100%] h-full font-kanit"
             >
-              <div className="mt-10">
-                <div className="w-full justify-center items-center flex flex-col mb-4">
-                  <p className="font-semibold my-4 text-4xl">
-                    Contact
-                  </p>
-                </div>
-                <form className=" justify-center items-center flex-col gap-4 flex" onSubmit={sendEmail}>
-                <div className="min-w-[300px]">
-                    <input
-                      type="name"
-                      id="name"
-                      name="name"
-                      className=" bg-gray-200 text-sm rounded-l block w-full p-2.5 lg:w-[400px]"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div className="min-w-[300px]">
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      className=" bg-gray-200 text-sm rounded-l block w-full p-2.5 lg:w-[400px]"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <div className="min-w-[300px]">
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      className=" bg-gray-200 text-sm rounded-l block w-full p-2.5 lg:w-[400px]"
-                      placeholder="Subject"
-                    />
-                  </div>
-                  <div className="min-w-[300px] sm:col-span-2">
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows="5"
-                      className=" bg-gray-200  text-sm rounded-l block w-full p-2.5 lg:w-[400px]"
-                      placeholder="Leave a comment..."
-                    ></textarea>
-                  </div>
-                  <div className="flex justify-end items-center mt-2">
-                    <button
-                      type="submit"
-                      className="py-2 hover:bg-[#34568B] hover:text-white hover:animate-pulse px-2 text-sm justify-items-end font-medium text-center border-2 rounded-md border-black dark:border-white dark:text-white text-slate-800">
-                      Send message
-                    </button>
-                  </div>
-                </form>
+              <div>                
+                
               </div>
+
+              <div className="mt-10 flex justify-center items-center">
+                <div className=" w-full max-w-md p-4 bg-white/30 backdrop-blur-md rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800/40 dark:border-gray-700">
+                    <form className="space-y-3" onSubmit={sendEmail}>
+                        <div className="text-3xl font-medium text-gray-900 dark:text-white">Contact</div>
+                        <div>
+                            <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom et prénom</label>
+                            <input type="name" name="name" id="name" ref={name}
+                                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
+                                              dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" 
+                                  placeholder="" required/>
+                        </div>
+                        <div>
+                            <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adresse Mail</label>
+                            <input type="email" name="email" id="email" ref={email}
+                                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
+                                             dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" 
+                                  placeholder="name@company.com" required/>
+                        </div>
+                        <div>
+                            <label for="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sujet</label>
+                            <input type="subject" name="subject" id="subject" ref={subject}
+                                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
+                                              dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" 
+                                  placeholder="" required/>
+                        </div>
+                        <div>
+                            <label for="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
+                            <textarea type="message" name="message" id="message" ref={message}
+                                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
+                                              dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" 
+                                  placeholder="Messagee ....." rows="5" required/>
+                        </div>
+                        <button type="submit" className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium r
+                                                        ounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Envoyer
+                        </button>                      
+                    </form>
+                </div>
+              </div>
+              
             </animated.div>
           )
       )}
