@@ -35,14 +35,7 @@ export default function Events() {
       setTimeout(() => {
         setCopys1(false);
       }, 1000);
-    }
-    if (copy === "copy2") {
-      navigator.clipboard.writeText("recrutement@advision-dz.net");
-      setCopys2(true);
-      setTimeout(() => {
-        setCopys2(false);
-      }, 1000);
-    }
+    }    
     if (copy === "copy3") {
       navigator.clipboard.writeText("advision.contact@gmail.com");
       setCopys3(true);
@@ -64,7 +57,7 @@ export default function Events() {
     /* emailjs.sendForm('service_i0j9asi', 'template_vx63a5n', e.target, '8v47NOKvNz6V_Sj9y'); */
     Email.send({
       SecureToken : 'fad7d214-1e60-4141-ac46-eb6bebc6e6e2',
-      To : "dev@advision-dz.net",
+      To : "aggoune.lina.work@gmail.com",
       From : "contact@advision-dz.net",
       Subject : subject.current.value,
       Body : `
