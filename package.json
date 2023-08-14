@@ -16,6 +16,7 @@
     "@mui/material": "^5.11.13",
     "@tailwindui/react": "^0.1.1",
     "@u-wave/react-youtube": "^0.7.4",
+    "emailjs": "^4.0.2",
     "framer-motion": "^10.2.5",
     "google-map-react": "^2.2.0",
     "lottie-react": "^2.4.0",

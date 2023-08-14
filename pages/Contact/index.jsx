@@ -22,6 +22,36 @@ export default function Events() {
     }
   }, [page]);
 
+
+  /* Mail Copy */
+  const [copys1, setCopys1] = useState(false);
+  const [copys2, setCopys2] = useState(false);
+  const [copys3, setCopys3] = useState(false);
+  const handleCopy = (copy) => {
+    if (copy === "copy1") {
+      navigator.clipboard.writeText("contact@advision-dz.net");
+      setCopys1(true);
+      setTimeout(() => {
+        setCopys1(false);
+      }, 1000);
+    }
+    if (copy === "copy2") {
+      navigator.clipboard.writeText("recrutement@advision-dz.net");
+      setCopys2(true);
+      setTimeout(() => {
+        setCopys2(false);
+      }, 1000);
+    }
+    if (copy === "copy3") {
+      navigator.clipboard.writeText("advision.contact@gmail.com");
+      setCopys3(true);
+      setTimeout(() => {
+        setCopys3(false);
+      }, 1000);
+    }
+  };
+
+
   const name = useRef(null);
   const email = useRef(null);
   const subject = useRef(null);
@@ -71,9 +101,6 @@ export default function Events() {
               style={style}
               className="w-[100%] h-full font-kanit"
             >
-              <div>                
-                
-              </div>
 
               <div className="mt-10 flex justify-center items-center">
                 <div className=" w-full max-w-md p-4 bg-white/30 backdrop-blur-md rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800/40 dark:border-gray-700">
@@ -112,6 +139,75 @@ export default function Events() {
                             Envoyer
                         </button>                      
                     </form>
+
+                    <div className="flex justify-center items-center sm:gap-2 gap-1">
+                    <p className="dark:text-white text-slate-800">
+                      contact@advision-dz.net
+                    </p>
+                    <div className="w-[30px] h-[30px] relative">
+                      <CgCopy
+                        onClick={() => handleCopy("copy1")}
+                        className="cursor-pointer"
+                      />
+                      <div
+                        className={`${
+                          copys1 ? "absolute" : "hidden"
+                        } top-[-45px] left-[-75px] sm:left-[-10px] text-xs px-[5px] py-[4px] bg-gray-300 whitespace-nowrap rounded-md text`}
+                      >
+                        Email copied
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex justify-center items-center sm:gap-2 gap-1">
+                    <p className="">
+                      recrutement@advision-dz.net
+                    </p>
+                    <div className="w-[30px] h-[30px] relative">
+                      <CgCopy
+                        onClick={() => handleCopy("copy2")}
+                        className="cursor-pointer"
+                      />
+                      <div
+                        className={`${
+                          copys2 ? "absolute" : "hidden"
+                        } top-[-45px] left-[-75px] sm:left-[-10px] text-xs px-[5px] py-[4px] bg-gray-300 whitespace-nowrap rounded-md text`}
+                      >
+                        Email copied
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex justify-center items-center sm:gap-2 gap-1 mb-2">
+                    <p className="">
+                      advision.contact@gmail.com
+                    </p>
+                    <div className="w-[30px] h-[30px] relative">
+                      <CgCopy
+                        onClick={() => handleCopy("copy3")}
+                        className="cursor-pointer"
+                      />
+                      <div
+                        className={`${
+                          copys3 ? "absolute" : "hidden"
+                        } top-[-45px] left-[-75px] sm:left-[-10px] text-xs px-[5px] py-[4px] bg-gray-300 whitespace-nowrap rounded-md text`}
+                      >
+                        Email copied
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex justify-center items-center gap-4">
+                    <a href="https://www.youtube.com/@advision6492/videos" target="_blank">
+                      <FlipIcon icon="/images/youtube.png" color="#0a66c2" />
+                    </a>
+                    <a href="https://www.facebook.com/advisioneldjazair" target="_blank">
+                      <FlipIcon icon="/images/facebook.png" color="#2481cc" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/74389890/admin/" target="_blank">
+                      <FlipIcon icon="/images/linkedin.png" color="#2481cc" />
+                    </a>
+                    <a href="https://www.instagram.com/advision.dz/" target="_blank">
+                      <FlipIcon icon="/images/instagram.png"  />
+                    </a>
+                  </div>
                 </div>
               </div>
               
@@ -132,3 +228,33 @@ const Container = styled.div`
     background-color: #c084fc;
   }
 `;
+
+const FlipIcon = ({ icon }) => {
+  const [hovered, setHovered] = useState(false);
+  return (
+    <div>
+      <div
+        className={`w-[55px] h-[55px] bg-gray-300 rounded-lg flex justify-center items-center relative overflow-hidden
+        hover:bg-[#2c031cfb] transition delay-150 duration-350 ease-in-out cursor-pointer transform hover:scale-105 `}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      >
+        <div
+          className={`w-full h-full flex justify-center items-center absolute top-0 ${
+            hovered && "translate-y-[100%]"
+          } transition delay-150 duration-350 ease-in-out cursor-pointer"
+          `}
+        >
+          <img src={icon} alt="git" width="32px" height="32px" />
+        </div>
+        <div
+          className={`w-full h-full flex justify-center items-center absolute top-[-100%] ${
+            hovered && "translate-y-[100%]"
+          } transition delay-150 duration-350 ease-in-out cursor-pointer`}
+        >
+          <img src={icon} alt="git" width="32px" height="32px" />
+        </div>
+      </div>
+    </div>
+  );
+};
