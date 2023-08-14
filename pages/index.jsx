@@ -28,7 +28,7 @@ export default function Home({}) {
             <animated.div
               config={{ duration: 500 }}
               style={style}
-              className="absolute w-full h-full mx-[5%] my-[200px] lg:my-[150px]"
+              className="absolute w-full h-full mx-[5%] my-[100px] lg:my-[150px]"
               >
               <div className="w-full h-full ">
                 <div className="font-Kanit text-black bg-clip-text">
