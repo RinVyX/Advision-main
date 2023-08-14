@@ -3,6 +3,7 @@ import { useTransition, animated } from "react-spring";
 import { useContext } from "react";
 import { State } from "../../Context/context";
 import styled from "styled-components";
+import { CgCopy } from "react-icons/cg";
 import emailjs from '@emailjs/browser';
 import {useRef} from 'react';
 
@@ -134,13 +135,13 @@ export default function Events() {
                                               dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" 
                                   placeholder="Messagee ....." rows="5" required/>
                         </div>
-                        <button type="submit" className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium r
-                                                        ounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <button type="submit" className="w-full text-white bg-[#900064] hover:bg-[#730050] focus:ring-4 focus:outline-none focus:ring-[#efcee6] font-medium r
+                                                        ounded-lg text-sm px-5 py-2.5 text-center dark:bg-[#cb5dae] dark:hover:bg-[#900064] dark:focus:ring-[#730050]">
                             Envoyer
                         </button>                      
                     </form>
 
-                    <div className="flex justify-center items-center sm:gap-2 gap-1">
+                    <div className="flex justify-center items-center sm:gap-2 gap-1 mt-3">
                     <p className="dark:text-white text-slate-800">
                       contact@advision-dz.net
                     </p>
