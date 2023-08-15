@@ -101,28 +101,28 @@ export default function Events() {
                     <form className="space-y-3" onSubmit={sendEmail}>
                         <div className="text-3xl font-medium text-gray-900 dark:text-white">Contact</div>
                         <div>
-                            <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom et prénom</label>
+                            <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom et prénom</label>
                             <input type="name" name="name" id="name" ref={name}
                                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
                                               dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" 
                                   placeholder="" required/>
                         </div>
                         <div>
-                            <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adresse Mail</label>
+                            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adresse Mail</label>
                             <input type="email" name="email" id="email" ref={email}
                                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
                                              dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" 
                                   placeholder="name@company.com" required/>
                         </div>
                         <div>
-                            <label for="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sujet</label>
+                            <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sujet</label>
                             <input type="subject" name="subject" id="subject" ref={subject}
                                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
                                               dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" 
                                   placeholder="" required/>
                         </div>
                         <div>
-                            <label for="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
+                            <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
                             <textarea type="message" name="message" id="message" ref={message}
                                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
                                               dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" 

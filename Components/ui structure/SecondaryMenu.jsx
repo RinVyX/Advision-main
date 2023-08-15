@@ -40,7 +40,7 @@ const SecondaryMenu = ({
               onKeyDown={(e) => handleKeyDown(e)}
             >
               <SNav
-                className={`w-full h-[120px] absolute md:grid md:grid-cols-5
+                className={`w-full h-[120px] absolute md:grid md:grid-cols-5 backdrop-blur-sm
                   ${ page === "agency" ? "left-0" : "left-[-100%]" } 
                   ${ subPage === "philosophy" ? "bg-[#61045F]/80 dark:bg-[#61045F]/30" : 
                      subPage === "vision" ? "bg-[#F09819]/80 dark:bg-[#F09819]/30" : "bg-[#0AB462]/80 dark:bg-[#0AB462]/30" }

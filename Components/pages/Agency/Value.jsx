@@ -53,7 +53,7 @@ const Value = ({ subPage }) => {
 
 return (
   <Container
-    className={`w-full h-full absolute dark:bg-gradient-to-t bg-gradient-to-t dark:from-[#24FE41]/30 from-[#24FE41]/80 dark:to-[#0AB462]/30 to-[#0AB462]/80 ${
+    className={`w-full h-full absolute backdrop-blur-sm dark:bg-gradient-to-t bg-gradient-to-t dark:from-[#24FE41]/30 from-[#24FE41]/80 dark:to-[#0AB462]/30 to-[#0AB462]/80 ${
       subPage === "value" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
     } font-kanit text-slate-800 dark:text-slate-200`}
   >

@@ -53,7 +53,7 @@ const Vision = ({ subPage }) => {
 
 return (
   <Container
-    className={`w-full h-full absolute dark:bg-gradient-to-t bg-gradient-to-t dark:from-[#EDDE5D]/30 from-[#EDDE5D]/80 dark:to-[#F09819]/30 to-[#F09819]/80 ${
+    className={`w-full h-full absolute backdrop-blur-sm dark:bg-gradient-to-t bg-gradient-to-t dark:from-[#EDDE5D]/30 from-[#EDDE5D]/80 dark:to-[#F09819]/30 to-[#F09819]/80 ${
       subPage === "vision" ? "left-0 opacity-1" : "left-[-100%] opacity-0"
     } font-kanit text-slate-800 dark:text-slate-200`}
   >
